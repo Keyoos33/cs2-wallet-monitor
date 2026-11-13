@@ -1,0 +1,79 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-fut-og1-2026-01-13 (trimmed)",
+ "event": {
+  "id": "154392",
+  "slug": "cs2-fut-og1-2026-01-13",
+  "title": "Counter-Strike: FUT Esports vs OG (BO3)",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-01-13T11:00:00Z",
+  "closed": true,
+  "score": "000-000|2-0|Bo3",
+  "period": "2/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "FUT Esports",
+    "abbreviation": "fut"
+   },
+   {
+    "name": "OG",
+    "abbreviation": "og1"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1148076",
+   "question": "Counter-Strike: FUT Esports vs OG (BO3)",
+   "conditionId": "0x10cd406938cbb2e96a3f08029815c7464fe58119bf7987e469d4d5a2ecfb6de1",
+   "slug": "cs2-fut-og1-2026-01-13",
+   "outcomes": "[\"FUT Esports\", \"OG\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"15401510121720169065257543995959077639992177778284914275749258459767951099687\", \"46571493507661068433208137969387099460556544470729312354946071216945121934007\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-01-13 11:00:00+00",
+   "eventStartTime": "2026-01-13T11:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"FUT Esports\" if FUT Esports win against OG in the named Counter-Strike match in the BLAST Bounty Qualifier, scheduled for January 13 at 6:00AM ET.\n\nThis market will resolve to \"OG\" if OG win against FUT Esports in the Counter-Strike match.\n\nIf the game is postponed, this market will remain open until the game has been completed."
+  },
+  {
+   "id": "1148086",
+   "question": "Series FUT Esports Rounds Handicap (-4.5)",
+   "conditionId": "0xd229e1f4bd08749de65a0a95ec64175321f469fe988d803933a364e734981fdf",
+   "slug": "cs2-fut-og1-2026-01-13-rounds-handicap-away-4pt5",
+   "outcomes": "[\"FUT Esports\", \"OG\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"45602678002070976955439412180878429511517754842763955806340622909468363741700\", \"104856911586005922483840731648738707263735692552852931939133237749222020886996\"]",
+   "sportsMarketType": "round_handicap_match",
+   "line": -4.5,
+   "groupItemTitle": "Series FUT Esports Rounds Handicap (-4.5)",
+   "gameStartTime": "2026-01-13 11:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between FUT Esports and OG in the BLAST Bounty Qualifier, scheduled for January 13 at 6:00am ET:\n\nIf FUT Esports defeats OG by 5 or more rounds across all maps in this series, this market will resolve to \"FUT Esports\".\n\nOtherwise, it will resolve to \"OG\"."
+  },
+  {
+   "id": "1165597",
+   "question": "Series FUT Esports Rounds Handicap (-4.5)",
+   "conditionId": "0x6d8f83dd6cd3196eeb3754b23b4674c589ef9fe292a24c193cdd218db92e3758",
+   "slug": "cs2-fut-og1-2026-01-13-round-handicap-away-4pt5",
+   "outcomes": "[\"FUT Esports\", \"OG\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"111287090621119999981870930875965411309757672701367467270568187451333626024129\", \"19592595323280768259898366952012520616790322650471096595490463728753271032331\"]",
+   "sportsMarketType": "round_handicap_match",
+   "line": -4.5,
+   "groupItemTitle": "Series FUT Esports Rounds Handicap (-4.5)",
+   "gameStartTime": "2026-01-13 11:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between FUT Esports and OG in the BLAST Bounty Qualifier, scheduled for January 13 at 6:00AM ET.\n\nIf FUT Esports defeats OG by 5 or more rounds across all Matchs in this match, this market will resolve to \"FUT Esports\".\n\nOtherwise, it will resolve to \"OG\"."
+  }
+ ]
+}

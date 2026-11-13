@@ -1,0 +1,149 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-nemi1-ast10-2026-10-04 (trimmed)",
+ "event": {
+  "id": "1131307",
+  "slug": "cs2-nemi1-ast10-2026-10-04",
+  "title": "Counter-Strike: Nemiga vs Astralis (BO5) - Stake Ranked Episode 4 Playoffs",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-10-04T16:25:00Z",
+  "closed": true,
+  "score": "000-000|1-3|Bo5",
+  "period": "4/5",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "Nemiga",
+    "abbreviation": "nemi1"
+   },
+   {
+    "name": "Astralis",
+    "abbreviation": "ast10"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "5285591",
+   "question": "Counter-Strike: Nemiga vs Astralis (BO5) - Stake Ranked Episode 4 Playoffs",
+   "conditionId": "0x633b275d40dc8424e532838d414614dbafe811169ec42bd75c4634248b8a81d0",
+   "slug": "cs2-nemi1-ast10-2026-10-04",
+   "outcomes": "[\"Nemiga\", \"Astralis\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"30643937571112010934882694103879915983475097818601313612498581719026955224947\", \"105637663817468868037049521418451297644113379528011804359268989155934188794708\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-10-04 16:25:00+00",
+   "eventStartTime": "2026-10-04T16:25:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Grand Final match between Nemiga and Astralis in the Stake Ranked Episode 4 Playoffs, initially scheduled for October 4, 2026 at 12:00 PM ET.\n\nThis market will resolve to \"Nemiga\" if Nemiga win the match against Astralis.\n\nThis market will resolve to \"Astralis\" if Astralis win the match against Nemiga."
+  },
+  {
+   "id": "5285592",
+   "question": "Games Total: O/U 3.5",
+   "conditionId": "0xfed7ac8020300a2cc28b51c73c645a940550ab0394b94d6f460eab7346b3a87e",
+   "slug": "cs2-nemi1-ast10-2026-10-04-total-games-3pt5",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"69968668599393461909151061022467841293686754789017338816166673655832050194584\", \"38774185967916431778096891023050316674244816715605193466661979066730156692645\"]",
+   "sportsMarketType": "totals",
+   "line": 3.5,
+   "groupItemTitle": "O/U 3.5 Games",
+   "gameStartTime": "2026-10-04 16:25:00+00",
+   "eventStartTime": "2026-10-04T16:25:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Grand Final match between Nemiga and Astralis in the Stake Ranked Episode 4 Playoffs, initially scheduled for October 4, 2026 at 12:00 PM ET.\n\nThis market will resolve to \"Over\" if Nemiga and Astralis play 4 or more maps in this series.\n\nIf fewer than 4 maps are played, this market will resolve to \"Under\"."
+  },
+  {
+   "id": "5285593",
+   "question": "Games Total: O/U 4.5",
+   "conditionId": "0x213df1c4b8aeb83728cdd02c96864733a2c0c004eaed596bc8131262dcc7cb7e",
+   "slug": "cs2-nemi1-ast10-2026-10-04-total-games-4pt5",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"65350969594228384189685645798442986135462304494924530168624607757809932576624\", \"84573847049210063450438358831380760253325800668988245017307476481150660608647\"]",
+   "sportsMarketType": "totals",
+   "line": 4.5,
+   "groupItemTitle": "O/U 4.5 Games",
+   "gameStartTime": "2026-10-04 16:25:00+00",
+   "eventStartTime": "2026-10-04T16:25:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Grand Final match between Nemiga and Astralis in the Stake Ranked Episode 4 Playoffs, initially scheduled for October 4, 2026 at 12:00 PM ET.\n\nThis market will resolve to \"Over\" if Nemiga and Astralis play 5 or more maps in this series.\n\nIf fewer than 5 maps are played, this market will resolve to \"Under\"."
+  },
+  {
+   "id": "5285594",
+   "question": "Map Handicap: NEMI (-1.5) vs Astralis (+1.5)",
+   "conditionId": "0xdf3d364316b5926754ae48844d5e269e8563a902c4ddfc497f235d648dabd7fd",
+   "slug": "cs2-nemi1-ast10-2026-10-04-map-handicap-away-1pt5",
+   "outcomes": "[\"Nemiga\", \"Astralis\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"44858707874936644495617806981316748666269437069718967982045036557049021409916\", \"48127656317125058934245311997436508538033764794044392333005828867306645291764\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: NEMI (-1.5) vs Astralis (+1.5)",
+   "gameStartTime": "2026-10-04 16:25:00+00",
+   "eventStartTime": "2026-10-04T16:25:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Grand Final match between Nemiga and Astralis in the Stake Ranked Episode 4 Playoffs, initially scheduled for October 4, 2026 at 12:00 PM ET.\n\nThis market will resolve to \"Nemiga\" if Nemiga wins 2 or more maps than Astralis in this match.\n\nOtherwise, this market will resolve to \"Astralis\". "
+  },
+  {
+   "id": "5285595",
+   "question": "Map Handicap: NEMI (-2.5) vs Astralis (+2.5)",
+   "conditionId": "0x9f4bf6f7992de620895c20176f292f39241a59f9ee29e50d8e54d127b2f87c9f",
+   "slug": "cs2-nemi1-ast10-2026-10-04-map-handicap-away-2pt5",
+   "outcomes": "[\"Nemiga\", \"Astralis\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"107929112868465156075874728666633305827030130294787982491021477221082896289130\", \"111050511994331174176915086227013014911949765285810188353875594502215470527206\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -2.5,
+   "groupItemTitle": "Map Handicap: NEMI (-2.5) vs Astralis (+2.5)",
+   "gameStartTime": "2026-10-04 16:25:00+00",
+   "eventStartTime": "2026-10-04T16:25:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Grand Final match between Nemiga and Astralis in the Stake Ranked Episode 4 Playoffs, initially scheduled for October 4, 2026 at 12:00 PM ET.\n\nThis market will resolve to \"Nemiga\" if Nemiga wins 3 or more maps than Astralis in this match.\n\nOtherwise, this market will resolve to \"Astralis\". "
+  },
+  {
+   "id": "5287729",
+   "question": "Map Handicap: AST (-1.5) vs Nemiga (+1.5)",
+   "conditionId": "0x4b3c3a6efe8e1264c1abc7dc0d39da4b9a31dbcc9ca1c1c2a103b58711e5aef9",
+   "slug": "cs2-nemi1-ast10-2026-10-04-map-handicap-home-1pt5",
+   "outcomes": "[\"Astralis\", \"Nemiga\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"40006657831095616898893011168710087930611251299938788512574862492410627988410\", \"105762297414656596344439541767539224001158699178243204140347524501694626135991\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: AST (-1.5) vs Nemiga (+1.5)",
+   "gameStartTime": "2026-10-04 16:25:00+00",
+   "eventStartTime": "2026-10-04T16:25:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Grand Final match between Nemiga and Astralis in the Stake Ranked Episode 4 Playoffs, initially scheduled for October 4, 2026 at 12:00 PM ET.\n\nThis market will resolve to \"Astralis\" if Astralis wins 2 or more maps than Nemiga in this match.\n\nOtherwise, this market will resolve to \"Nemiga\". "
+  },
+  {
+   "id": "5288377",
+   "question": "Map Handicap: AST (-2.5) vs Nemiga (+2.5)",
+   "conditionId": "0x018f341daffd1a69478e64359bced9f60c3fb50feb252e1a9597abc6ea7c42cc",
+   "slug": "cs2-nemi1-ast10-2026-10-04-map-handicap-home-2pt5",
+   "outcomes": "[\"Astralis\", \"Nemiga\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"25019159669084655754190213434687546892316022869859638927973846642682062751512\", \"38267226448124727535703480856718145619446399480306391766260887165899858041844\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -2.5,
+   "groupItemTitle": "Map Handicap: AST (-2.5) vs Nemiga (+2.5)",
+   "gameStartTime": "2026-10-04 16:25:00+00",
+   "eventStartTime": "2026-10-04T16:25:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Grand Final match between Nemiga and Astralis in the Stake Ranked Episode 4 Playoffs, initially scheduled for October 4, 2026 at 12:25 PM ET.\n\nThis market will resolve to \"Astralis\" if Astralis wins 3 or more maps than Nemiga in this match.\n\nOtherwise, this market will resolve to \"Nemiga\". "
+  }
+ ]
+}

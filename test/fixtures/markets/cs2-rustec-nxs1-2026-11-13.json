@@ -1,0 +1,147 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-rustec-nxs1-2026-11-13 (trimmed)",
+ "event": {
+  "id": "1367520",
+  "slug": "cs2-rustec-nxs1-2026-11-13",
+  "title": "Counter-Strike: ex-RUSTEC vs Nexus (BO3) - CCT Europe Group Stage",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-11-13T18:00:00Z",
+  "closed": false,
+  "score": "0-0|0-0|Bo3",
+  "period": "0/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "ex-RUSTEC",
+    "abbreviation": "rustec"
+   },
+   {
+    "name": "Nexus",
+    "abbreviation": "nxs1"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "6976332",
+   "question": "Counter-Strike: ex-RUSTEC vs Nexus - Map 1 Winner",
+   "conditionId": "0x0aae6a6c970bd9c63cd12002930b592bfd05a0e70ca1cbec127998bb398156d0",
+   "slug": "cs2-rustec-nxs1-2026-11-13-game1",
+   "outcomes": "[\"ex-RUSTEC\", \"Nexus\"]",
+   "outcomePrices": "[\"0.43\", \"0.57\"]",
+   "clobTokenIds": "[\"12285320125848622496353083482602561525184601496020708220465795174651815670402\", \"99706580650849539854397030634114191996759496759798110393026451345773075397596\"]",
+   "sportsMarketType": "child_moneyline",
+   "groupItemTitle": "Map 1 Winner",
+   "gameStartTime": "2026-11-13 18:00:00+00",
+   "eventStartTime": "2026-11-13T18:00:00Z",
+   "negRisk": false,
+   "closed": false,
+   "description": "This market refers to the Counter-Strike Round 2 match between ex-RUSTEC and Nexus in the CCT Europe Group Stage, initially scheduled for November 13, 2026 at 1:00 PM ET.\n\nThis market will resolve to \"ex-RUSTEC\" if ex-RUSTEC win Map 1 against Nexus.\n\nThis market will resolve to \"Nexus\" if Nexus win Map 1 against ex-RUSTEC."
+  },
+  {
+   "id": "6976333",
+   "question": "Counter-Strike: ex-RUSTEC vs Nexus - Map 2 Winner",
+   "conditionId": "0x495e7661b6f1f60cd9877b5106a164003c88531bc346f1fc2c057980d18b31aa",
+   "slug": "cs2-rustec-nxs1-2026-11-13-game2",
+   "outcomes": "[\"ex-RUSTEC\", \"Nexus\"]",
+   "outcomePrices": "[\"0.43\", \"0.57\"]",
+   "clobTokenIds": "[\"40657922043004809283561580912696661046073744253158947857560535932344549002745\", \"14142653756346881534051034097403469767350539882381313765307332258717649359946\"]",
+   "sportsMarketType": "child_moneyline",
+   "groupItemTitle": "Map 2 Winner",
+   "gameStartTime": "2026-11-13 18:00:00+00",
+   "eventStartTime": "2026-11-13T18:00:00Z",
+   "negRisk": false,
+   "closed": false,
+   "description": "This market refers to the Counter-Strike Round 2 match between ex-RUSTEC and Nexus in the CCT Europe Group Stage, initially scheduled for November 13, 2026 at 1:00 PM ET.\n\nThis market will resolve to \"ex-RUSTEC\" if ex-RUSTEC win Map 2 against Nexus.\n\nThis market will resolve to \"Nexus\" if Nexus win Map 2 against ex-RUSTEC."
+  },
+  {
+   "id": "6976334",
+   "question": "Counter-Strike: ex-RUSTEC vs Nexus (BO3) - CCT Europe Group Stage",
+   "conditionId": "0x85de47c5d01c6afcfb018a44fa55cba2bc58e7decd6a6ba8854dd0210fe93645",
+   "slug": "cs2-rustec-nxs1-2026-11-13",
+   "outcomes": "[\"ex-RUSTEC\", \"Nexus\"]",
+   "outcomePrices": "[\"0.41\", \"0.59\"]",
+   "clobTokenIds": "[\"21859504952792142933955073415656001122239523194929147084844987956480519688212\", \"80461740432688421213511713302280759574590820110278368650715603283815749503287\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-11-13 18:00:00+00",
+   "eventStartTime": "2026-11-13T18:00:00Z",
+   "negRisk": false,
+   "closed": false,
+   "description": "This market refers to the Counter-Strike Round 2 match between ex-RUSTEC and Nexus in the CCT Europe Group Stage, initially scheduled for November 13, 2026 at 1:00 PM ET.\n\nThis market will resolve to \"ex-RUSTEC\" if ex-RUSTEC win the match against Nexus.\n\nThis market will resolve to \"Nexus\" if Nexus win the match against ex-RUSTEC."
+  },
+  {
+   "id": "6976335",
+   "question": "Games Total: O/U 2.5",
+   "conditionId": "0x0e6e970c7dd28c49f9fe89451fb6a5712f24cd75819d3783fb08e418959edf0a",
+   "slug": "cs2-rustec-nxs1-2026-11-13-total-games-2pt5",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"0.46\", \"0.54\"]",
+   "clobTokenIds": "[\"85057451550621522139467133246974677418940759582732950043865961204415567634866\", \"90311573856354140225251028610234365154835871333647026365339066879880573119643\"]",
+   "sportsMarketType": "totals",
+   "line": 2.5,
+   "groupItemTitle": "O/U 2.5 Games",
+   "gameStartTime": "2026-11-13 18:00:00+00",
+   "eventStartTime": "2026-11-13T18:00:00Z",
+   "negRisk": false,
+   "closed": false,
+   "description": "This market refers to the Counter-Strike Round 2 match between ex-RUSTEC and Nexus in the CCT Europe Group Stage, initially scheduled for November 13, 2026 at 1:00 PM ET.\n\nThis market will resolve to \"Over\" if ex-RUSTEC and Nexus play 3 or more maps in this series.\n\nIf fewer than 3 maps are played, this market will resolve to \"Under\"."
+  },
+  {
+   "id": "6991651",
+   "question": "Map Handicap: NXS (-1.5) vs ex-RUSTEC (+1.5)",
+   "conditionId": "0xdc2fbb7bdc4331e3ea483cb8d70e7f3882812c3ec3b29b839d8154ec12964366",
+   "slug": "cs2-rustec-nxs1-2026-11-13-map-handicap-home-1pt5",
+   "outcomes": "[\"Nexus\", \"ex-RUSTEC\"]",
+   "outcomePrices": "[\"0.345\", \"0.655\"]",
+   "clobTokenIds": "[\"72912026167256574638530185804199037130463638254685735058509523053514658955348\", \"10411829433247646258745208391344338942576197427736904161608882938733529069860\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: NXS (-1.5) vs ex-RUSTEC (+1.5)",
+   "gameStartTime": "2026-11-13 18:00:00+00",
+   "eventStartTime": "2026-11-13T18:00:00Z",
+   "negRisk": false,
+   "closed": false,
+   "description": "This market refers to the Counter-Strike Round 2 match between ex-RUSTEC and Nexus in the CCT Europe Group Stage, initially scheduled for November 13, 2026 at 1:00 PM ET.\n\nThis market will resolve to \"Nexus\" if Nexus wins 2 or more maps than ex-RUSTEC in this match.\n\nOtherwise, this market will resolve to \"ex-RUSTEC\". "
+  },
+  {
+   "id": "6991652",
+   "question": "Map 1 Total Rounds: Over/Under 21.5",
+   "conditionId": "0x2c5198c0a525ca567a36dbe1914f2d9d075908305142ec5fa86d8284ed9f4bf8",
+   "slug": "cs2-rustec-nxs1-2026-11-13-game1-round-total-21pt5",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"0.51\", \"0.49\"]",
+   "clobTokenIds": "[\"107708593263144595277627964558101215094610111270207674261955118529265737300290\", \"33910476389938074782233617874955388379602998209598294482863198863937144566733\"]",
+   "sportsMarketType": "round_over_under_game_1",
+   "line": 21.5,
+   "groupItemTitle": "Map 1 Total Rounds: Over/Under 21.5",
+   "gameStartTime": "2026-11-13 18:00:00+00",
+   "eventStartTime": "2026-11-13T18:00:00Z",
+   "negRisk": false,
+   "closed": false,
+   "description": "This market refers to the Counter-Strike match between ex-RUSTEC and Nexus in the CCT Europe Group Stage, initially scheduled for November 13, 2026 at 1:00 PM ET. This market is decided solely by the total number of rounds played within Map 1 of this match (the combined round score of both teams on that single map), and is independent of which team wins Map 1 or the overall match.\n\nThis market will resolve to \"Over\" if the combined number of rounds played by both teams on Map 1, including any overtime, is greater than 21.5. This market will resolve to \"Under\" if the combined number of rounds played is less than 21.5. If the combined number of rounds played is exactly 21.5, this market will resolve 50-50.\n\nMap 1 must be played to completion, with a final round score determined by rounds actually played, for this market to resolve to \"Over\" or \"Under\". If Map 1 is completed in this way, the market resolves on that round total regardless of how the remainder of the match concludes (including any later forfeit, disqualification, walkover, or default). If Map 1 is not played at all, is not played to completion, or is decided by forfeit, disqualification, walkover, or default rather than by rounds played to a conclusion, this market will resolve 50-50. If the match is canceled, this market will resolve 50-50."
+  },
+  {
+   "id": "6991654",
+   "question": "Map 3 Total Rounds: Over/Under 21.5",
+   "conditionId": "0xf5c1a2138a4526e081e9a6256cab2c79d6632f8f912e51afebab96ca6a8cd6eb",
+   "slug": "cs2-rustec-nxs1-2026-11-13-game3-round-total-21pt5",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"0.5\", \"0.5\"]",
+   "clobTokenIds": "[\"19786033948598651387098176647738926010662897024621413341301841625205411970615\", \"102342317042814409655746655764265149215433040275404511957165147589031482135498\"]",
+   "sportsMarketType": "round_over_under_game_3",
+   "line": 21.5,
+   "groupItemTitle": "Map 3 Total Rounds: Over/Under 21.5",
+   "gameStartTime": "2026-11-13 18:00:00+00",
+   "eventStartTime": "2026-11-13T18:00:00Z",
+   "negRisk": false,
+   "closed": false,
+   "description": "This market refers to the Counter-Strike match between ex-RUSTEC and Nexus in the CCT Europe Group Stage, initially scheduled for November 13, 2026 at 1:00 PM ET. This market is decided solely by the total number of rounds played within Map 3 of this match (the combined round score of both teams on that single map), and is independent of which team wins Map 3 or the overall match.\n\nThis market will resolve to \"Over\" if the combined number of rounds played by both teams on Map 3, including any overtime, is greater than 21.5. This market will resolve to \"Under\" if the combined number of rounds played is less than 21.5. If the combined number of rounds played is exactly 21.5, this market will resolve 50-50.\n\nMap 3 must be played to completion, with a final round score determined by rounds actually played, for this market to resolve to \"Over\" or \"Under\". If Map 3 is completed in this way, the market resolves on that round total regardless of how the remainder of the match concludes (including any later forfeit, disqualification, walkover, or default). If Map 3 is not played at all, is not played to completion, or is decided by forfeit, disqualification, walkover, or default rather than by rounds played to a conclusion, this market will resolve 50-50. If the match is canceled, this market will resolve 50-50."
+  }
+ ]
+}

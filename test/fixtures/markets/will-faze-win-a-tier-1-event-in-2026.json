@@ -1,0 +1,26 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=will-faze-win-a-tier-1-event-in-2026 (trimmed)",
+ "event": {
+  "id": "244564",
+  "slug": "will-faze-win-a-tier-1-event-in-2026",
+  "title": "Will FaZe win a Tier 1 event in 2026? ",
+  "closed": false,
+  "teams": [],
+  "series": []
+ },
+ "markets": [
+  {
+   "id": "1495860",
+   "question": "Will FaZe win a Tier 1 event in 2026? ",
+   "conditionId": "0x2921b53fa1e280aa1c81b630cf177349a665ceb9f713f841e4e18e05fc806864",
+   "slug": "will-faze-win-a-tier-1-event-in-2026",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0.01\", \"0.99\"]",
+   "clobTokenIds": "[\"63010139968443726554698863038804793867289135404366358483235179597139821369733\", \"109294604043346086721916144967232602282021095067452423620736645513760961401876\"]",
+   "groupItemTitle": "",
+   "negRisk": false,
+   "closed": false,
+   "description": "This market will resolve to \"Yes\" if FaZe Clan's CS2 roster wins (takes 1st place in) any Tier 1 CS2 tournament that concludes by December 31, 2026, 11:59 PM ET. Otherwise, this market will resolve to \"No\".\n\nFor the purpose of this market, a \"Tier 1 Event\" refers to any tournament classified as S-Tier on Liquipedia.net. Online-only events, or events downgraded prior to event start (e.g., downgraded to A-Tier due to team attendance) do not qualify. If a Tier 1 event is downgraded after it has concluded, this event will still qualify as a \"Tier 1 Event\". \n\nThe primary resolution source for this market will be official information from the tournament organizers (e.g., ESL, PGL, BLAST.tv, etc.)."
+  }
+ ]
+}

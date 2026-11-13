@@ -1,0 +1,61 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-nrg-9ine-2026-01-05 (trimmed)",
+ "event": {
+  "id": "143777",
+  "slug": "cs2-nrg-9ine-2026-01-05",
+  "title": "Counter-Strike: NRG vs 9INE (BO5)",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-01-05T00:15:00Z",
+  "closed": true,
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "NRG",
+    "abbreviation": "nrg"
+   },
+   {
+    "name": "9INE",
+    "abbreviation": "9ine"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1108390",
+   "question": "Counter-Strike: NRG vs 9INE (BO3)",
+   "conditionId": "0x6ba6c54abb08a7b4ee8b617f512bbbdd86e452cc5dd384f2c367262c37e0d8b2",
+   "slug": "cs2-nrg-9ine-2026-01-05-322",
+   "outcomes": "[\"NRG\", \"9INE\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"111647933735197874326074275888926425153617412807621585710735216672082295532740\", \"103175911813662123537366800421638588901910143928261795089072660570273574413614\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-01-05 00:15:00+00",
+   "eventStartTime": "2026-01-05T00:15:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"NRG\" if NRG win against 9INE in the named Counter-Strike match in the Fragadelphia Miami Playoffs, scheduled for January 4 at 7:15PM ET.\n\nThis market will resolve to \"9INE\" if 9INE win against NRG in the Counter-Strike match.\n\nIf the game is postponed, this market will remain open until the game has been completed."
+  },
+  {
+   "id": "1108393",
+   "question": "Games Total: O/U 2.5",
+   "conditionId": "0x32318eb0a2c952c7cab1beb993cd476674e27bfa8bf66488d8747e2d54bf4951",
+   "slug": "cs2-nrg-9ine-2026-01-05-total-games-2pt5-143",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"101062937093346776200037338638896158532804922934421236329679261004669245306072\", \"18486821924662929075556420773751087250123831120727815516779495648781055682504\"]",
+   "sportsMarketType": "totals",
+   "line": 2.5,
+   "groupItemTitle": "O/U 2.5",
+   "gameStartTime": "2026-01-05 00:15:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between NRG and 9INE in the Fragadelphia Miami Playoffs, scheduled for January 4 at 7:15pm ET:\n\nThis market will resolve to \"Over\" if NRG and 9INE play 3 or more games in this series.\n\nIf fewer than 3 games are played, this market will resolve to \"Under\"."
+  }
+ ]
+}

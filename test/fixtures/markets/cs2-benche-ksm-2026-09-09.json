@@ -1,0 +1,76 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-benche-ksm-2026-09-09 (trimmed)",
+ "event": {
+  "id": "992375",
+  "slug": "cs2-benche-ksm-2026-09-09",
+  "title": "Counter-Strike: Benched gods vs KUUSAMO.gg (BO2) - Exort Fiesta Closed Qualifier: Series #2 Group D",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-09-09T17:00:00Z",
+  "closed": true,
+  "score": "0-0|0-0|Bo3",
+  "period": "0/3",
+  "negRisk": true,
+  "teams": [
+   {
+    "name": "Benched gods",
+    "abbreviation": "benche"
+   },
+   {
+    "name": "KUUSAMO.gg",
+    "abbreviation": "ksm"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "4400641",
+   "question": "Benched gods to win 2-0?",
+   "conditionId": "0xe4d4733fdec6a01517d572b22742684cfa4c4712ea114b55f0401529f516d4b1",
+   "slug": "cs2-benche-ksm-2026-09-09-benche",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"30989200647297261378207962517541373261557153385888500193532583541550501527556\", \"26158424517358367461061405967591556047624380510566716336027743785554905567814\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Benched gods",
+   "gameStartTime": "2026-09-09 17:00:00+00",
+   "negRisk": true,
+   "closed": true,
+   "description": "In the upcoming Counter-Strike best-of-two series, scheduled for September 9, 2026 at 1:00 PM ET, if Benched gods wins the series (wins both games, 2-0), this market will resolve to \"Yes\". Otherwise, this market will resolve to \"No\". If the series is postponed, this market will remain open until the series has been completed. If the series is canceled entirely, with no make-up, this market will resolve \"No\". This market refers only to the result of the best-of-two series (both games). The primary resolution source for this market is the official results of the event as recognized by the tournament organizer. However, if the tournament organizer has not published final results within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the tournament organizer. Revisions to officially declared final results made after market resolution will not be accounted for in determining the outcome."
+  },
+  {
+   "id": "4400642",
+   "question": "Benched gods vs KUUSAMO.gg: Draw (1-1)?",
+   "conditionId": "0xe210b4abd1ca1d9a3b695ec1b3f6557cc15d83e88ba0e7b5cf324e46630cf386",
+   "slug": "cs2-benche-ksm-2026-09-09-draw",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"100105516101500657025619266846173521744969233947159888032864649592565151977320\", \"110654950363786742167305219384350043837715590826027527810395608113853734419673\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Draw",
+   "gameStartTime": "2026-09-09 17:00:00+00",
+   "negRisk": true,
+   "closed": true,
+   "description": "In the upcoming Counter-Strike best-of-two series, scheduled for September 9, 2026 at 1:00 PM ET, if the series ends in a draw (1-1), this market will resolve to \"Yes\". Otherwise, this market will resolve to \"No\". If the series is postponed, this market will remain open until the series has been completed. If the series is canceled entirely, with no make-up, this market will resolve \"Yes\". This market refers only to the result of the best-of-two series (both games). The primary resolution source for this market is the official results of the event as recognized by the tournament organizer. However, if the tournament organizer has not published final results within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the tournament organizer. Revisions to officially declared final results made after market resolution will not be accounted for in determining the outcome."
+  },
+  {
+   "id": "4400643",
+   "question": "KUUSAMO.gg to win 2-0?",
+   "conditionId": "0xf98b25d04c3fb4ba73048fd964110ac0f805120d279bcfd8bebd70ffc5780f00",
+   "slug": "cs2-benche-ksm-2026-09-09-ksm",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"95268330487787694379610027378183320246954548821585554500247060569217983173022\", \"24926789318604892738152773402743812134816683813232289102363783017164282807047\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "KUUSAMO.gg",
+   "gameStartTime": "2026-09-09 17:00:00+00",
+   "negRisk": true,
+   "closed": true,
+   "description": "In the upcoming Counter-Strike best-of-two series, scheduled for September 9, 2026 at 1:00 PM ET, if KUUSAMO.gg wins the series (wins both games, 2-0), this market will resolve to \"Yes\". Otherwise, this market will resolve to \"No\". If the series is postponed, this market will remain open until the series has been completed. If the series is canceled entirely, with no make-up, this market will resolve \"No\". This market refers only to the result of the best-of-two series (both games). The primary resolution source for this market is the official results of the event as recognized by the tournament organizer. However, if the tournament organizer has not published final results within 2 hours after the event's conclusion, a consensus of credible reporting may be used instead. All markets will settle based on the official final result as recognized by the tournament organizer. Revisions to officially declared final results made after market resolution will not be accounted for in determining the outcome."
+  }
+ ]
+}

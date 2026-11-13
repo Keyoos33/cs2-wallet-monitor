@@ -1,0 +1,34 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-copenhagen-wolves-forze-reload-2025-09-24 (trimmed)",
+ "event": {
+  "id": "49021",
+  "slug": "cs2-copenhagen-wolves-forze-reload-2025-09-24",
+  "title": "Counter-Strike: Copenhagen Wolves vs FORZE Reload",
+  "seriesSlug": "counter-strike",
+  "startTime": "2025-09-24T08:30:00Z",
+  "closed": true,
+  "negRisk": false,
+  "teams": [],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "610463",
+   "question": "Counter-Strike: Copenhagen Wolves vs FORZE Reload",
+   "conditionId": "0xe588870ab1e6ca65a47039f8464af470741469d67d57cd9a7d47198b1e3852bc",
+   "slug": "cs2-copenhagen-wolves-forze-reload-2025-09-24",
+   "outcomes": "[\"Copenhagen Wolves\", \"FORZE Reload\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"89586362436870813996575926195711299259193657542166553639166126732341350061063\", \"115727700974512256048457153907965581051540507480888927550326826987095369793666\"]",
+   "groupItemTitle": "Copenhagen Wolves",
+   "gameStartTime": "2025-09-24 08:30:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"Copenhagen Wolves\" if Copenhagen Wolves win against FORZE Reload in the named Counter-Strike match.\n\nThis market will resolve to \"FORZE Reload\" if FORZE Reload win against Copenhagen Wolves in the Counter-Strike match.\n\nIf the game is postponed, this market will remain open until the game has been completed."
+  }
+ ]
+}

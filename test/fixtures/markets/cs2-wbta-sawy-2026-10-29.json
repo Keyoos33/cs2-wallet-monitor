@@ -1,0 +1,47 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-wbta-sawy-2026-10-29 (trimmed)",
+ "event": {
+  "id": "1266457",
+  "slug": "cs2-wbta-sawy-2026-10-29",
+  "title": "Counter-Strike: WBT Academy vs SAW Youngsters (BO1) - Circuito Retake Group A",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-10-29T09:00:00Z",
+  "closed": true,
+  "score": "000-000|0-1|Bo1",
+  "period": "1/1",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "WBT Academy",
+    "abbreviation": "wbta"
+   },
+   {
+    "name": "SAW Youngsters",
+    "abbreviation": "sawy"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "6300501",
+   "question": "Counter-Strike: WBT Academy vs SAW Youngsters (BO1) - Circuito Retake Group A",
+   "conditionId": "0x220b0bc921c51d824edb72cc6a74b5e82d8cc87c096f377d46b70e1535a436ed",
+   "slug": "cs2-wbta-sawy-2026-10-29",
+   "outcomes": "[\"WBT Academy\", \"SAW Youngsters\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"99273172729026823318126056216009445446990274236652368132378086242657512627957\", \"18286791559551215665940799049121824999056940583333545530994286457236211661162\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-10-29 09:00:00+00",
+   "eventStartTime": "2026-10-29T09:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between WBT Academy and SAW Youngsters in the Circuito Retake Group A, initially scheduled for October 29, 2026 at 5:00 AM ET.\n\nThis market will resolve to \"WBT Academy\" if WBT Academy win the match against SAW Youngsters.\n\nThis market will resolve to \"SAW Youngsters\" if SAW Youngsters win the match against WBT Academy."
+  }
+ ]
+}

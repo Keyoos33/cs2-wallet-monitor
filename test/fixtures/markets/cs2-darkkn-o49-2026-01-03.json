@@ -1,0 +1,159 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-darkkn-o49-2026-01-03 (trimmed)",
+ "event": {
+  "id": "141131",
+  "slug": "cs2-darkkn-o49-2026-01-03",
+  "title": "Counter-Strike: Dark Knight vs Outfit 49 (BO3)",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-01-03T17:30:00Z",
+  "closed": true,
+  "score": "000-000|1-2|Bo3",
+  "period": "3/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "Dark Knight",
+    "abbreviation": "darkkn"
+   },
+   {
+    "name": "Outfit 49",
+    "abbreviation": "o49"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1097824",
+   "question": "Counter-Strike: Dark Knight vs Outfit 49 (BO3)",
+   "conditionId": "0xd09ef9d4efc329214649a798840df421118cab0a720e5847247fcb84fbe78631",
+   "slug": "cs2-darkkn-o49-2026-01-03",
+   "outcomes": "[\"Dark Knight\", \"Outfit 49\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"36425871205410251345498900762053044990736152261800411593530694854689376892480\", \"12262055302917137214568123835323090957255217543176830071645113839296525856859\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-01-03 17:30:00+00",
+   "eventStartTime": "2026-01-03T17:30:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"Dark Knight\" if Dark Knight win against Outfit 49 in the named Counter-Strike match in the Fragadelphia Miami Group B, scheduled for January 3 at 12:30PM ET.\n\nThis market will resolve to \"Outfit 49\" if Outfit 49 win against Dark Knight in the Counter-Strike match.\n\nIf the game is postponed, this market will remain open until the game has been completed."
+  },
+  {
+   "id": "1097832",
+   "question": "Map Handicap: O49 (-1.5)",
+   "conditionId": "0x95d2b9a0d6d2afc53002126fa362bed3cb48eb71781226aed6eaf13e32b86b6e",
+   "slug": "cs2-darkkn-o49-2026-01-03-map-handicap-home-1pt5",
+   "outcomes": "[\"Outfit 49\", \"Dark Knight\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"68252712046171303047357668826779455047497449908628163842641851700303992996839\", \"58870317875571725268557892314300887983407703151801326395633659901119439042971\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: O49 (-1.5)",
+   "gameStartTime": "2026-01-03 17:30:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Outfit 49 and Dark Knight in the Fragadelphia Miami Group B, scheduled for January 3 at 12:30PM ET:\n\nThis market will resolve to \"Outfit 49\" if Outfit 49 wins 2 or more maps than Dark Knight in this match.\n\nOtherwise, this market will resolve to \"Dark Knight\"."
+  },
+  {
+   "id": "1097833",
+   "question": "Outfit 49 to win 0 maps?",
+   "conditionId": "0x2903246c81fd3500e49ab3504998c7d3be52b322b7bba04e0c549a6dce544d84",
+   "slug": "cs2-darkkn-o49-2026-01-03-outfit-49-to-win-0-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"104710446262436077770920897777552205722471702796967701491561057948210484879810\", \"35807345943229812040913012784355681620723167996800780303925427787143491836124\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 0,
+   "groupItemTitle": "Outfit 49 to win 0 maps?",
+   "gameStartTime": "2026-01-03 17:30:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Outfit 49 and Dark Knight in the Fragadelphia Miami Group B, scheduled for January 3 at 12:30pm ET:\n\nIf Outfit 49 wins exactly 0 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "1097834",
+   "question": "Outfit 49 to win 1 maps?",
+   "conditionId": "0xfb901afc47e45da4e1793d237269f72ff2a751c4c9ffe09a5bca11974cc65436",
+   "slug": "cs2-darkkn-o49-2026-01-03-outfit-49-to-win-1-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"94894987196232778892085991060765650560981675386885496749768427379489769334147\", \"111934063471475353534984889457175561458492330367819060448513904470510592585205\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 1,
+   "groupItemTitle": "Outfit 49 to win 1 maps?",
+   "gameStartTime": "2026-01-03 17:30:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Outfit 49 and Dark Knight in the Fragadelphia Miami Group B, scheduled for January 3 at 12:30pm ET:\n\nIf Outfit 49 wins exactly 1 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "1097835",
+   "question": "Outfit 49 to win 2 maps?",
+   "conditionId": "0x680c481824579a5d2c5bcb0904c3b5e656742973746f53b55491d5127b018524",
+   "slug": "cs2-darkkn-o49-2026-01-03-outfit-49-to-win-2-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"44285272998345988091998706381939252386924178814555625845023715406203234736511\", \"28830155897167303302958046731117368011589972666049574839472766218570244581832\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 2,
+   "groupItemTitle": "Outfit 49 to win 2 maps?",
+   "gameStartTime": "2026-01-03 17:30:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Outfit 49 and Dark Knight in the Fragadelphia Miami Group B, scheduled for January 3 at 12:30pm ET:\n\nIf Outfit 49 wins exactly 2 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "1097837",
+   "question": "Dark Knight to win 0 maps?",
+   "conditionId": "0x55dfa3058c67f87e0e12a3fe34d2ca38bfe737e33e8f300c23bc617855e7faa2",
+   "slug": "cs2-darkkn-o49-2026-01-03-dark-knight-to-win-0-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"106380893430070152888883681723050093982356347462811881704115168559700288717910\", \"32676239883956097377207708013640363057547159068158278533447140024929681095902\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 0,
+   "groupItemTitle": "Dark Knight to win 0 maps?",
+   "gameStartTime": "2026-01-03 17:30:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Dark Knight and Outfit 49 in the Fragadelphia Miami Group B, scheduled for January 3 at 12:30pm ET:\n\nIf Dark Knight wins exactly 0 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "1097839",
+   "question": "Dark Knight to win 2 maps?",
+   "conditionId": "0xb2fcfdd8d21b6a8609526b9f4282162adbbee2a58befedb0929668fe106a466a",
+   "slug": "cs2-darkkn-o49-2026-01-03-dark-knight-to-win-2-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"13281681361072683586382739961451119872956170702532803792108262752811170170187\", \"64813854551014285394345841084062603355354829314669669059629876876142580660592\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 2,
+   "groupItemTitle": "Dark Knight to win 2 maps?",
+   "gameStartTime": "2026-01-03 17:30:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Dark Knight and Outfit 49 in the Fragadelphia Miami Group B, scheduled for January 3 at 12:30pm ET:\n\nIf Dark Knight wins exactly 2 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "1097838",
+   "question": "Dark Knight to win 1 maps?",
+   "conditionId": "0x70ed1e9230d8485301266aafe84426439a0c960f317eae14787eaba425907754",
+   "slug": "cs2-darkkn-o49-2026-01-03-dark-knight-to-win-1-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"87175071095668907186226531372598765353707182547033709625442369642346610351886\", \"32797868910051983356520374459333484272700079437410440338846534706216596939141\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 1,
+   "groupItemTitle": "Dark Knight to win 1 maps?",
+   "gameStartTime": "2026-01-03 17:30:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Dark Knight and Outfit 49 in the Fragadelphia Miami Group B, scheduled for January 3 at 12:30pm ET:\n\nIf Dark Knight wins exactly 1 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  }
+ ]
+}

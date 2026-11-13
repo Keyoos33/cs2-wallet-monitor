@@ -1,0 +1,61 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-benche-ksm-2026-09-09-more-markets (trimmed)",
+ "event": {
+  "id": "992376",
+  "slug": "cs2-benche-ksm-2026-09-09-more-markets",
+  "title": "Counter-Strike: Benched gods vs KUUSAMO.gg - More Markets",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-09-09T17:00:00Z",
+  "closed": true,
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "Benched gods",
+    "abbreviation": "benche"
+   },
+   {
+    "name": "KUUSAMO.gg",
+    "abbreviation": "ksm"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "4400644",
+   "question": "Counter-Strike: Benched gods vs KUUSAMO.gg - Map 1 Winner",
+   "conditionId": "0x5c4a9bc3d832b8638efaf6dd2ec08b74b330d52a03523a7d25a7e0a9d21276e8",
+   "slug": "cs2-benche-ksm-2026-09-09-game1",
+   "outcomes": "[\"Benched gods\", \"KUUSAMO.gg\"]",
+   "outcomePrices": "[\"0.5\", \"0.5\"]",
+   "clobTokenIds": "[\"73270932101636165405545855203609033295625866890877590623184676503511632395923\", \"5182579748552302748129063767156887203292148796303638276094417283817493872659\"]",
+   "sportsMarketType": "child_moneyline",
+   "groupItemTitle": "Map 1 Winner",
+   "gameStartTime": "2026-09-09 17:00:00+00",
+   "eventStartTime": "2026-09-09T17:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Decider match between Benched gods and KUUSAMO.gg in the Exort Fiesta Closed Qualifier: Series #2 Group D, initially scheduled for September 9, 2026 at 1:00 PM ET.\n\nThis market will resolve to \"Benched gods\" if Benched gods win Map 1 against KUUSAMO.gg.\n\nThis market will resolve to \"KUUSAMO.gg\" if KUUSAMO.gg win Map 1 against Benched gods."
+  },
+  {
+   "id": "4400645",
+   "question": "Counter-Strike: Benched gods vs KUUSAMO.gg - Map 2 Winner",
+   "conditionId": "0x99af45cedf79fd76250fda15c08ecc342522a38cd5709f5beaab86191b9654fb",
+   "slug": "cs2-benche-ksm-2026-09-09-game2",
+   "outcomes": "[\"Benched gods\", \"KUUSAMO.gg\"]",
+   "outcomePrices": "[\"0.5\", \"0.5\"]",
+   "clobTokenIds": "[\"85609417240691237108409209202926166427558069838132355035885845898414942676759\", \"68138962988132151848528816234728152084877028380040785105864578819578645710753\"]",
+   "sportsMarketType": "child_moneyline",
+   "groupItemTitle": "Map 2 Winner",
+   "gameStartTime": "2026-09-09 17:00:00+00",
+   "eventStartTime": "2026-09-09T17:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Decider match between Benched gods and KUUSAMO.gg in the Exort Fiesta Closed Qualifier: Series #2 Group D, initially scheduled for September 9, 2026 at 1:00 PM ET.\n\nThis market will resolve to \"Benched gods\" if Benched gods win Map 2 against KUUSAMO.gg.\n\nThis market will resolve to \"KUUSAMO.gg\" if KUUSAMO.gg win Map 2 against Benched gods."
+  }
+ ]
+}

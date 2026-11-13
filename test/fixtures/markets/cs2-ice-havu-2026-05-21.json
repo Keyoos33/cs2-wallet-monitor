@@ -1,0 +1,79 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-ice-havu-2026-05-21 (trimmed)",
+ "event": {
+  "id": "506447",
+  "slug": "cs2-ice-havu-2026-05-21",
+  "title": "Counter-Strike: Inner Circle Esports vs HAVU (BO1) - BC Game Masters Championship Group A",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-05-21T08:30:00Z",
+  "closed": true,
+  "score": "000-000|1-0|Bo1",
+  "period": "1/1",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "Inner Circle Esports",
+    "abbreviation": "ice"
+   },
+   {
+    "name": "HAVU",
+    "abbreviation": "havu"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "2313313",
+   "question": "Counter-Strike: Inner Circle Esports vs HAVU (BO1) - BC Game Masters Championship Group A",
+   "conditionId": "0x6057f65fffe1f7a7411fcf9f096dc341abe6b4e19803b71eedff8147438a3176",
+   "slug": "cs2-ice-havu-2026-05-21",
+   "outcomes": "[\"Inner Circle Esports\", \"HAVU\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"112835970203579106610726406117246028512201561850407621222833796365999270608140\", \"11377045601111414918870159448889234928784673868238717838030254339193912856322\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-05-21 08:30:00+00",
+   "eventStartTime": "2026-05-21T08:30:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between Inner Circle Esports and HAVU in the BC Game Masters Championship Group A, initially scheduled for May 21 at 4:00AM ET.\n\nThis market will resolve to \"Inner Circle Esports\" if Inner Circle Esports win the match against HAVU.\n\nThis market will resolve to \"HAVU\" if HAVU win the match against Inner Circle Esports."
+  },
+  {
+   "id": "2313368",
+   "question": "Map 1: Odd/Even Total Kills?",
+   "conditionId": "0x670e66f50d52cfb57ce89c5b5233cf0e379ddf1be1057a669166c272da38bab1",
+   "slug": "cs2-ice-havu-2026-05-21-game1-odd-even-total-kills",
+   "outcomes": "[\"Odd\", \"Even\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"99387986630930773024989689434181334662449066186502388103582514503940526521527\", \"40730494447751951285356250922052971878715425144919979106772455398533059239585\"]",
+   "sportsMarketType": "cs2_odd_even_total_kills",
+   "groupItemTitle": "Odd/Even Total Kills",
+   "gameStartTime": "2026-05-21 08:30:00+00",
+   "eventStartTime": "2026-05-21T08:30:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"Odd\" if the total combined kills by both teams in Map 1 is an odd number.\n\nThis market will resolve to \"Even\" if the total combined kills by both teams in Map 1 is an even number.\n\n\"Total combined kills\" includes all kills recorded during the match across all rounds, including kills during regulation rounds and overtime rounds if applicable. Team kills (friendly fire) and self-inflicted deaths (e.g., falling damage, own grenade) do not count as kills for the purposes of this market."
+  },
+  {
+   "id": "2313369",
+   "question": "Map 1: Odd/Even Total Rounds?",
+   "conditionId": "0xfea786a3cd4a5e18968c4d63112696ff2ae0aa235ceb218a5d9f50c7a42b78a5",
+   "slug": "cs2-ice-havu-2026-05-21-game1-odd-even-total-rounds",
+   "outcomes": "[\"Odd\", \"Even\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"110565538516242935630735113112348895592708411754090283305958343198451079206345\", \"58946752927164149545925652212306355683512236864706851709654423337099487181871\"]",
+   "sportsMarketType": "cs2_odd_even_total_rounds",
+   "groupItemTitle": "Odd/Even Total Rounds",
+   "gameStartTime": "2026-05-21 08:30:00+00",
+   "eventStartTime": "2026-05-21T08:30:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"Odd\" if the total combined rounds played by both teams in Map 1 is an odd number.\n\nThis market will resolve to \"Even\" if the total combined rounds played by both teams in Map 1 is an even number.\n\n\"Total combined rounds\" is the sum of rounds won by both teams during the match, including any overtime rounds if applicable. For example, a match ending 13–11 would have a total of 24 rounds (even), while a match ending 13–10 would have a total of 23 rounds (odd)."
+  }
+ ]
+}

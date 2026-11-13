@@ -1,0 +1,98 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-phanto-hon1-2026-10-13 (trimmed)",
+ "event": {
+  "id": "1181883",
+  "slug": "cs2-phanto-hon1-2026-10-13",
+  "title": "Counter-Strike:  Phantom Academy vs Honvéd (BO1) - ESEA Advanced Europe Regular Season",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-10-19T17:20:00Z",
+  "closed": true,
+  "score": "000-000|0-1|Bo1",
+  "period": "1/1",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": " Phantom Academy",
+    "abbreviation": "phanto"
+   },
+   {
+    "name": "Honvéd",
+    "abbreviation": "hon1"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "5645471",
+   "question": "Counter-Strike:  Phantom Academy vs Honvéd (BO1) - ESEA Advanced Europe Regular Season",
+   "conditionId": "0xf3bd503205eb3128aabfad3c87e338e4783224d80a6c70ba78230aa77f0cf63d",
+   "slug": "cs2-phanto-hon1-2026-10-13",
+   "outcomes": "[\" Phantom Academy\", \"Honvéd\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"88801501788272230372097048639274699583602253602857632098354728806154565934556\", \"77814061207190260736556625404163884578474995071150325595365179852236439449812\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-10-19 17:20:00+00",
+   "eventStartTime": "2026-10-19T17:20:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between  Phantom Academy and Honvéd in the ESEA Advanced Europe Regular Season, initially scheduled for October 13, 2026 at 2:30 PM ET.\n\nThis market will resolve to \" Phantom Academy\" if  Phantom Academy win the match against Honvéd.\n\nThis market will resolve to \"Honvéd\" if Honvéd win the match against  Phantom Academy."
+  },
+  {
+   "id": "5645696",
+   "question": "Map 1 Total Rounds: Over/Under 21.5",
+   "conditionId": "0x5a6b07ae1b70a7a4e78613fb6f659fcf70362ac46f2a8d2425119b3bd3023efd",
+   "slug": "cs2-phanto-hon1-2026-10-13-game1-round-total-21pt5",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"81206976726113937068991780329934207055692496840794384739184873403336785616945\", \"24295029621917130202893867757170244375464247918037543533793296898804497713439\"]",
+   "sportsMarketType": "round_over_under_game_1",
+   "line": 21.5,
+   "groupItemTitle": "Map 1 Total Rounds: Over/Under 21.5",
+   "gameStartTime": "2026-10-19 17:20:00+00",
+   "eventStartTime": "2026-10-19T17:20:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between  Phantom Academy and Honvéd in the ESEA Advanced Europe Regular Season, initially scheduled for October 13, 2026 at 2:30 PM ET. This market is decided solely by the total number of rounds played within Map 1 of this match (the combined round score of both teams on that single map), and is independent of which team wins Map 1 or the overall match.\n\nThis market will resolve to \"Over\" if the combined number of rounds played by both teams on Map 1, including any overtime, is greater than 21.5. This market will resolve to \"Under\" if the combined number of rounds played is less than 21.5. If the combined number of rounds played is exactly 21.5, this market will resolve 50-50.\n\nMap 1 must be played to completion, with a final round score determined by rounds actually played, for this market to resolve to \"Over\" or \"Under\". If Map 1 is completed in this way, the market resolves on that round total regardless of how the remainder of the match concludes (including any later forfeit, disqualification, walkover, or default). If Map 1 is not played at all, is not played to completion, or is decided by forfeit, disqualification, walkover, or default rather than by rounds played to a conclusion, this market will resolve 50-50. If the match is canceled, this market will resolve 50-50."
+  },
+  {
+   "id": "5932472",
+   "question": "Map 1 Rounds Handicap:  Phantom Academy (-3.5) vs Honvéd (+3.5)",
+   "conditionId": "0xd785cd46854bb189181aff1c1ccfdf81aa16c0c26ebde1dbb50da73023dc1ebd",
+   "slug": "cs2-phanto-hon1-2026-10-13-game1-round-handicap-phanto-3pt5",
+   "outcomes": "[\" Phantom Academy\", \"Honvéd\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"7700843086611513538659288918035757990024546698517820524349213760063239221037\", \"38613950494654436003863462772589013996879935604403879917719763367824945518116\"]",
+   "sportsMarketType": "round_handicap_game_1",
+   "line": -3.5,
+   "groupItemTitle": "Map 1 Rounds Handicap:  Phantom Academy (-3.5) vs Honvéd (+3.5)",
+   "gameStartTime": "2026-10-19 17:20:00+00",
+   "eventStartTime": "2026-10-19T17:20:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between  Phantom Academy and Honvéd in the ESEA Advanced Europe Regular Season, initially scheduled for October 19, 2026 at 1:20 PM ET. This market is decided solely by the round score of Map 1 of this match, and is independent of which team wins Map 1 or the overall match.\n\nThis market will resolve to \" Phantom Academy\" if  Phantom Academy wins Map 1 by 4 or more rounds, including any overtime (i.e.  Phantom Academy's round total on Map 1 exceeds Honvéd's by 4 or more). Otherwise, this market will resolve to \"Honvéd\".\n\nMap 1 must be played to completion, with a final round score determined by rounds actually played, for this market to resolve to a team. If Map 1 is completed in this way, the market resolves on that round score regardless of how the remainder of the match concludes (including any later forfeit, disqualification, walkover, or default). If Map 1 is not played at all, is not played to completion, or is decided by forfeit, disqualification, walkover, or default rather than by rounds played to a conclusion, this market will resolve 50-50. If the match is canceled, this market will resolve 50-50."
+  },
+  {
+   "id": "5932473",
+   "question": "Map 1 Total Rounds: Over/Under 24.5",
+   "conditionId": "0x35c42959c30eea205cbffc024b0673ee3004ebccbb15bd272dea826d78e458b5",
+   "slug": "cs2-phanto-hon1-2026-10-13-game1-round-total-24pt5",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"36338630612252977423019507817376524130418206109455317427382041745323121677834\", \"2719248735578077447658507603627632455749503626069963984768164513938707500563\"]",
+   "sportsMarketType": "round_over_under_game_1",
+   "line": 24.5,
+   "groupItemTitle": "Map 1 Total Rounds: Over/Under 24.5",
+   "gameStartTime": "2026-10-19 17:20:00+00",
+   "eventStartTime": "2026-10-19T17:20:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between  Phantom Academy and Honvéd in the ESEA Advanced Europe Regular Season, initially scheduled for October 19, 2026 at 1:20 PM ET. This market is decided solely by the total number of rounds played within Map 1 of this match (the combined round score of both teams on that single map), and is independent of which team wins Map 1 or the overall match.\n\nThis market will resolve to \"Over\" if the combined number of rounds played by both teams on Map 1, including any overtime, is greater than 24.5. This market will resolve to \"Under\" if the combined number of rounds played is less than 24.5. If the combined number of rounds played is exactly 24.5, this market will resolve 50-50.\n\nMap 1 must be played to completion, with a final round score determined by rounds actually played, for this market to resolve to \"Over\" or \"Under\". If Map 1 is completed in this way, the market resolves on that round total regardless of how the remainder of the match concludes (including any later forfeit, disqualification, walkover, or default). If Map 1 is not played at all, is not played to completion, or is decided by forfeit, disqualification, walkover, or default rather than by rounds played to a conclusion, this market will resolve 50-50. If the match is canceled, this market will resolve 50-50."
+  }
+ ]
+}

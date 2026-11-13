@@ -1,0 +1,95 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-tl1-fal2-2026-01-22 (trimmed)",
+ "event": {
+  "id": "179664",
+  "slug": "cs2-tl1-fal2-2026-01-22",
+  "title": "Counter-Strike: Liquid vs Team Falcons (BO3) - BLAST Bounty Playoffs",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-01-22T15:00:00Z",
+  "closed": true,
+  "score": "000-000|0-2|Bo3",
+  "period": "2/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "Liquid",
+    "abbreviation": "tl1"
+   },
+   {
+    "name": "Team Falcons",
+    "abbreviation": "fal2"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1236778",
+   "question": "Counter-Strike: Liquid vs Team Falcons (BO3) - BLAST Bounty Playoffs",
+   "conditionId": "0xb33830305265d3c83293e941bdb156e89db4da262e90a7338010f6880b4de7a2",
+   "slug": "cs2-tl1-fal2-2026-01-22",
+   "outcomes": "[\"Liquid\", \"Team Falcons\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"11224845438716706739657514237110549187232385300391476805709504063395016535202\", \"62484969071260813330567839528939316750863720349180156210189968419678356881537\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-01-22 15:00:00+00",
+   "eventStartTime": "2026-01-22T15:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between Liquid and Team Falcons in the BLAST Bounty Playoffs, scheduled for January 22 at 10:00AM ET.\n\nThis market will resolve to \"Liquid\" if Liquid win the match against Team Falcons.\n\nThis market will resolve to \"Team Falcons\" if Team Falcons win the match against Liquid."
+  },
+  {
+   "id": "1236787",
+   "question": "Series Team Falcons Rounds Handicap (-8.5) vs Liquid (+8.5)",
+   "conditionId": "0xb235eca1d7dba634cfe7a1036e751340a6732fab128b1145d877064fcc656812",
+   "slug": "cs2-tl1-fal2-2026-01-22-round-handicap-home-8pt5",
+   "outcomes": "[\"Team Falcons\", \"Liquid\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"20859769510302341985377574228139105959916442323339185717710053421076729297789\", \"54076544351221969069406253675607622055041681851638650223749792724760685691445\"]",
+   "sportsMarketType": "round_handicap_match",
+   "line": -8.5,
+   "groupItemTitle": "Series Team Falcons Rounds Handicap (-8.5) vs Liquid (+8.5)",
+   "gameStartTime": "2026-01-22 15:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between Liquid and Team Falcons in the BLAST Bounty Playoffs, scheduled for January 22 at 10:00AM ET.\n\nIf Team Falcons defeats Liquid by 9 or more rounds across all Matchs in this match, this market will resolve to \"Team Falcons\".\n\nOtherwise, it will resolve to \"Liquid\"."
+  },
+  {
+   "id": "1236788",
+   "question": "Series Team Falcons Rounds Handicap (-6.5) vs Liquid (+6.5)",
+   "conditionId": "0x3d819f1bcfd13b9b5bb52ee763c81cc3afe5bb919bd742d564981db34db3f2d9",
+   "slug": "cs2-tl1-fal2-2026-01-22-round-handicap-home-6pt5",
+   "outcomes": "[\"Team Falcons\", \"Liquid\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"47036776099471520883722651341322707556240470081048861892978773182701489539057\", \"8088293590253059313037931363114714202508651850098502727491306393574787960634\"]",
+   "sportsMarketType": "round_handicap_match",
+   "line": -6.5,
+   "groupItemTitle": "Series Team Falcons Rounds Handicap (-6.5) vs Liquid (+6.5)",
+   "gameStartTime": "2026-01-22 15:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between Liquid and Team Falcons in the BLAST Bounty Playoffs, scheduled for January 22 at 10:00AM ET.\n\nIf Team Falcons defeats Liquid by 7 or more rounds across all Matchs in this match, this market will resolve to \"Team Falcons\".\n\nOtherwise, it will resolve to \"Liquid\"."
+  },
+  {
+   "id": "1236790",
+   "question": "Total Rounds Over/Under 49.5",
+   "conditionId": "0x68c63a0a86c720241815afd3784e640cb97d92b82101385a08c94af4adbafec6",
+   "slug": "cs2-tl1-fal2-2026-01-22-total-rounds-over-under-49pt5",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"17291295437787080290167722131110323070566102051057588452869499689994300938941\", \"48071125112006824291093556293058174892956315622039903625609379355933851799388\"]",
+   "sportsMarketType": "round_over_under_match",
+   "line": 49.5,
+   "groupItemTitle": "Total Rounds Over/Under 49.5",
+   "gameStartTime": "2026-01-22 15:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between Liquid and Team Falcons in the BLAST Bounty Playoffs, scheduled for January 22 at 10:00AM ET.\n\nThis market will resolve to \"Over\" if the total number of rounds across all maps in this match is greater than or equal to 50.\n\nOtherwise, it will resolve to \"Under\"."
+  }
+ ]
+}

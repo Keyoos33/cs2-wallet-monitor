@@ -1,0 +1,143 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-eiv-brute-2026-01-15 (trimmed)",
+ "event": {
+  "id": "153054",
+  "slug": "cs2-eiv-brute-2026-01-15",
+  "title": "Counter-Strike: Pigeons vs Brute (BO3) - NODWIN Clutch Series Play-In Group C",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-01-15T12:00:00Z",
+  "closed": true,
+  "score": "000-000|0-2|Bo3",
+  "period": "2/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "ex-Imperial Valkyries",
+    "abbreviation": "eiv"
+   },
+   {
+    "name": "Brute",
+    "abbreviation": "brute"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1142700",
+   "question": "Counter-Strike: ex-Imperial Valkyries vs Brute (BO3)",
+   "conditionId": "0xdb57b06eeb1ecd9762c1efc09ab44bdebeca1977b0e6fd8e26be9d4115d28420",
+   "slug": "cs2-eiv-brute-2026-01-15",
+   "outcomes": "[\"ex-Imperial Valkyries\", \"Brute\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"35654311775410155861772775367248513219146834639797628875870133840400475765405\", \"52510270864730702641892705671209752823653187863871272371899115599484431217385\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Pigeons vs Brute - NODWIN Clutch Series Play-In Group C",
+   "gameStartTime": "2026-01-15 12:00:00+00",
+   "eventStartTime": "2026-01-15T12:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"ex-Imperial Valkyries\" if ex-Imperial Valkyries win against Brute in the named Counter-Strike match in the NODWIN Clutch Series Play-In Group D, scheduled for January 15 at 7:00AM ET.\n\nThis market will resolve to \"Brute\" if Brute win against ex-Imperial Valkyries in the Counter-Strike match.\n\nIf the game is postponed, this market will remain open until the game has been completed."
+  },
+  {
+   "id": "1142702",
+   "question": "Counter-Strike: ex-Imperial Valkyries vs Brute - Map 2 Winner",
+   "conditionId": "0x6f9ee68605a2a4cdf3cf0b64b7b2d7d8178526143b68c22605a5014bd139ddf7",
+   "slug": "cs2-eiv-brute-2026-01-15-game2",
+   "outcomes": "[\"ex-Imperial Valkyries\", \"Brute\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"79290165466142224322692985392012147133905729680609168423534818127982067018796\", \"98463567654995435097827432381830211139037852121058851672714344552585632082294\"]",
+   "sportsMarketType": "child_moneyline",
+   "groupItemTitle": "Map 2 Winner",
+   "gameStartTime": "2026-01-15 12:00:00+00",
+   "eventStartTime": "2026-01-15T12:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"ex-Imperial Valkyries\" if ex-Imperial Valkyries win Map 2 against Brute in this match in the NODWIN Clutch Series Play-In Group D, scheduled for January 15 at 7:00AM ET.\n\nThis market will resolve to \"Brute\" if Brute win Map 2 against ex-Imperial Valkyries in this match.\n\nIf the match is concluded before Map 2 is played (e.g., a team clinches the match early), this market will resolve 50-50."
+  },
+  {
+   "id": "1142704",
+   "question": "Map Handicap: BRUTE (-1.5)",
+   "conditionId": "0xfec3934f7733ed27bf13c541049b03c2acb012837050e9b68dfadb449840e952",
+   "slug": "cs2-eiv-brute-2026-01-15-map-handicap-home-1pt5",
+   "outcomes": "[\"Brute\", \"ex-Imperial Valkyries\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"82361497205677180350423014423843686100472382504606170826210491782774508993353\", \"81605123520570535729829586797149985584130243437530655991507255422426415872723\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: BRUTE (-1.5)",
+   "gameStartTime": "2026-01-15 12:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Brute and ex-Imperial Valkyries in the NODWIN Clutch Series Play-In Group D, scheduled for January 15 at 7:00AM ET:\n\nThis market will resolve to \"Brute\" if Brute wins 2 or more maps than ex-Imperial Valkyries in this match.\n\nOtherwise, this market will resolve to \"ex-Imperial Valkyries\"."
+  },
+  {
+   "id": "1142706",
+   "question": "Brute to win 2 maps?",
+   "conditionId": "0x7a6cb2348153cebd7757d80b85ba15a0126460b91c7211032f3315442c9b33b8",
+   "slug": "cs2-eiv-brute-2026-01-15-brute-to-win-2-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"41153259954662026405286512489447661244650117969039567218397861544573795746221\", \"42088024260495138162149719808231823274043807178369728278390615546314191361009\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 2,
+   "groupItemTitle": "Brute to win 2 maps?",
+   "gameStartTime": "2026-01-15 12:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Brute and ex-Imperial Valkyries in the NODWIN Clutch Series Play-In Group D, scheduled for January 15 at 7:00am ET:\n\nIf Brute wins exactly 2 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "1142708",
+   "question": "ex-Imperial Valkyries to win 2 maps?",
+   "conditionId": "0xa75d4658dd9d54a4d6854439ed422a971965bdac2d9264d979393c651f81a83b",
+   "slug": "cs2-eiv-brute-2026-01-15-eiv-to-win-2-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"110497881844800757841791463625608785544431635862624438621234905731797251291031\", \"41090947915570896533752232840139928742362449964185120071097438298669872643542\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 2,
+   "groupItemTitle": "ex-Imperial Valkyries to win 2 maps?",
+   "gameStartTime": "2026-01-15 12:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between ex-Imperial Valkyries and Brute in the NODWIN Clutch Series Play-In Group D, scheduled for January 15 at 7:00am ET:\n\nIf ex-Imperial Valkyries wins exactly 2 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "1159022",
+   "question": "Pigeons to win 2 maps?",
+   "conditionId": "0x543ab73b9a034826a16b4d2254b72171d49e4df2fa7946872f16928b66c4394d",
+   "slug": "cs2-eiv-brute-2026-01-15-pge-to-win-2-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"79898105140727905947652455499153428969577304151389540063380469081695018395522\", \"22368045639666678024346517405452179294611893527837920243669728471814562485759\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 2,
+   "groupItemTitle": "Pigeons to win 2 maps?",
+   "gameStartTime": "2026-01-15 12:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between Pigeons and Brute in the NODWIN Clutch Series Play-In Group D, scheduled for January 15 at 7:00am ET:\n\nIf Pigeons wins exactly 2 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "1190071",
+   "question": "Map Handicap: PGE (-1.5)",
+   "conditionId": "0x3ad690586556c394b633b6001a9757fab67f058f5a8b9e5b9dcc620eb7a74120",
+   "slug": "cs2-eiv-brute-2026-01-15-map-handicap-away-1pt5",
+   "outcomes": "[\"Pigeons\", \"Brute\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"20627829206696009930970798154588442053711682710440977178366847852949968232642\", \"88211763704951555972840679635132503605558127612274757512321849161917772923353\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: PGE (-1.5)",
+   "gameStartTime": "2026-01-15 12:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between Pigeons and Brute in the NODWIN Clutch Series Play-In Group C, scheduled for January 15 at 7:00AM ET.\n\nThis market will resolve to \"Pigeons\" if Pigeons wins 2 or more maps than Brute in this match.\n\nOtherwise, this market will resolve to \"Brute\"."
+  }
+ ]
+}

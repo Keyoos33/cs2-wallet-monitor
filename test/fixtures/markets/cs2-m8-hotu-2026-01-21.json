@@ -1,0 +1,63 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-m8-hotu-2026-01-21 (trimmed)",
+ "event": {
+  "id": "179056",
+  "slug": "cs2-m8-hotu-2026-01-21",
+  "title": "Counter-Strike: Gentle Mates vs HOTU (BO3) - IEM Rio: Global Closed Qualifier Playoffs",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-01-21T16:00:00Z",
+  "closed": true,
+  "score": "000-000|0-2|Bo3",
+  "period": "2/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "Gentle Mates",
+    "abbreviation": "m8"
+   },
+   {
+    "name": "HOTU",
+    "abbreviation": "hotu"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1234845",
+   "question": "Counter-Strike: Gentle Mates vs HOTU (BO3) - IEM Rio: Global Closed Qualifier Playoffs",
+   "conditionId": "0x48ed8f1abb4688093f58c415b99a483f1cd9144078e9ada1ef68fbccbdd9291d",
+   "slug": "cs2-m8-hotu-2026-01-21",
+   "outcomes": "[\"Gentle Mates\", \"HOTU\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"72712235137432197962903554123025658202778347724964568645401228215345069758108\", \"30189778541241420013549964070153926705658944562148191550738709570205317007789\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-01-21 16:00:00+00",
+   "eventStartTime": "2026-01-21T16:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between Gentle Mates and HOTU in the IEM Rio: Global Closed Qualifier Playoffs, scheduled for January 21 at 11:00AM ET.\n\nThis market will resolve to \"Gentle Mates\" if Gentle Mates win the match against HOTU.\n\nThis market will resolve to \"HOTU\" if HOTU win the match against Gentle Mates."
+  },
+  {
+   "id": "1234850",
+   "question": "Map Handicap: M8 (-1.5) vs HOTU (+1.5)",
+   "conditionId": "0x1c08cbbdcca42d157f25979d462123bdc5c58c871719de4edc60eec54a6a3ece",
+   "slug": "cs2-m8-hotu-2026-01-21-map-handicap-away-1pt5",
+   "outcomes": "[\"Gentle Mates\", \"HOTU\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"69511561147582398225773394247724159664215116151091302520211497724896634470196\", \"19228129077673371890096774023880791624682886393670824372209723576068483448992\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: M8 (-1.5) vs HOTU (+1.5)",
+   "gameStartTime": "2026-01-21 16:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between Gentle Mates and HOTU in the IEM Rio: Global Closed Qualifier Playoffs, scheduled for January 21 at 11:00AM ET.\n\nThis market will resolve to \"Gentle Mates\" if Gentle Mates wins 2 or more maps than HOTU in this match.\n\nOtherwise, this market will resolve to \"HOTU\"."
+  }
+ ]
+}

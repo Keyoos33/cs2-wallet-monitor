@@ -1,0 +1,79 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-csdiil-prime-2026-02-05 (trimmed)",
+ "event": {
+  "id": "199022",
+  "slug": "cs2-csdiil-prime-2026-02-05",
+  "title": "Counter-Strike:  CSDIILIT vs PRIME (BO3) - CCT Europe Series #15 Play-In Group D",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-02-05T12:00:00Z",
+  "closed": true,
+  "score": "000-000|2-0|Bo3",
+  "period": "2/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": " CSDIILIT",
+    "abbreviation": "csdiil"
+   },
+   {
+    "name": "PRIME",
+    "abbreviation": "prime"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1338181",
+   "question": "Counter-Strike:  CSDIILIT vs PRIME (BO3) - CCT Europe Series #15 Play-In Group D",
+   "conditionId": "0x7d4bfe16dba245c2d8172d1a3a223149e9634077527fccec9e09385506511145",
+   "slug": "cs2-csdiil-prime-2026-02-05",
+   "outcomes": "[\" CSDIILIT\", \"PRIME\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"28073982646432795519896142622501099185096982630666604269063078146450684751263\", \"114081432491311275168147789313928010254130161129037686442281299519008938380412\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-02-05 12:00:00+00",
+   "eventStartTime": "2026-02-05T12:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between  CSDIILIT and PRIME in the CCT Europe Series #15 Play-In Group D, scheduled for February 5 at 7:00AM ET.\n\nThis market will resolve to \" CSDIILIT\" if  CSDIILIT win the match against PRIME.\n\nThis market will resolve to \"PRIME\" if PRIME win the match against  CSDIILIT."
+  },
+  {
+   "id": "1338182",
+   "question": "Counter-Strike:  CSDIILIT vs PRIME - Map 1 Winner",
+   "conditionId": "0xe786cbf839391fd276b64ab2b8de09c16a3b9655cedd67a4606e3ad836b35020",
+   "slug": "cs2-csdiil-prime-2026-02-05-game1",
+   "outcomes": "[\" CSDIILIT\", \"PRIME\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"115551517229776476968201147743934757931301914086011612918501387310801034329860\", \"2447099292138304079346546157864112736493196116332768138393386971520448449301\"]",
+   "sportsMarketType": "child_moneyline",
+   "groupItemTitle": "Map 1 Winner",
+   "gameStartTime": "2026-02-05 12:00:00+00",
+   "eventStartTime": "2026-02-05T12:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between  CSDIILIT and PRIME in the CCT Europe Series #15 Play-In Group D, scheduled for February 5 at 7:00AM ET.\n\nThis market will resolve to \" CSDIILIT\" if  CSDIILIT win Map 1 against PRIME.\n\nThis market will resolve to \"PRIME\" if PRIME win Map 1 against  CSDIILIT."
+  },
+  {
+   "id": "1338185",
+   "question": "Map Handicap: PRIME (-1.5) vs  CSDIILIT (+1.5)",
+   "conditionId": "0xc0565f5bb600d421fbf3bf0a130020946adaa61f3b38661b16e86fe24c21966d",
+   "slug": "cs2-csdiil-prime-2026-02-05-map-handicap-home-1pt5",
+   "outcomes": "[\"PRIME\", \" CSDIILIT\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"42774693190884629256000499080005845933197995182509090191673742142463743371208\", \"115367401323679400409150259611446062275449170952837798507523361114830058587334\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: PRIME (-1.5) vs  CSDIILIT (+1.5)",
+   "gameStartTime": "2026-02-05 12:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between  CSDIILIT and PRIME in the CCT Europe Series #15 Play-In Group D, scheduled for February 5 at 7:00AM ET.\n\nThis market will resolve to \"PRIME\" if PRIME wins 2 or more maps than  CSDIILIT in this match.\n\nOtherwise, this market will resolve to \" CSDIILIT\"."
+  }
+ ]
+}

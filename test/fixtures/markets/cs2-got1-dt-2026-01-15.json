@@ -1,0 +1,63 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-got1-dt-2026-01-15 (trimmed)",
+ "event": {
+  "id": "165547",
+  "slug": "cs2-got1-dt-2026-01-15",
+  "title": "Counter-Strike: gothboiclique vs Dark Tigers (BO3)",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-01-15T13:30:00Z",
+  "closed": true,
+  "score": "000-000|2-1|Bo3",
+  "period": "3/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "gothboiclique",
+    "abbreviation": "got1"
+   },
+   {
+    "name": "Dark Tigers",
+    "abbreviation": "dt"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1189103",
+   "question": "Counter-Strike: gothboiclique vs Dark Tigers (BO3)",
+   "conditionId": "0xdf4b9fd66fed8d90268a6e3901acd1b3dc21174edf0c9f24d1fca9f62edd068f",
+   "slug": "cs2-got1-dt-2026-01-15",
+   "outcomes": "[\"gothboiclique\", \"Dark Tigers\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"74724339998405136474286717066867408902711176089082902518283346338442486727060\", \"60685259015333374560673333722119724858379689037841452898358839726379811340267\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-01-15 13:30:00+00",
+   "eventStartTime": "2026-01-15T13:30:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between gothboiclique and Dark Tigers in the Exort Series Group Stage, scheduled for January 15 at 8:30AM ET.\n\nThis market will resolve to \"gothboiclique\" if gothboiclique win the match against Dark Tigers.\n\nThis market will resolve to \"Dark Tigers\" if Dark Tigers win the match against gothboiclique."
+  },
+  {
+   "id": "1189107",
+   "question": "Map Handicap: gothboiclique (-1.5)",
+   "conditionId": "0x91b747ed53d062e3e2538b81daaf95945148a291acf4e7f62ac24f602ff22006",
+   "slug": "cs2-got1-dt-2026-01-15-map-handicap-away-1pt5",
+   "outcomes": "[\"gothboiclique\", \"Dark Tigers\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"19251623353020892279459801639433243429238961043431834557572384117596193629635\", \"977431568031544566686665992930920686836674830621612564696932309330885119143\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: gothboiclique (-1.5)",
+   "gameStartTime": "2026-01-15 13:30:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between gothboiclique and Dark Tigers in the Exort Series Group Stage, scheduled for January 15 at 8:30AM ET.\n\nThis market will resolve to \"gothboiclique\" if gothboiclique wins 2 or more maps than Dark Tigers in this match.\n\nOtherwise, this market will resolve to \"Dark Tigers\"."
+  }
+ ]
+}

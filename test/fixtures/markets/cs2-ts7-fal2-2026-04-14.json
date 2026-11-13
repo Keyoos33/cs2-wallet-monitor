@@ -1,0 +1,81 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-ts7-fal2-2026-04-14 (trimmed)",
+ "event": {
+  "id": "375948",
+  "slug": "cs2-ts7-fal2-2026-04-14",
+  "title": "Counter-Strike: Spirit vs Team Falcons (BO3) - IEM Rio Group A",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-04-14T16:40:00Z",
+  "closed": true,
+  "score": "000-000|0-2|Bo3",
+  "period": "2/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "Spirit",
+    "abbreviation": "ts7"
+   },
+   {
+    "name": "Team Falcons",
+    "abbreviation": "fal2"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1973327",
+   "question": "Counter-Strike: Spirit vs Team Falcons (BO3) - IEM Rio Group A",
+   "conditionId": "0x0702c8eac2c1daf3bd4f5b5f91bf1db03e855ccdb4f094587e6b295bf1596d5b",
+   "slug": "cs2-ts7-fal2-2026-04-14",
+   "outcomes": "[\"Spirit\", \"Team Falcons\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"88916559874945038516743504246196679349860126783164531984411151187882361306988\", \"86316555518121665790137594993141424954728922462179127499817711220361683737683\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-04-14 16:40:00+00",
+   "eventStartTime": "2026-04-14T16:40:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Upper bracket semifinal 2 match between Spirit and Team Falcons in the IEM Rio Group A, initially scheduled for April 14 at 11:30AM ET.\n\nThis market will resolve to \"Spirit\" if Spirit win the match against Team Falcons.\n\nThis market will resolve to \"Team Falcons\" if Team Falcons win the match against Spirit."
+  },
+  {
+   "id": "1973336",
+   "question": "Map Handicap: FAL (-1.5) vs Spirit (+1.5)",
+   "conditionId": "0x57153c31fbe48d8b5f7a82035c9110428a1acc9a60898d85fa1ddc6dc62df37f",
+   "slug": "cs2-ts7-fal2-2026-04-14-map-handicap-home-1pt5",
+   "outcomes": "[\"Team Falcons\", \"Spirit\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"74850477352708255787677560720247985327624444838558933000432062968737718420752\", \"47661813864274556419928476381918658331138125832232509471799429578778729125159\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: FAL (-1.5) vs Spirit (+1.5)",
+   "gameStartTime": "2026-04-14 16:40:00+00",
+   "eventStartTime": "2026-04-14T16:40:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Upper bracket semifinal 2 match between Spirit and Team Falcons in the IEM Rio Group A, initially scheduled for April 14 at 11:30AM ET.\n\nThis market will resolve to \"Team Falcons\" if Team Falcons wins 2 or more maps than Spirit in this match.\n\nOtherwise, this market will resolve to \"Spirit\". "
+  },
+  {
+   "id": "1983798",
+   "question": "Map Handicap: TS (-1.5) vs Team Falcons (+1.5)",
+   "conditionId": "0x0bf966fc91ef72e5286db45af2d7dd6b0cd4be1541cc8caec96680ce24a0a770",
+   "slug": "cs2-ts7-fal2-2026-04-14-map-handicap-away-1pt5",
+   "outcomes": "[\"Spirit\", \"Team Falcons\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"25818787700038003106293948983520332437103564539760825054965739161059703453120\", \"38511534333539319661291824823287648774077329393182466037841069296449893297389\"]",
+   "sportsMarketType": "map_handicap",
+   "line": -1.5,
+   "groupItemTitle": "Map Handicap: TS (-1.5) vs Team Falcons (+1.5)",
+   "gameStartTime": "2026-04-14 16:40:00+00",
+   "eventStartTime": "2026-04-14T16:40:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike Upper bracket semifinal 2 match between Spirit and Team Falcons in the IEM Rio Group A, initially scheduled for April 14 at 12:40PM ET.\n\nThis market will resolve to \"Spirit\" if Spirit wins 2 or more maps than Team Falcons in this match.\n\nOtherwise, this market will resolve to \"Team Falcons\". "
+  }
+ ]
+}

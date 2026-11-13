@@ -1,0 +1,95 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-aaa-inf1-2026-03-10 (trimmed)",
+ "event": {
+  "id": "257425",
+  "slug": "cs2-aaa-inf1-2026-03-10",
+  "title": "Counter-Strike: against All authority vs INFURITY Gaming (BO3) - United21 Group A",
+  "seriesSlug": "counter-strike",
+  "startTime": "2026-03-10T11:40:00Z",
+  "closed": false,
+  "score": "000-000|0-2|Bo3",
+  "period": "2/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "against All authority",
+    "abbreviation": "aaa"
+   },
+   {
+    "name": "INFURITY Gaming",
+    "abbreviation": "inf1"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "1544453",
+   "question": "Counter-Strike: against All authority vs INFURITY Gaming (BO3) - United21 Group A",
+   "conditionId": "0xfd25ee21c6d0162e4f439f71bc935b5631324b3dc20c4fc01a6605b70b7407bb",
+   "slug": "cs2-aaa-inf1-2026-03-10",
+   "outcomes": "[\"against All authority\", \"INFURITY Gaming\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"56351191903168982107965664097689764618339110221881766011392356609261314227782\", \"94302443707320863444280727855742218343840669692357083496640050061557456460910\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2026-03-10 11:40:00+00",
+   "eventStartTime": "2026-03-10T11:40:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market refers to the Counter-Strike match between against All authority and INFURITY Gaming in the United21 Group A, initially scheduled for March 10 at 7:30AM ET.\n\nThis market will resolve to \"against All authority\" if against All authority win the match against INFURITY Gaming.\n\nThis market will resolve to \"INFURITY Gaming\" if INFURITY Gaming win the match against against All authority."
+  },
+  {
+   "id": "1544459",
+   "question": "Map 1: Odd/Even Total Rounds?",
+   "conditionId": "0xcd405a9ccea26c35322ff8250cc4e7a680e153a01a44421d9df37427d6b8aae7",
+   "slug": "cs2-aaa-inf1-2026-03-10-game1-odd-even-total-rounds",
+   "outcomes": "[\"Odd\", \"Even\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"25197129814888995633701148951169889386134977513225089870140435171453327707770\", \"67194122069020030081103407916425113517145240627878523397537009237759498384106\"]",
+   "sportsMarketType": "cs2_odd_even_total_rounds",
+   "groupItemTitle": "Odd/Even Total Rounds",
+   "gameStartTime": "2026-03-10 11:40:00+00",
+   "eventStartTime": "2026-03-10T11:40:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"Odd\" if the total combined rounds played by both teams in Map 1 is an odd number.\n\nThis market will resolve to \"Even\" if the total combined rounds played by both teams in Map 1 is an even number.\n\n\"Total combined rounds\" is the sum of rounds won by both teams during the match, including any overtime rounds if applicable. For example, a match ending 13–11 would have a total of 24 rounds (even), while a match ending 13–10 would have a total of 23 rounds (odd)."
+  },
+  {
+   "id": "1544462",
+   "question": "Map 3: Odd/Even Total Kills?",
+   "conditionId": "0x793abfd6d8a162caea28947c8682f1e59eb0fd621eedbc4b8a431ef123966b41",
+   "slug": "cs2-aaa-inf1-2026-03-10-game3-odd-even-total-kills",
+   "outcomes": "[\"Odd\", \"Even\"]",
+   "outcomePrices": "[\"0.5\", \"0.5\"]",
+   "clobTokenIds": "[\"25555142384250882875059305799918449079589036249314306366508874114068107760858\", \"82590490957422738900082813611095175442527944960385466947947104513195408937909\"]",
+   "sportsMarketType": "cs2_odd_even_total_kills",
+   "groupItemTitle": "Odd/Even Total Kills",
+   "gameStartTime": "2026-03-10 11:40:00+00",
+   "eventStartTime": "2026-03-10T11:40:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"Odd\" if the total combined kills by both teams in Map 3 is an odd number.\n\nThis market will resolve to \"Even\" if the total combined kills by both teams in Map 3 is an even number.\n\n\"Total combined kills\" includes all kills recorded during the match across all rounds, including kills during regulation rounds and overtime rounds if applicable. Team kills (friendly fire) and self-inflicted deaths (e.g., falling damage, own grenade) do not count as kills for the purposes of this market."
+  },
+  {
+   "id": "1544463",
+   "question": "Map 3: Odd/Even Total Rounds?",
+   "conditionId": "0x34e7b364d52b7f86ca396a9439f343c2ac4c74d57a16bca08647865bebab77df",
+   "slug": "cs2-aaa-inf1-2026-03-10-game3-odd-even-total-rounds",
+   "outcomes": "[\"Odd\", \"Even\"]",
+   "outcomePrices": "[\"0.5\", \"0.5\"]",
+   "clobTokenIds": "[\"82088587614362512899304057977890933304087535008821460244620874568654019871282\", \"81376610957947812612485991337080076964410999461743393585903836458119594769990\"]",
+   "sportsMarketType": "cs2_odd_even_total_rounds",
+   "groupItemTitle": "Odd/Even Total Rounds",
+   "gameStartTime": "2026-03-10 11:40:00+00",
+   "eventStartTime": "2026-03-10T11:40:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"Odd\" if the total combined rounds played by both teams in Map 3 is an odd number.\n\nThis market will resolve to \"Even\" if the total combined rounds played by both teams in Map 3 is an even number.\n\n\"Total combined rounds\" is the sum of rounds won by both teams during the match, including any overtime rounds if applicable. For example, a match ending 13–11 would have a total of 24 rounds (even), while a match ending 13–10 would have a total of 23 rounds (odd)."
+  }
+ ]
+}

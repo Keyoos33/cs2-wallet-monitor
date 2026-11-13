@@ -1,0 +1,127 @@
+{
+ "_source": "GET https://gamma-api.polymarket.com/events?slug=cs2-mouz-faze-2025-12-12 (trimmed)",
+ "event": {
+  "id": "99595",
+  "slug": "cs2-mouz-faze-2025-12-12",
+  "title": "Counter-Strike: MOUZ vs FaZe (BO3)",
+  "seriesSlug": "counter-strike",
+  "startTime": "2025-12-12T16:00:00Z",
+  "closed": true,
+  "score": "000-000|0-2|Bo3",
+  "period": "2/3",
+  "negRisk": false,
+  "teams": [
+   {
+    "name": "MOUZ",
+    "abbreviation": "mouz"
+   },
+   {
+    "name": "FaZe",
+    "abbreviation": "faze"
+   }
+  ],
+  "series": [
+   {
+    "slug": "counter-strike"
+   }
+  ]
+ },
+ "markets": [
+  {
+   "id": "891382",
+   "question": "Counter-Strike: MOUZ vs FaZe (BO3)",
+   "conditionId": "0xf261a0e84c14bff052d31341dfd05485db1c1bfe190b62ac6b4183c3b74be554",
+   "slug": "cs2-mouz-faze-2025-12-12",
+   "outcomes": "[\"MOUZ\", \"FaZe\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"84124107153870511003962059699983221615984965560235093210258078539471044083900\", \"37483434724746227222790529657062716872556521461207449612059076153570675153963\"]",
+   "sportsMarketType": "moneyline",
+   "groupItemTitle": "Match Winner",
+   "gameStartTime": "2025-12-12 16:00:00+00",
+   "eventStartTime": "2025-12-12T19:00:00Z",
+   "negRisk": false,
+   "closed": true,
+   "description": "This market will resolve to \"MOUZ\" if MOUZ win against FaZe in the named Counter-Strike match in the StarLadder Major Budapest Playoffs, scheduled for December 12 at 11:00AM ET.\n\nThis market will resolve to \"FaZe\" if FaZe win against MOUZ in the Counter-Strike match.\n\nIf the game is postponed, this market will remain open until the game has been completed."
+  },
+  {
+   "id": "908424",
+   "question": "Total Rounds Over/Under 52.5",
+   "conditionId": "0xf880eb1ba340450c8c6de1eb7eaa89c88cfd9fb5dbdc6aa76c31d22bb6eb4298",
+   "slug": "cs2-mouz-faze-2025-12-12-total-rounds-over-under-52pt5",
+   "outcomes": "[\"Over\", \"Under\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"60264806744140935179555639215741895330550271157154680918789164472461006857075\", \"18775321338055800341247045617500996128892461470154341991259352929966463261558\"]",
+   "sportsMarketType": "shooter_rounds_total",
+   "line": 52.5,
+   "groupItemTitle": "Total Rounds Over/Under 52.5",
+   "gameStartTime": "2025-12-12 19:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between FaZe and MOUZ in the StarLadder Major Budapest Playoffs, scheduled for December 12 at 2:00pm ET:\n\nThis market is about the total number of rounds in this series.\n\nThis market will resolve to \"Over\" if the total number of rounds across all maps in this series is greater than or equal to 53."
+  },
+  {
+   "id": "908427",
+   "question": "MOUZ Rounds Handicap (-7.5)",
+   "conditionId": "0xe96ca634f545f9e29628c9237db6bab4d8b5ed20be8707de1670d6663169096b",
+   "slug": "cs2-mouz-faze-2025-12-12-rounds-handicap-away-7pt5",
+   "outcomes": "[\"MOUZ\", \"FaZe\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"45064003311373314700284062057623693780855545920878334111322134609739143590828\", \"51471615885126555825800243382374085274189775988087485860590939870337126515797\"]",
+   "sportsMarketType": "shooter_round_handicap",
+   "line": -7.5,
+   "groupItemTitle": "MOUZ Rounds Handicap (-7.5)",
+   "gameStartTime": "2025-12-12 19:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between MOUZ and FaZe in the StarLadder Major Budapest Playoffs, scheduled for December 12 at 2:00pm ET:\n\nIf MOUZ defeats FaZe by 8 or more rounds across all maps in this series, this market will resolve to \"MOUZ\".\n\nOtherwise, it will resolve to \"FaZe\"."
+  },
+  {
+   "id": "908430",
+   "question": "FaZe to win 1 maps?",
+   "conditionId": "0x51621d93cce0be5b1012b5c5665aa2b98265fefc12c2dc5e67c2efd5e70a46da",
+   "slug": "cs2-mouz-faze-2025-12-12-faze-to-win-1-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0.5\", \"0.5\"]",
+   "clobTokenIds": "[\"66149201240544633619172452643106964098375626317821639097442525875215789550554\", \"65286765318370276909318616948456268088719512349471298278299027415794811219708\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 1,
+   "groupItemTitle": "FaZe to win 1 maps?",
+   "gameStartTime": "2025-12-12 19:00:00+00",
+   "negRisk": false,
+   "closed": false,
+   "description": "In the upcoming match between FaZe and MOUZ in the StarLadder Major Budapest Playoffs, scheduled for December 12 at 2:00pm ET:\n\nIf FaZe wins exactly 1 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "908437",
+   "question": "MOUZ to win 0 maps?",
+   "conditionId": "0xe6921982fa6757409e3bf8929a4c320f68a76f1dccbd2038c5f1b5eb32b2b17a",
+   "slug": "cs2-mouz-faze-2025-12-12-mouz-to-win-0-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"1\", \"0\"]",
+   "clobTokenIds": "[\"112320909347154455831402992186113846776432440965241035974041743470618384772385\", \"40665972902436851038456900268997973502840989135720871087221726952905056171770\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 0,
+   "groupItemTitle": "MOUZ to win 0 maps?",
+   "gameStartTime": "2025-12-12 19:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between MOUZ and FaZe in the StarLadder Major Budapest Playoffs, scheduled for December 12 at 2:00pm ET:\n\nIf MOUZ wins exactly 0 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  },
+  {
+   "id": "908435",
+   "question": "MOUZ to win 2 maps?",
+   "conditionId": "0x87f22f38b1aca80ec3d617b2416fae3478fb097b953fa257b07b9bd2fe47d8c0",
+   "slug": "cs2-mouz-faze-2025-12-12-mouz-to-win-2-maps",
+   "outcomes": "[\"Yes\", \"No\"]",
+   "outcomePrices": "[\"0\", \"1\"]",
+   "clobTokenIds": "[\"97090892834203478548900832889119015725236004667419001962323056294959703501146\", \"33619627248858743856871128514944436528834334972091387271113446767403671853913\"]",
+   "sportsMarketType": "map_participant_win_total",
+   "line": 2,
+   "groupItemTitle": "MOUZ to win 2 maps?",
+   "gameStartTime": "2025-12-12 19:00:00+00",
+   "negRisk": false,
+   "closed": true,
+   "description": "In the upcoming match between MOUZ and FaZe in the StarLadder Major Budapest Playoffs, scheduled for December 12 at 2:00pm ET:\n\nIf MOUZ wins exactly 2 maps in this series, this market will resolve to \"Yes\".\n\nOtherwise, it will resolve to \"No\"."
+  }
+ ]
+}
