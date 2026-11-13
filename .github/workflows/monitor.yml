@@ -52,4 +52,7 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           GITHUB_TOKEN: ${{ github.token }}
+          # Notifications Telegram désactivées à la demande du propriétaire (suivi consulté via Claude / dashboard).
+          # Les alertes restent calculées et journalisées dans ledger/alerts.jsonl. Mettre "0" pour réactiver.
+          DRY_RUN: "1"
         run: node src/runner/main.ts
