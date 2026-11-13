@@ -9,8 +9,8 @@ const SRC = params.get("src");
 /** Ordre des sources : branche `data` (raw.githubusercontent) puis même origine ; l'inverse en développement local. */
 const SOURCES = SRC === "remote" ? [REMOTE, "./"] : (SRC === "local" || IS_LOCAL) ? ["./", REMOTE] : [REMOTE, "./"];
 const REFRESH_MS = 60_000;
-const HB_OK_S = 120;        // battement de coeur < 2 min : vert
-const HB_LATE_S = 900;      // < 15 min : orange ; au-delà : rouge
+const HB_OK_S = 600;        // battement < 10 min : vert (publié toutes les 5 min + cache raw ~5 min)
+const HB_LATE_S = 1200;     // < 20 min : orange ; au-delà : rouge (le chien de garde relance en 10 min)
 const DATA_MAX_AGE_MIN = 10; // relecture de data.json au moins toutes les 10 min, même sans nouveau battement
 const ANALYSIS_MAX_AGE_MS = 30 * 60_000;
 const PAGE = 40;
@@ -697,7 +697,7 @@ function renderAlerts(el) {
         <div><div class="k">Run démarré</div><div class="v small">${esc(fDT(hb.started_ts))}</div></div>
         <div><div class="k">Run</div><div class="v small">${esc(hb.run_id || "—")}</div></div>
       </div>` : ""}
-      <p class="note">Vert : battement &lt; 2 min · orange : &lt; 15 min · rouge au-delà. Le moniteur publie un battement toutes les 5 min environ (et la source raw.githubusercontent garde ~5 min en cache).</p>
+      <p class="note">Vert : battement &lt; 10 min · orange : &lt; 20 min · rouge au-delà. Le moniteur publie un battement toutes les 5 min environ (et la source raw.githubusercontent garde ~5 min en cache).</p>
     </div>
     <div class="summary" style="margin-top:14px">
       <div class="sbox"><div class="k">Détection</div><div class="v">${durS(mDet)}</div></div>
