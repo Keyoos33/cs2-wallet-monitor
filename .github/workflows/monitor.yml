@@ -1,0 +1,55 @@
+# Moniteur permanent : boucle longue auto-relancée + chien de garde.
+#
+#  - Un run détient le « bail » (state/state.json sur la branche `data`) et tourne ~5 h 20 (MAX_RUN_S).
+#    5 minutes avant la fin il lance son successeur (workflow_dispatch), attend qu'il soit prêt, puis libère le bail.
+#  - Chien de garde : toutes les 10 minutes (schedule), un run démarre ; s'il trouve un bail vivant il s'arrête
+#    en quelques secondes ; sinon (run précédent mort) il reprend le bail et rattrape ce qui a été manqué.
+#  - Relance manuelle : pousser une modification du fichier `.kick`, ou « Run workflow » dans l'onglet Actions.
+#  - Premier run : crée la branche orpheline `data` puis charge tout l'historique (backfill, sans alerte)
+#    avant d'entrer dans la boucle.
+#
+# Pas de groupe `concurrency` : le successeur DOIT pouvoir démarrer pendant que le run courant tourne encore ;
+# c'est le bail qui garantit qu'un seul run envoie des alertes.
+name: monitor
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "run = moniteur ; backfill = recharger l'historique ; replay = alertes TEST ; send-test = un message Telegram de test"
+        type: choice
+        options: [run, backfill, replay, send-test]
+        default: run
+      replay_n:
+        description: "replay : nombre de fills historiques à rejouer"
+        type: string
+        default: "12"
+  schedule:
+    - cron: "*/10 * * * *"
+  push:
+    branches: [main]
+    paths: [".kick"]
+
+permissions:
+  contents: write   # pousser sur la branche `data`
+  actions: write    # lancer le run suivant
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Moniteur
+        env:
+          MODE: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || 'run' }}
+          REPLAY_N: ${{ github.event_name == 'workflow_dispatch' && inputs.replay_n || '12' }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node src/runner/main.ts

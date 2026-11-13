@@ -10,7 +10,7 @@ import { pathToFileURL } from "node:url";
 import { pendingCount } from "../core/alerts.ts";
 import { createRuntime } from "./env.ts";
 import type { Runtime } from "./env.ts";
-import { leaseAlive, newLease } from "./lease.ts";
+import { dispatchSuccessor, leaseAlive, newLease } from "./lease.ts";
 import { errText, Pipeline } from "./pipeline.ts";
 import type { ReconcileReport } from "./pipeline.ts";
 import { FILES, readState } from "./store.ts";
@@ -68,6 +68,10 @@ export async function runReconcile(rt: Runtime): Promise<number> {
   if (p.state.lease) { p.state.lease.released = true; p.state.lease.heartbeat_ts = now(); }
   p.siteDirty = true;
   if (p.persist("réconciliation: terminée", true) !== "ok") { log("réconciliation: résultat non poussé"); code = 1; }
+  // Aucun moniteur ne tournait : on en relance un (sans effet hors GitHub Actions).
+  if (process.env.GITHUB_ACTIONS === "true") {
+    await dispatchSuccessor({ repo: process.env.GITHUB_REPOSITORY, token: process.env.GITHUB_TOKEN, ref: process.env.GITHUB_REF_NAME || "main", log });
+  }
   return code;
 }
 

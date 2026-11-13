@@ -286,7 +286,7 @@ export class Pipeline {
         const rec: AlertRecord = {
           id: dft.id, kind: dft.kind, token_id: dft.token_id, condition_id: dft.condition_id, fills: dft.fills, usdc: dft.usdc,
           title: msg.title, text: msg.body, url: msg.url,
-          created_ts: dft.created_ts, sent_ts: sentTs,
+          created_ts: dft.created_ts, fill_ts: dft.firstTs, last_fill_ts: dft.lastTs, detected_ts: dft.firstDetTs, sent_ts: sentTs,
           lat_detect_s: Math.max(0, dft.firstDetTs - (dft.kind === "RESULT" ? dft.lastTs : dft.firstTs)),
           lat_send_s: Math.max(0, sentTs - dft.firstDetTs),
           status: res.dry ? "dry" : "ok", tries: dft.tries + res.tries, is_test: !!this.d.isTest, book: book ?? null,

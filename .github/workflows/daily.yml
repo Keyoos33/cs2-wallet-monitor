@@ -1,0 +1,35 @@
+# Réconciliation quotidienne : relit TOUT l'historique du wallet, le compare au registre, ajoute ce qui manque
+# (marqué src:"reconcile" ; alerte avec mention de retard seulement si le fill a moins de 24 h) et régénère site/data.json.
+#
+# Un seul écrivain sur la branche `data` : si le moniteur tourne, ce job lui demande la réconciliation et attend
+# son compte rendu ; si aucun moniteur ne tourne, il la fait lui-même puis relance le moniteur.
+# Un run rouge signifie que le moniteur n'a pas répondu : à regarder.
+name: daily
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  reconcile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Réconciliation
+        env:
+          MODE: reconcile
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node src/runner/main.ts

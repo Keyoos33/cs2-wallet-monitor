@@ -233,6 +233,12 @@ export interface AlertRecord {
   text: string;
   url: string;
   created_ts: number;
+  /** Horodatage bloc du premier et du dernier fill du lot (RESULT : premier fill de la position, résolution). */
+  fill_ts: number;
+  last_fill_ts: number;
+  /** Première détection du lot par le moniteur (horloge murale). */
+  detected_ts: number;
+  /** Confirmation d'envoi par Telegram (horloge murale). */
   sent_ts: number;
   /** Détection : première détection − horodatage bloc du premier fill du lot (s). */
   lat_detect_s: number;
@@ -407,7 +413,9 @@ export interface DashAlert {
   id: string;
   k: AlertKind;
   tok: string;                  // token_id (→ DashPosition.id)
-  ts: number;                   // envoi
+  ts: number;                   // envoi confirmé par Telegram
+  tf: number;                   // horodatage bloc du premier fill du lot (RESULT : résolution)
+  td: number;                   // première détection par le moniteur
   n: number;                    // fills couverts
   usd: number;                  // cash du lot
   ld: number;                   // latence fill → détection (s)

@@ -63,7 +63,7 @@ export interface Config {
 export const DEFAULT_CONFIG: Config = {
   WALLET: "0xc9bfc7986767173b4f1c3fc9b2c6b255fc7381c0",
   TZ: "Europe/Zurich",
-  POLL_SECONDS: 5,
+  POLL_SECONDS: 3,
   POLL_LIMIT: 200,
   POLL_OVERLAP_S: 600,
   RESUME_REWIND_S: 3600,

@@ -128,7 +128,8 @@ export function buildDashboardData(inp: DashboardInput): DashboardData {
   for (const p of pos) p.m = remap.get(p.m) ?? p.m;
 
   const alerts: DashAlert[] = inp.alerts.slice(-inp.alertLogMax).reverse().map((a) => ({
-    id: a.id, k: a.kind, tok: a.token_id, ts: a.sent_ts, n: a.fills.length, usd: r2(a.usdc),
+    id: a.id, k: a.kind, tok: a.token_id, ts: a.sent_ts,
+    tf: a.kind === "RESULT" ? (a.last_fill_ts ?? a.sent_ts) : (a.fill_ts ?? a.sent_ts), td: a.detected_ts ?? a.created_ts, n: a.fills.length, usd: r2(a.usdc),
     ld: Math.round(a.lat_detect_s), ls: Math.round(a.lat_send_s), ok: a.status === "ok" ? 1 : 0, test: a.is_test ? 1 : 0,
     title: a.title, text: a.text,
     ask: a.book?.bestAsk ?? null, avail: a.book ? r2(a.book.usdAvail) : null,
