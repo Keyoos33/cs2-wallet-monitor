@@ -1,0 +1,3185 @@
+{
+ "genere_le": "2026-11-13T07:59:05Z",
+ "periode": {
+  "debut": "2026-05-29T16:35:41Z",
+  "fin": "2026-11-13T07:22:16Z",
+  "ordres": 11069,
+  "positions": 754,
+  "positions_reglees": 740,
+  "matchs": 390
+ },
+ "wallet": "0xc9bfc7986767173b4f1c3fc9b2c6b255fc7381c0",
+ "verdict": "Copiable techniquement, oui ; rentable de façon démontrée, non. Le bénéfice du wallet est réel (584 182 USDC, 19,1 % de l'argent misé, uniquement sur CS2), mais 98 % de l'argent a été misé sur 29 jours seulement, 86 % du gain vient de 10 positions et l'intervalle de confiance du rendement va de 1,2 % à 37,6 %. À mise égale sur chaque position, le rendement tombe à 4,9 % (de −4,2 % à 14,0 %) : ses choix seuls ne se distinguent pas du hasard, ce sont ses plus grosses mises qui ont fait le résultat. Le retard, lui, coûte peu : le wallet achète au prix affiché plusieurs heures avant le match, en commençant petit, et 1 à 15 minutes plus tard le prix n'est qu'à 1,5 à 1,8 centimes au-dessus de son premier prix. Un suiveur simulé à 1 minute (frais et 1 centime d'écart compris) obtient 3,6 % à mise fixe (de −4,8 % à 12,4 %) et 21 % en copiant aussi les tailles (de 3 % à 40 %). Ces chiffres héritent des mêmes résultats de matchs que le wallet : son prix d'achat ne bat pas le prix de clôture (−0,2 % de la mise), tout le gain vient donc du fait que ses équipes ont gagné plus souvent que le marché ne le prévoyait, sur 382 matchs. Un parieur sans avantage sur 39 environ ferait aussi bien par hasard, et ce wallet a justement été repéré parce qu'il avait gagné. Conseil : ne pas copier avec de l'argent qui compte. Suivre sur le papier ou à très petite mise fixe (les carnets des petits tournois n'absorbent souvent que quelques centaines d'USDC), refuser tout prix supérieur de plus de 2 centimes à celui du wallet, et refaire le point chaque semaine avec ce tableau : il faudra plusieurs centaines de matchs supplémentaires pour trancher.",
+ "sections": [
+  {
+   "id": "profit",
+   "titre": "1. Le bénéfice est-il réel, et vient-il de CS2 ?",
+   "resume": "Le bénéfice est réel et vient à 100 % de CS2 : 3 054 897 USDC misés, 3 639 079 USDC encaissés, soit 584 182 USDC de bénéfice net (19,1 % de l'argent misé), plus 14 356 USDC de remises. Mais 86 % de ce bénéfice vient des 10 meilleures positions, l'intervalle de confiance du rendement va de 1,2 % à 37,6 %, et à mise égale sur chaque position le rendement n'est que de 4,9 % (de −4,2 % à 14,0 %).",
+   "tableaux": [
+    {
+     "titre": "Bilan en argent réel",
+     "colonnes": [
+      "Poste",
+      "Montant (USDC)"
+     ],
+     "lignes": [
+      [
+       "Argent misé, frais inclus (toutes positions)",
+       3159534.69
+      ],
+      [
+       "dont positions réglées",
+       3054897.11
+      ],
+      [
+       "dont positions encore ouvertes (14)",
+       104637.58
+      ],
+      [
+       "Frais payés sur positions réglées",
+       60635.39
+      ],
+      [
+       "Gains encaissés au règlement",
+       3639078.69
+      ],
+      [
+       "Bénéfice net des paris réglés",
+       584181.58
+      ],
+      [
+       "Remises reçues (preneur)",
+       13596.67
+      ],
+      [
+       "Remises reçues (teneur de marché)",
+       759.65
+      ],
+      [
+       "Bénéfice net, remises comprises",
+       598537.9
+      ],
+      [
+       "Dépôts",
+       244732.65
+      ],
+      [
+       "Retraits",
+       48260.0
+      ]
+     ]
+    },
+    {
+     "titre": "Rendement et part de CS2",
+     "colonnes": [
+      "Indicateur",
+      "Valeur"
+     ],
+     "lignes": [
+      [
+       "Rendement sur l'argent misé (%)",
+       19.12
+      ],
+      [
+       "Rendement, remises comprises (%)",
+       19.59
+      ],
+      [
+       "Bénéfice net / dépôts (multiple)",
+       2.45
+      ],
+      [
+       "Part des ordres sur CS2 (%)",
+       100.0
+      ],
+      [
+       "Part de l'argent misé sur CS2 (%)",
+       100.0
+      ],
+      [
+       "Matchs joués (réglés)",
+       382
+      ],
+      [
+       "Positions réglées",
+       740
+      ],
+      [
+       "Positions gagnées / perdues / remboursées à 50 %",
+       "414 / 312 / 14"
+      ]
+     ]
+    },
+    {
+     "titre": "Bénéfice par mois (date prévue du match)",
+     "colonnes": [
+      "Mois",
+      "Matchs",
+      "Positions",
+      "Misé (USDC)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)"
+     ],
+     "lignes": [
+      [
+       "2026-05",
+       2,
+       2,
+       2.0,
+       -1.0,
+       -46.7,
+       -100.0,
+       7.3
+      ],
+      [
+       "2026-08",
+       6,
+       11,
+       6763.0,
+       -4931.0,
+       -72.9,
+       -89.9,
+       33.4
+      ],
+      [
+       "2026-10",
+       262,
+       513,
+       1722691.0,
+       524033.0,
+       30.4,
+       11.9,
+       47.7
+      ],
+      [
+       "2026-11",
+       112,
+       214,
+       1325441.0,
+       65081.0,
+       4.9,
+       -31.2,
+       38.6
+      ]
+     ]
+    },
+    {
+     "titre": "Risque",
+     "colonnes": [
+      "Indicateur",
+      "Valeur"
+     ],
+     "lignes": [
+      [
+       "Pire baisse depuis un sommet, par jour de règlement (USDC)",
+       178159.0
+      ],
+      [
+       "Début / fin de cette baisse",
+       "2026-11-03 → 2026-11-07"
+      ],
+      [
+       "Pire baisse, position par position (USDC)",
+       188067.0
+      ],
+      [
+       "Bénéfice cumulé au sommet précédant cette baisse (USDC)",
+       656250.0
+      ],
+      [
+       "Pire baisse / dépôts totaux (%)",
+       76.8
+      ],
+      [
+       "Pire journée (USDC)",
+       -148955.0
+      ],
+      [
+       "Date de la pire journée",
+       "2026-11-04"
+      ],
+      [
+       "Jours avec règlement",
+       42
+      ],
+      [
+       "Jours gagnants (%)",
+       61.9
+      ],
+      [
+       "Plus grosse mise sur une position (USDC)",
+       70615.0
+      ],
+      [
+       "Mise médiane par position (USDC)",
+       712.0
+      ]
+     ]
+    },
+    {
+     "titre": "Concentration du bénéfice",
+     "colonnes": [
+      "Indicateur",
+      "Valeur"
+     ],
+     "lignes": [
+      [
+       "Bénéfice des 10 meilleures positions (USDC)",
+       501024.0
+      ],
+      [
+       "Part du bénéfice total venant des 10 meilleures positions (%)",
+       85.8
+      ],
+      [
+       "Bénéfice sans les 10 meilleures positions (USDC)",
+       83158.0
+      ],
+      [
+       "Perte des 10 pires positions (USDC)",
+       -344521.0
+      ],
+      [
+       "Bénéfice des 10 meilleurs matchs (USDC)",
+       627585.0
+      ],
+      [
+       "Perte des 10 pires matchs (USDC)",
+       -437186.0
+      ],
+      [
+       "Bénéfice du meilleur match (USDC)",
+       140962.0
+      ],
+      [
+       "Bénéfice sans les 5 meilleurs matchs (USDC)",
+       162998.0
+      ],
+      [
+       "Bénéfice médian par match (USDC)",
+       14.0
+      ],
+      [
+       "Matchs gagnants (%)",
+       52.9
+      ]
+     ]
+    },
+    {
+     "titre": "Les 10 meilleures et 5 pires positions",
+     "colonnes": [
+      "Marché",
+      "Issue",
+      "Misé (USDC)",
+      "Prix moyen",
+      "Bénéfice (USDC)"
+     ],
+     "lignes": [
+      [
+       "cs2-tl1-prv-2026-11-03-map-handicap-home-1pt5",
+       "PARIVISION",
+       44008.0,
+       0.335,
+       83110.0
+      ],
+      [
+       "cs2-furia-vit-2026-11-11",
+       "FURIA",
+       34994.0,
+       0.324,
+       69427.0
+      ],
+      [
+       "cs2-mouz-g2-2026-11-11",
+       "G2",
+       17287.0,
+       0.223,
+       57201.0
+      ],
+      [
+       "cs2-nemi1-vit-2026-10-30",
+       "Nemiga",
+       11782.0,
+       0.17,
+       54763.0
+      ],
+      [
+       "cs2-tl1-prv-2026-11-03",
+       "PARIVISION",
+       70615.0,
+       0.579,
+       49085.0
+      ],
+      [
+       "cs2-fut-nemi1-2026-10-29",
+       "Nemiga",
+       20154.0,
+       0.298,
+       45487.0
+      ],
+      [
+       "cs2-navi-fal2-2026-11-02",
+       "Natus Vincere",
+       35838.0,
+       0.446,
+       42425.0
+      ],
+      [
+       "cs2-lgc-b8-2026-11-02",
+       "B8",
+       25388.0,
+       0.384,
+       38873.0
+      ],
+      [
+       "cs2-b8-k271-2026-10-27",
+       "K27",
+       19369.0,
+       0.369,
+       31567.0
+      ],
+      [
+       "cs2-mglz-nemi1-2026-10-28",
+       "Nemiga",
+       22596.0,
+       0.425,
+       29085.0
+      ],
+      [
+       "cs2-lgc-fal2-2026-11-11",
+       "Legacy",
+       34996.0,
+       0.29,
+       -34996.0
+      ],
+      [
+       "cs2-b8-hotu-2026-10-29",
+       "B8",
+       35636.0,
+       0.583,
+       -35636.0
+      ],
+      [
+       "cs2-aur1-g2-2026-11-03",
+       "G2",
+       35872.0,
+       0.437,
+       -35872.0
+      ],
+      [
+       "cs2-bca-pha-2026-11-01",
+       "Phantom",
+       35874.0,
+       0.5,
+       -35874.0
+      ],
+      [
+       "cs2-hero-b8-2026-11-02",
+       "B8",
+       36079.0,
+       0.385,
+       -36079.0
+      ]
+     ]
+    },
+    {
+     "titre": "Chance ou avantage réel ? (rééchantillonnage par match)",
+     "colonnes": [
+      "Mesure",
+      "Valeur"
+     ],
+     "lignes": [
+      [
+       "Rendement réel (%)",
+       19.12
+      ],
+      [
+       "IC 95 % bas (%)",
+       1.2
+      ],
+      [
+       "IC 95 % haut (%)",
+       37.63
+      ],
+      [
+       "Part des tirages avec un bénéfice nul ou négatif (%)",
+       1.64
+      ],
+      [
+       "Score z, bénéfice après frais (groupé par match)",
+       1.95
+      ],
+      [
+       "Probabilité associée, bilatérale",
+       0.0509
+      ],
+      [
+       "Score z, prix seuls avant frais (hypothèse : prix d'entrée justes)",
+       2.14
+      ],
+      [
+       "Rendement à mise fixe par position (%)",
+       4.93
+      ],
+      [
+       "IC 95 % bas, mise fixe (%)",
+       -4.17
+      ],
+      [
+       "IC 95 % haut, mise fixe (%)",
+       14.0
+      ],
+      [
+       "Score z, mise fixe",
+       1.05
+      ],
+      [
+       "Probabilité associée, mise fixe",
+       0.294
+      ]
+     ]
+    },
+    {
+     "titre": "Taux de réussite réel contre probabilité payée, par tranche de prix d'entrée",
+     "colonnes": [
+      "Prix d'entrée",
+      "Positions",
+      "Probabilité payée moyenne (%)",
+      "Taux de réussite (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Écart (points)",
+      "Probabilité payée, pondérée par la mise (%)",
+      "Taux de réussite, pondéré par la mise (%)",
+      "Misé (USDC)",
+      "Bénéfice (USDC)",
+      "Rendement (%)"
+     ],
+     "lignes": [
+      [
+       "0.00 à 0.20",
+       13,
+       14.8,
+       26.9,
+       10.4,
+       54.0,
+       12.1,
+       17.8,
+       27.0,
+       44481.0,
+       23516.0,
+       52.9
+      ],
+      [
+       "0.20 à 0.30",
+       45,
+       26.3,
+       24.4,
+       14.2,
+       38.7,
+       -1.9,
+       26.9,
+       34.4,
+       153060.0,
+       42200.0,
+       27.6
+      ],
+      [
+       "0.30 à 0.40",
+       115,
+       35.5,
+       35.7,
+       27.5,
+       44.7,
+       0.2,
+       35.0,
+       54.9,
+       429961.0,
+       220147.0,
+       51.2
+      ],
+      [
+       "0.40 à 0.50",
+       151,
+       45.0,
+       51.3,
+       43.4,
+       59.2,
+       6.3,
+       44.5,
+       56.6,
+       585947.0,
+       148783.0,
+       25.4
+      ],
+      [
+       "0.50 à 0.60",
+       149,
+       55.1,
+       56.0,
+       48.0,
+       63.8,
+       0.9,
+       56.1,
+       53.1,
+       613287.0,
+       -53187.0,
+       -8.7
+      ],
+      [
+       "0.60 à 0.70",
+       134,
+       64.8,
+       67.9,
+       59.6,
+       75.2,
+       3.1,
+       64.6,
+       81.9,
+       469536.0,
+       117824.0,
+       25.1
+      ],
+      [
+       "0.70 à 0.80",
+       87,
+       74.1,
+       80.5,
+       70.9,
+       87.4,
+       6.4,
+       73.8,
+       84.7,
+       473630.0,
+       63833.0,
+       13.5
+      ],
+      [
+       "0.80 à 1.00",
+       46,
+       87.4,
+       94.6,
+       84.0,
+       98.3,
+       7.2,
+       89.1,
+       96.0,
+       284995.0,
+       21066.0,
+       7.4
+      ],
+      [
+       "Total",
+       740,
+       53.5,
+       56.9,
+       53.3,
+       60.4,
+       3.3,
+       56.0,
+       66.0,
+       3054897.0,
+       584182.0,
+       19.1
+      ]
+     ]
+    }
+   ],
+   "avertissements": [
+    "L'historique utile est court : 99,8 % de l'argent misé l'a été depuis le 08/10/2026.",
+    "Les positions d'un même match gagnent ou perdent ensemble : les intervalles sont calculés en tirant des matchs entiers, pas des ordres.",
+    "Les remises ne sont pas rattachables à un pari ; elles sont comptées à part.",
+    "Les intervalles de confiance supposent que les matchs sont indépendants et que le comportement du wallet ne change pas."
+   ]
+  },
+  {
+   "id": "structure",
+   "titre": "2. Comment parie-t-il ?",
+   "resume": "Oui, il garde tout jusqu'au règlement : 11 069 achats, 0 vente, 0 fusion de parts. Il parie plusieurs marchés du même match dans 52 % des matchs, presque toujours sur la même équipe (169 matchs sur 188). Il a acheté les deux côtés d'un même marché 16 fois (2,0 % de l'argent misé) : c'est une façon de réduire une position sans vendre, trop rare et trop déséquilibrée pour être de l'arbitrage.",
+   "tableaux": [
+    {
+     "titre": "Tient-il jusqu'au règlement ?",
+     "colonnes": [
+      "Type d'opération",
+      "Nombre"
+     ],
+     "lignes": [
+      [
+       "Achats",
+       11069
+      ],
+      [
+       "Ventes",
+       0
+      ],
+      [
+       "Fusions de parts (MERGE)",
+       0
+      ],
+      [
+       "Scissions (SPLIT)",
+       0
+      ],
+      [
+       "Conversions",
+       0
+      ],
+      [
+       "Règlements automatiques (REDEEM)",
+       738
+      ],
+      [
+       "Positions réglées",
+       740
+      ],
+      [
+       "Positions encore ouvertes",
+       14
+      ]
+     ]
+    },
+    {
+     "titre": "Nombre de marchés pariés par match",
+     "colonnes": [
+      "Marchés pariés dans le match",
+      "Matchs",
+      "Part des matchs (%)",
+      "Part de l'argent misé (%)"
+     ],
+     "lignes": [
+      [
+       1,
+       188,
+       48.2,
+       13.3
+      ],
+      [
+       2,
+       103,
+       26.4,
+       30.9
+      ],
+      [
+       3,
+       65,
+       16.7,
+       28.8
+      ],
+      [
+       4,
+       18,
+       4.6,
+       15.8
+      ],
+      [
+       "5 et plus",
+       16,
+       4.1,
+       11.2
+      ]
+     ]
+    },
+    {
+     "titre": "Plusieurs paris sur le même match : même sens ou couverture ?",
+     "colonnes": [
+      "Cas",
+      "Matchs",
+      "Misé (USDC)"
+     ],
+     "lignes": [
+      [
+       "Tous les paris sur la même équipe",
+       169,
+       2521541.0
+      ],
+      [
+       "Paris sur les deux équipes (marchés différents ou même marché)",
+       19,
+       122805.0
+      ],
+      [
+       "Marchés achetés des deux côtés",
+       16,
+       61751.0
+      ],
+      [
+       "dont somme des deux prix payés inférieure à 1",
+       14,
+       null
+      ],
+      [
+       "dont plus de la moitié des parts couvertes par l'autre côté",
+       3,
+       null
+      ]
+     ]
+    },
+    {
+     "titre": "Marchés achetés des deux côtés",
+     "colonnes": [
+      "Marché",
+      "Côté principal",
+      "Misé côté principal (USDC)",
+      "Prix côté principal",
+      "Autre côté",
+      "Misé autre côté (USDC)",
+      "Prix autre côté",
+      "Somme des deux prix",
+      "Part couverte (%)",
+      "Bénéfice net (USDC)"
+     ],
+     "lignes": [
+      [
+       "cs2-ts7-fut-2026-11-11-map-handicap-away-1pt5",
+       "FUT Esports",
+       13030.0,
+       0.478,
+       "Spirit",
+       11170.0,
+       0.517,
+       0.995,
+       79.3,
+       2382.0
+      ],
+      [
+       "cs2-lgc-mglz-2026-11-02",
+       "Legacy",
+       9033.0,
+       0.5,
+       "TheMongolz",
+       630.0,
+       0.366,
+       0.866,
+       9.5,
+       -7996.0
+      ],
+      [
+       "cs2-mglz-lgc-2026-10-27-map-handicap-home-1pt5",
+       "TheMongolz",
+       5207.0,
+       0.67,
+       "Legacy",
+       43.0,
+       0.28,
+       0.95,
+       1.9,
+       2396.0
+      ],
+      [
+       "cs2-ast10-mibr-2026-10-16",
+       "Astralis",
+       3617.0,
+       0.459,
+       "MIBR",
+       1304.0,
+       0.47,
+       0.929,
+       35.2,
+       -2218.0
+      ],
+      [
+       "cs2-mis-sashia1-2026-08-19",
+       "Misa Esports",
+       4660.0,
+       0.638,
+       "ex-Sashi Academy",
+       2.0,
+       0.15,
+       0.788,
+       0.2,
+       -4649.0
+      ],
+      [
+       "cs2-jjh-mzp-2026-11-01",
+       "JiJieHao",
+       3583.0,
+       0.583,
+       "Metizport",
+       478.0,
+       0.38,
+       0.963,
+       20.0,
+       -2841.0
+      ],
+      [
+       "cs2-ts7-fut-2026-11-11-total-games-2pt5",
+       "Under",
+       2590.0,
+       0.6,
+       "Over",
+       925.0,
+       0.408,
+       1.008,
+       53.0,
+       -1273.0
+      ],
+      [
+       "cs2-nao-pain-2026-10-31-map-handicap-home-1pt5",
+       "naocopulas",
+       1607.0,
+       0.419,
+       "paiN",
+       1192.0,
+       0.51,
+       0.929,
+       62.0,
+       950.0
+      ],
+      [
+       "cs2-lvg-cw-2026-10-22",
+       "Lynn Vision",
+       939.0,
+       0.712,
+       "Chinggis Warriors",
+       27.0,
+       0.24,
+       0.952,
+       8.2,
+       335.0
+      ],
+      [
+       "cs2-bbl1-bcg-2026-10-20",
+       "BBL",
+       511.0,
+       0.34,
+       "BC.Game Esports",
+       175.0,
+       0.583,
+       0.923,
+       20.2,
+       -392.0
+      ],
+      [
+       "cs2-nxs1-forzer-2026-11-07",
+       "FORZE Reload",
+       493.0,
+       0.494,
+       "Nexus",
+       11.0,
+       0.43,
+       0.924,
+       2.7,
+       -478.0
+      ],
+      [
+       "cs2-wbta-is-2026-11-01",
+       "WBT Academy",
+       114.0,
+       0.231,
+       "Iberian Soul",
+       51.0,
+       0.7,
+       0.931,
+       15.1,
+       312.0
+      ],
+      [
+       "cs2-baks-ff-2026-11-06",
+       "Fire Flux Esports",
+       105.0,
+       0.372,
+       "BakS eSports",
+       9.0,
+       0.58,
+       0.952,
+       5.4,
+       -99.0
+      ],
+      [
+       "cs2-g1-tsa-2026-10-22",
+       "Spirit Academy",
+       92.0,
+       0.45,
+       "GenOne",
+       9.0,
+       0.36,
+       0.81,
+       12.5,
+       98.0
+      ],
+      [
+       "cs2-6666-meg1-2026-10-12",
+       "6666",
+       63.0,
+       0.65,
+       "megoshort",
+       10.0,
+       0.29,
+       0.94,
+       34.7,
+       22.0
+      ],
+      [
+       "cs2-g2a-bbp-2026-08-20",
+       "Bebop",
+       68.0,
+       0.443,
+       "G2 Ares",
+       4.0,
+       0.58,
+       1.023,
+       4.7,
+       -65.0
+      ]
+     ]
+    },
+    {
+     "titre": "Par type de marché",
+     "colonnes": [
+      "Catégorie",
+      "Positions",
+      "Misé (USDC)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Taux de réussite (%)",
+      "Prix moyen payé"
+     ],
+     "lignes": [
+      [
+       "Vainqueur du match",
+       357,
+       2058356.0,
+       335537.0,
+       16.3,
+       -3.0,
+       36.0,
+       54.1,
+       0.559
+      ],
+      [
+       "Handicap de cartes +1.5",
+       107,
+       439463.0,
+       74350.0,
+       16.9,
+       -10.7,
+       43.5,
+       64.5,
+       0.61
+      ],
+      [
+       "Handicap de cartes -1.5",
+       64,
+       368052.0,
+       125590.0,
+       34.1,
+       -16.2,
+       81.5,
+       50.0,
+       0.514
+      ],
+      [
+       "Vainqueur d'une carte",
+       142,
+       148627.0,
+       25783.0,
+       17.3,
+       -13.4,
+       42.3,
+       58.5,
+       0.556
+      ],
+      [
+       "Nombre de cartes (plus/moins)",
+       47,
+       33138.0,
+       17178.0,
+       51.8,
+       2.6,
+       94.3,
+       61.7,
+       0.548
+      ],
+      [
+       "Handicap de manches (une carte)",
+       21,
+       4765.0,
+       2010.0,
+       42.2,
+       7.0,
+       79.0,
+       66.7,
+       0.503
+      ],
+      [
+       "Handicap de cartes -2.5",
+       1,
+       2125.0,
+       4105.0,
+       193.2,
+       null,
+       null,
+       100.0,
+       0.33
+      ],
+      [
+       "Handicap de cartes +2.5",
+       1,
+       372.0,
+       -372.0,
+       -100.0,
+       null,
+       null,
+       0.0,
+       0.6
+      ]
+     ]
+    },
+    {
+     "titre": "Par format de match",
+     "colonnes": [
+      "Catégorie",
+      "Positions",
+      "Misé (USDC)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Taux de réussite (%)",
+      "Prix moyen payé"
+     ],
+     "lignes": [
+      [
+       "BO3",
+       722,
+       2943299.0,
+       547694.0,
+       18.6,
+       -1.0,
+       37.1,
+       56.8,
+       0.557
+      ],
+      [
+       "BO5",
+       9,
+       90192.0,
+       46111.0,
+       51.1,
+       -85.6,
+       69.6,
+       77.8,
+       0.669
+      ],
+      [
+       "BO1",
+       9,
+       21406.0,
+       -9624.0,
+       -45.0,
+       -99.2,
+       50.2,
+       44.4,
+       0.553
+      ]
+     ]
+    },
+    {
+     "titre": "Par niveau de tournoi (1 = élite, 5 = le plus bas ; donnée Polymarket)",
+     "colonnes": [
+      "Catégorie",
+      "Positions",
+      "Misé (USDC)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Taux de réussite (%)",
+      "Prix moyen payé"
+     ],
+     "lignes": [
+      [
+       "Niveau 1",
+       86,
+       910153.0,
+       75207.0,
+       8.3,
+       -43.9,
+       54.8,
+       45.3,
+       0.482
+      ],
+      [
+       "Niveau 2",
+       88,
+       515723.0,
+       374716.0,
+       72.7,
+       33.3,
+       108.0,
+       71.0,
+       0.508
+      ],
+      [
+       "Niveau 3",
+       66,
+       273774.0,
+       94146.0,
+       34.4,
+       -14.5,
+       71.7,
+       53.8,
+       0.499
+      ],
+      [
+       "Niveau 4",
+       299,
+       927718.0,
+       30332.0,
+       3.3,
+       -18.7,
+       23.6,
+       57.5,
+       0.628
+      ],
+      [
+       "Niveau 5",
+       201,
+       427530.0,
+       9781.0,
+       2.3,
+       -16.3,
+       17.5,
+       55.7,
+       0.683
+      ]
+     ]
+    },
+    {
+     "titre": "Par taille de mise sur la position",
+     "colonnes": [
+      "Catégorie",
+      "Positions",
+      "Misé (USDC)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Taux de réussite (%)",
+      "Prix moyen payé"
+     ],
+     "lignes": [
+      [
+       "0 à 100 USDC",
+       167,
+       5740.0,
+       -417.0,
+       -7.3,
+       -26.1,
+       10.9,
+       50.3,
+       0.517
+      ],
+      [
+       "100 à 1000 USDC",
+       246,
+       99860.0,
+       14287.0,
+       14.3,
+       -2.5,
+       29.4,
+       57.1,
+       0.536
+      ],
+      [
+       "1000 à 5000 USDC",
+       157,
+       380123.0,
+       -9016.0,
+       -2.4,
+       -18.6,
+       14.4,
+       55.1,
+       0.542
+      ],
+      [
+       "5000 à 20000 USDC",
+       128,
+       1312531.0,
+       418859.0,
+       31.9,
+       11.2,
+       54.0,
+       64.1,
+       0.562
+      ],
+      [
+       "20000 USDC et plus",
+       42,
+       1256643.0,
+       160469.0,
+       12.8,
+       -24.0,
+       47.4,
+       66.7,
+       0.567
+      ]
+     ]
+    },
+    {
+     "titre": "Par prix d'entrée",
+     "colonnes": [
+      "Catégorie",
+      "Positions",
+      "Misé (USDC)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Taux de réussite (%)",
+      "Prix moyen payé"
+     ],
+     "lignes": [
+      [
+       "0.00 à 0.20",
+       13,
+       44481.0,
+       23516.0,
+       52.9,
+       -99.9,
+       387.8,
+       26.9,
+       0.178
+      ],
+      [
+       "0.20 à 0.30",
+       45,
+       153060.0,
+       42200.0,
+       27.6,
+       -74.7,
+       147.6,
+       24.4,
+       0.269
+      ],
+      [
+       "0.30 à 0.40",
+       115,
+       429961.0,
+       220147.0,
+       51.2,
+       -14.8,
+       114.0,
+       35.7,
+       0.35
+      ],
+      [
+       "0.40 à 0.50",
+       151,
+       585947.0,
+       148783.0,
+       25.4,
+       -10.9,
+       60.8,
+       51.3,
+       0.445
+      ],
+      [
+       "0.50 à 0.60",
+       149,
+       613287.0,
+       -53187.0,
+       -8.7,
+       -41.8,
+       20.1,
+       56.0,
+       0.561
+      ],
+      [
+       "0.60 à 0.70",
+       134,
+       469536.0,
+       117824.0,
+       25.1,
+       6.7,
+       39.4,
+       67.9,
+       0.646
+      ],
+      [
+       "0.70 à 0.80",
+       87,
+       473630.0,
+       63833.0,
+       13.5,
+       -7.7,
+       29.0,
+       80.5,
+       0.738
+      ],
+      [
+       "0.80 à 1.00",
+       46,
+       284995.0,
+       21066.0,
+       7.4,
+       -3.9,
+       14.1,
+       94.6,
+       0.891
+      ]
+     ]
+    }
+   ],
+   "avertissements": [
+    "Acheter l'issue opposée revient économiquement à vendre : « aucune vente » ne veut donc pas dire « aucune sortie » dans les 16 marchés achetés des deux côtés.",
+    "Les découpages par catégorie reposent sur peu de matchs chacun : un rendement élevé dans une ligne n'est pas une preuve.",
+    "Le niveau de tournoi vient du champ « leagueTier » de Polymarket ; il n'a pas été vérifié auprès d'une autre source.",
+    "Plusieurs positions sur un même match ne sont pas des paris indépendants : un seul résultat les fait gagner ou perdre ensemble."
+   ]
+  },
+  {
+   "id": "maker_taker",
+   "titre": "3. Prend-il les prix ou pose-t-il des ordres ?",
+   "resume": "En nombre d'ordres exécutés, 54 % sont des achats au prix affiché (preneur) ; en argent c'est 90 % : ce wallet prend les prix, il ne tient pas le marché. Il a payé 63 190 USDC de frais et reçu 14 356 USDC de remises.",
+   "tableaux": [
+    {
+     "titre": "Preneur contre teneur de marché",
+     "colonnes": [
+      "Mode d'exécution",
+      "Ordres exécutés",
+      "Part des ordres (%)",
+      "Misé (USDC)",
+      "Part de l'argent (%)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Prix moyen payé",
+      "Frais payés (USDC)",
+      "Écart au prix de clôture (% de la mise)"
+     ],
+     "lignes": [
+      [
+       "Preneur (prend un prix affiché)",
+       5926,
+       53.5,
+       2841126.0,
+       89.9,
+       547582.0,
+       19.9,
+       1.0,
+       39.0,
+       0.485,
+       63190.0,
+       -0.15
+      ],
+      [
+       "Teneur de marché (ordre en attente)",
+       5143,
+       46.5,
+       318409.0,
+       10.1,
+       36599.0,
+       11.9,
+       -0.9,
+       24.4,
+       0.624,
+       0.0,
+       -1.07
+      ]
+     ]
+    },
+    {
+     "titre": "Frais et remises",
+     "colonnes": [
+      "Poste",
+      "Valeur"
+     ],
+     "lignes": [
+      [
+       "Frais payés, toutes positions (USDC)",
+       63189.69
+      ],
+      [
+       "Frais en % des montants pris au prix affiché",
+       2.27
+      ],
+      [
+       "Remises preneur reçues (USDC)",
+       13596.67
+      ],
+      [
+       "Remises teneur de marché reçues (USDC)",
+       759.65
+      ],
+      [
+       "Remises / frais (%)",
+       22.7
+      ],
+      [
+       "Frais nets de remises (USDC)",
+       48833.37
+      ],
+      [
+       "Frais nets en % de l'argent misé",
+       1.55
+      ]
+     ]
+    },
+    {
+     "titre": "Comment la position est-elle ouverte ?",
+     "colonnes": [
+      "Premier ordre de la position",
+      "Positions",
+      "Part (%)",
+      "Misé (USDC)",
+      "Part de l'argent venant d'ordres en attente (%)"
+     ],
+     "lignes": [
+      [
+       "Preneur",
+       727,
+       96.4,
+       3039086.0,
+       9.4
+      ],
+      [
+       "Teneur de marché",
+       27,
+       3.6,
+       120449.0,
+       27.1
+      ]
+     ]
+    }
+   ],
+   "avertissements": [
+    "Le rendement par mode d'exécution mélange deux effets : le mode lui-même et le fait que les ordres en attente sont placés à des prix et à des moments différents.",
+    "Un ordre en attente n'est exécuté que si quelqu'un accepte de vendre à ce prix : un suiveur ne peut pas reproduire ces exécutions après coup.",
+    "Les remises dépendent du programme de Polymarket en vigueur ; un suiveur ne doit pas compter dessus."
+   ]
+  },
+  {
+   "id": "timing",
+   "titre": "4. Quand parie-t-il ?",
+   "resume": "C'est un parieur d'avant-match : 99,7 % de l'argent est placé avant l'heure prévue du match, la moitié plus de 5,8 heures avant. Une position commence en médiane 8,1 h avant le match, par un petit ordre, puis grossit pendant 2,0 h.",
+   "tableaux": [
+    {
+     "titre": "Quand les ordres sont-ils exécutés, par rapport à l'heure prévue du match ?",
+     "colonnes": [
+      "Moment de l'exécution",
+      "Ordres",
+      "Misé (USDC)",
+      "Part de l'argent (%)",
+      "Part prise au prix affiché (%)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "Écart au prix de clôture (% de la mise)"
+     ],
+     "lignes": [
+      [
+       "plus de 8 h avant",
+       3523,
+       1171870.0,
+       37.1,
+       89.9,
+       269545.0,
+       25.0,
+       0.7
+      ],
+      [
+       "4 à 8 h avant",
+       3088,
+       840304.0,
+       26.6,
+       91.8,
+       77974.0,
+       9.4,
+       -0.58
+      ],
+      [
+       "2 à 4 h avant",
+       2186,
+       579451.0,
+       18.3,
+       89.6,
+       147089.0,
+       25.5,
+       -0.4
+      ],
+      [
+       "1 à 2 h avant",
+       1241,
+       298068.0,
+       9.4,
+       87.3,
+       18172.0,
+       6.1,
+       -1.15
+      ],
+      [
+       "moins d'1 h avant",
+       954,
+       261072.0,
+       8.3,
+       88.3,
+       73304.0,
+       28.1,
+       -1.73
+      ],
+      [
+       "après l'heure prévue",
+       77,
+       8769.0,
+       0.3,
+       60.8,
+       -1902.0,
+       -21.7,
+       null
+      ]
+     ]
+    },
+    {
+     "titre": "Répartition (heures avant l'heure prévue du match)",
+     "colonnes": [
+      "Mesure",
+      "5 %",
+      "25 %",
+      "Médiane",
+      "75 %",
+      "95 %"
+     ],
+     "lignes": [
+      [
+       "Ordres, pondérés par l'argent",
+       0.62,
+       2.79,
+       5.77,
+       9.86,
+       11.86
+      ],
+      [
+       "Premier ordre de chaque position",
+       0.62,
+       3.12,
+       8.1,
+       11.64,
+       12.37
+      ],
+      [
+       "Dernier ordre de chaque position",
+       0.29,
+       0.75,
+       1.9,
+       5.65,
+       11.36
+      ],
+      [
+       "Durée de construction d'une position (heures)",
+       0.0,
+       0.24,
+       1.99,
+       6.99,
+       11.35
+      ],
+      [
+       "Nombre d'ordres par position",
+       1.0,
+       2.0,
+       6.0,
+       17.0,
+       49.0
+      ],
+      [
+       "Part de la mise finale posée dans les 10 premières minutes (%)",
+       0.2,
+       3.0,
+       19.4,
+       86.7,
+       100.0
+      ],
+      [
+       "Montant des 20 premières secondes (USDC)",
+       3.0,
+       13.0,
+       68.0,
+       285.0,
+       1901.0
+      ]
+     ]
+    },
+    {
+     "titre": "Ordres exécutés après l'heure prévue",
+     "colonnes": [
+      "Type de marché",
+      "Ordres",
+      "Misé (USDC)",
+      "Part prise au prix affiché (%)",
+      "Retard médian (minutes)",
+      "Retard maximal (minutes)",
+      "Bénéfice (USDC)"
+     ],
+     "lignes": [
+      [
+       "Vainqueur du match",
+       53,
+       6596.0,
+       62.2,
+       176.0,
+       516.0,
+       -3414.0
+      ],
+      [
+       "Vainqueur d'une carte",
+       19,
+       700.0,
+       76.3,
+       148.0,
+       155.0,
+       109.0
+      ],
+      [
+       "Handicap de cartes",
+       5,
+       1473.0,
+       47.4,
+       1.0,
+       8.0,
+       1403.0
+      ]
+     ]
+    }
+   ],
+   "avertissements": [
+    "L'heure utilisée est l'heure PRÉVUE du match (gameStartTime), pas l'heure réelle du coup d'envoi : un match en retard fait passer des paris d'avant-match pour des paris en direct.",
+    "Les 77 ordres après l'heure prévue (8 769 USDC, 12 positions) sont trop peu nombreux pour conclure quoi que ce soit sur un jeu en direct ; une partie concerne des cartes 2 ou 3, qui partagent l'heure prévue du match et n'avaient donc pas forcément commencé.",
+    "Polymarket vide le carnet d'ordres au début du match (clearBookOnStart) : les ordres en attente du wallet ne restent pas en jeu pendant le match."
+   ]
+  },
+  {
+   "id": "copiabilite",
+   "titre": "5. Peut-on le copier après coup ?",
+   "resume": "Le retard coûte peu : 1 à 15 minutes après le premier ordre, le prix n'est qu'environ 1,5 à 1,8 centimes au-dessus du premier prix du wallet, et il ne s'envole pas ensuite. Mais ce qui est copié est fragile : à mise égale par pari le suiveur simulé gagne 3,6 % (de −4,8 % à 12,4 %, donc peut-être rien) ; les 21 % obtenus en copiant aussi ses tailles viennent de quelques gros paris gagnés, et son prix d'achat ne bat pas le prix de clôture (−0,2 % de la mise).",
+   "tableaux": [
+    {
+     "titre": "Rendement d'un suiveur qui entre une seule fois, X après le premier ordre du wallet (prix à la minute + 1.0 centime d'écart + frais)",
+     "colonnes": [
+      "Délai après le premier ordre du wallet",
+      "Positions",
+      "Couverture (%)",
+      "Retard réel moyen du point de prix (s)",
+      "Surcoût moyen par rapport au premier prix du wallet (centimes)",
+      "Rendement suiveur, mise fixe (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Rendement wallet, mise fixe, mêmes positions (%)",
+      "Rendement suiveur, mises proportionnelles (%)",
+      "IC 95 % bas, mises proportionnelles (%)",
+      "IC 95 % haut, mises proportionnelles (%)",
+      "Rendement wallet, mêmes positions (%)"
+     ],
+     "lignes": [
+      [
+       "10 s",
+       736,
+       99.5,
+       43.0,
+       1.47,
+       4.3,
+       -4.7,
+       13.1,
+       5.0,
+       21.7,
+       3.0,
+       40.5,
+       19.5
+      ],
+      [
+       "30 s",
+       735,
+       99.3,
+       61.0,
+       1.72,
+       3.5,
+       -5.2,
+       12.2,
+       4.7,
+       21.2,
+       3.3,
+       39.8,
+       19.1
+      ],
+      [
+       "1 min",
+       730,
+       98.6,
+       94.0,
+       1.61,
+       3.6,
+       -4.8,
+       12.4,
+       4.7,
+       20.9,
+       3.0,
+       39.5,
+       18.7
+      ],
+      [
+       "5 min",
+       730,
+       98.6,
+       334.0,
+       1.5,
+       4.1,
+       -5.0,
+       13.6,
+       5.3,
+       21.8,
+       2.9,
+       39.4,
+       19.5
+      ],
+      [
+       "15 min",
+       738,
+       99.7,
+       933.0,
+       1.82,
+       3.0,
+       -5.9,
+       11.4,
+       4.8,
+       20.4,
+       2.5,
+       38.5,
+       19.1
+      ]
+     ]
+    },
+    {
+     "titre": "Sensibilité à l'hypothèse d'écart de prix (en centimes ajoutés au prix à la minute)",
+     "colonnes": [
+      "Délai",
+      "Écart ajouté (centimes)",
+      "Rendement suiveur, mise fixe (%)",
+      "Rendement suiveur, mises proportionnelles (%)"
+     ],
+     "lignes": [
+      [
+       "10 s",
+       0.0,
+       6.5,
+       24.4
+      ],
+      [
+       "10 s",
+       0.5,
+       5.4,
+       23.1
+      ],
+      [
+       "10 s",
+       1.0,
+       4.3,
+       21.7
+      ],
+      [
+       "10 s",
+       2.0,
+       2.1,
+       19.2
+      ],
+      [
+       "30 s",
+       0.0,
+       5.7,
+       23.8
+      ],
+      [
+       "30 s",
+       0.5,
+       4.6,
+       22.5
+      ],
+      [
+       "30 s",
+       1.0,
+       3.5,
+       21.2
+      ],
+      [
+       "30 s",
+       2.0,
+       1.4,
+       18.7
+      ],
+      [
+       "1 min",
+       0.0,
+       5.9,
+       23.5
+      ],
+      [
+       "1 min",
+       0.5,
+       4.7,
+       22.2
+      ],
+      [
+       "1 min",
+       1.0,
+       3.6,
+       20.9
+      ],
+      [
+       "1 min",
+       2.0,
+       1.5,
+       18.4
+      ],
+      [
+       "5 min",
+       0.0,
+       6.3,
+       24.4
+      ],
+      [
+       "5 min",
+       0.5,
+       5.2,
+       23.1
+      ],
+      [
+       "5 min",
+       1.0,
+       4.1,
+       21.8
+      ],
+      [
+       "5 min",
+       2.0,
+       2.0,
+       19.3
+      ],
+      [
+       "15 min",
+       0.0,
+       5.2,
+       23.0
+      ],
+      [
+       "15 min",
+       0.5,
+       4.1,
+       21.7
+      ],
+      [
+       "15 min",
+       1.0,
+       3.0,
+       20.4
+      ],
+      [
+       "15 min",
+       2.0,
+       0.9,
+       18.0
+      ]
+     ]
+    },
+    {
+     "titre": "Règle simple : ne suivre que si le prix n'a pas dépassé le premier prix du wallet de plus de N centimes",
+     "colonnes": [
+      "Délai",
+      "Plafond (centimes au-dessus du prix du wallet)",
+      "Positions suivies",
+      "Part des positions (%)",
+      "Rendement, mise fixe (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Rendement, mises proportionnelles (%)"
+     ],
+     "lignes": [
+      [
+       "1 min",
+       1.0,
+       218,
+       29.5,
+       22.5,
+       6.1,
+       39.7,
+       43.0
+      ],
+      [
+       "1 min",
+       2.0,
+       556,
+       75.1,
+       7.2,
+       -3.5,
+       17.9,
+       24.0
+      ],
+      [
+       "1 min",
+       3.0,
+       634,
+       85.7,
+       4.7,
+       -4.9,
+       15.0,
+       20.9
+      ],
+      [
+       "1 min",
+       5.0,
+       689,
+       93.1,
+       4.6,
+       -4.7,
+       14.2,
+       20.8
+      ],
+      [
+       "5 min",
+       1.0,
+       233,
+       31.5,
+       24.6,
+       7.0,
+       41.6,
+       38.5
+      ],
+      [
+       "5 min",
+       2.0,
+       548,
+       74.1,
+       9.3,
+       -1.6,
+       19.5,
+       26.1
+      ],
+      [
+       "5 min",
+       3.0,
+       638,
+       86.2,
+       5.9,
+       -4.4,
+       15.3,
+       22.3
+      ],
+      [
+       "5 min",
+       5.0,
+       690,
+       93.2,
+       5.9,
+       -3.5,
+       15.4,
+       22.1
+      ],
+      [
+       "15 min",
+       1.0,
+       255,
+       34.5,
+       14.8,
+       -0.9,
+       30.8,
+       39.0
+      ],
+      [
+       "15 min",
+       2.0,
+       478,
+       64.6,
+       4.6,
+       -6.1,
+       16.1,
+       23.3
+      ],
+      [
+       "15 min",
+       3.0,
+       604,
+       81.6,
+       4.1,
+       -6.4,
+       13.7,
+       22.2
+      ],
+      [
+       "15 min",
+       5.0,
+       682,
+       92.2,
+       5.1,
+       -4.4,
+       14.3,
+       22.5
+      ]
+     ]
+    },
+    {
+     "titre": "Attendre que le wallet ait engagé un certain montant sur la position, puis entrer 1 minute après (mise fixe)",
+     "colonnes": [
+      "Montant déjà engagé par le wallet",
+      "Positions",
+      "Heures avant le match (médiane)",
+      "Prix du suiveur − prix moyen final du wallet (centimes)",
+      "Rendement suiveur, mise fixe (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Rendement wallet, mise fixe, mêmes positions (%)"
+     ],
+     "lignes": [
+      [
+       "dès le premier ordre",
+       730,
+       8.0,
+       0.42,
+       3.6,
+       -4.8,
+       12.4,
+       4.7
+      ],
+      [
+       "1 000 USDC",
+       326,
+       7.3,
+       0.7,
+       6.5,
+       -6.0,
+       19.0,
+       7.9
+      ],
+      [
+       "5 000 USDC",
+       170,
+       5.3,
+       0.68,
+       14.4,
+       -2.5,
+       31.4,
+       15.9
+      ],
+      [
+       "10 000 USDC",
+       97,
+       4.6,
+       0.91,
+       32.7,
+       11.3,
+       56.2,
+       34.9
+      ],
+      [
+       "20 000 USDC",
+       42,
+       6.1,
+       0.77,
+       14.7,
+       -18.9,
+       47.3,
+       16.4
+      ]
+     ]
+    },
+    {
+     "titre": "Suiveur qui copie aussi chaque renfort (une alerte par salve de 10 minutes), mêmes montants que le wallet",
+     "colonnes": [
+      "Délai après le début de la salve",
+      "Salves",
+      "Couverture (%)",
+      "Rendement suiveur (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Rendement wallet, mêmes salves (%)",
+      "Écart suiveur − wallet (points)"
+     ],
+     "lignes": [
+      [
+       "10 s",
+       5943,
+       99.7,
+       17.3,
+       -0.6,
+       34.9,
+       19.2,
+       -1.9
+      ],
+      [
+       "30 s",
+       5943,
+       99.7,
+       17.3,
+       -0.6,
+       34.9,
+       19.2,
+       -1.9
+      ],
+      [
+       "1 min",
+       5931,
+       99.5,
+       17.3,
+       -0.6,
+       34.9,
+       19.2,
+       -1.9
+      ],
+      [
+       "5 min",
+       5925,
+       99.4,
+       17.4,
+       -0.5,
+       35.1,
+       19.1,
+       -1.7
+      ],
+      [
+       "15 min",
+       5938,
+       99.6,
+       17.2,
+       -0.6,
+       34.8,
+       19.1,
+       -2.0
+      ]
+     ]
+    },
+    {
+     "titre": "Selon la façon dont le wallet a ouvert la position",
+     "colonnes": [
+      "Ouverture",
+      "Délai",
+      "Positions",
+      "Misé par le wallet (USDC)",
+      "Surcoût moyen (centimes)",
+      "Rendement suiveur, mise fixe (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Rendement wallet, mise fixe (%)",
+      "Rendement suiveur, mises proportionnelles (%)",
+      "Rendement wallet (%)"
+     ],
+     "lignes": [
+      [
+       "Position ouverte en prenant un prix affiché",
+       "1 min",
+       704,
+       2938195.0,
+       1.63,
+       2.4,
+       -7.1,
+       11.7,
+       3.6,
+       20.2,
+       18.0
+      ],
+      [
+       "Position ouverte en prenant un prix affiché",
+       "5 min",
+       705,
+       2938195.0,
+       1.57,
+       2.9,
+       -6.5,
+       12.3,
+       4.2,
+       21.1,
+       18.9
+      ],
+      [
+       "Position ouverte en prenant un prix affiché",
+       "15 min",
+       712,
+       2938195.0,
+       1.87,
+       1.7,
+       -7.9,
+       10.9,
+       3.7,
+       19.5,
+       18.4
+      ],
+      [
+       "Position ouverte par un ordre en attente",
+       "1 min",
+       26,
+       116702.0,
+       0.94,
+       37.3,
+       6.7,
+       72.7,
+       33.5,
+       37.3,
+       36.0
+      ],
+      [
+       "Position ouverte par un ordre en attente",
+       "5 min",
+       25,
+       116702.0,
+       -0.48,
+       39.5,
+       6.2,
+       74.2,
+       33.7,
+       37.9,
+       36.1
+      ],
+      [
+       "Position ouverte par un ordre en attente",
+       "15 min",
+       26,
+       116702.0,
+       0.29,
+       39.6,
+       7.5,
+       75.9,
+       33.5,
+       43.5,
+       36.0
+      ]
+     ]
+    },
+    {
+     "titre": "Contrôle avec les achats réellement exécutés sur le marché (à la seconde) : prix moyen des 100 premiers USDC achetés après le délai, dans les 15 minutes",
+     "colonnes": [
+      "Délai",
+      "Achats pris en compte",
+      "Positions",
+      "Couverture (%)",
+      "Surcoût moyen (centimes)",
+      "Surcoût médian (centimes)",
+      "Rendement, mise fixe (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Rendement, mises proportionnelles (%)",
+      "IC 95 % bas, mises proportionnelles (%)",
+      "IC 95 % haut, mises proportionnelles (%)"
+     ],
+     "lignes": [
+      [
+       "10 s",
+       "autres acheteurs seulement",
+       252,
+       34.1,
+       0.77,
+       1.0,
+       5.4,
+       -8.7,
+       19.3,
+       20.0,
+       -2.6,
+       42.7
+      ],
+      [
+       "10 s",
+       "tous les acheteurs, wallet compris",
+       340,
+       45.9,
+       0.75,
+       1.0,
+       4.1,
+       -8.1,
+       16.0,
+       23.2,
+       -0.1,
+       46.8
+      ],
+      [
+       "30 s",
+       "autres acheteurs seulement",
+       255,
+       34.5,
+       0.94,
+       1.0,
+       3.2,
+       -10.9,
+       17.2,
+       19.4,
+       -3.1,
+       44.1
+      ],
+      [
+       "30 s",
+       "tous les acheteurs, wallet compris",
+       361,
+       48.8,
+       0.83,
+       1.0,
+       1.2,
+       -10.4,
+       12.4,
+       22.0,
+       -2.6,
+       45.0
+      ],
+      [
+       "1 min",
+       "autres acheteurs seulement",
+       256,
+       34.6,
+       1.06,
+       1.0,
+       4.3,
+       -9.8,
+       19.4,
+       20.7,
+       -3.2,
+       45.4
+      ],
+      [
+       "1 min",
+       "tous les acheteurs, wallet compris",
+       385,
+       52.0,
+       0.84,
+       1.0,
+       2.7,
+       -8.1,
+       13.8,
+       25.5,
+       4.0,
+       47.5
+      ],
+      [
+       "5 min",
+       "autres acheteurs seulement",
+       260,
+       35.1,
+       1.24,
+       1.0,
+       4.3,
+       -8.7,
+       19.0,
+       20.1,
+       -3.4,
+       45.0
+      ],
+      [
+       "5 min",
+       "tous les acheteurs, wallet compris",
+       406,
+       54.9,
+       0.82,
+       1.0,
+       2.6,
+       -8.7,
+       14.5,
+       23.4,
+       0.3,
+       44.3
+      ],
+      [
+       "15 min",
+       "autres acheteurs seulement",
+       248,
+       33.5,
+       1.59,
+       1.15,
+       -3.4,
+       -17.7,
+       9.9,
+       19.1,
+       -8.6,
+       44.5
+      ],
+      [
+       "15 min",
+       "tous les acheteurs, wallet compris",
+       372,
+       50.3,
+       1.21,
+       1.0,
+       1.5,
+       -9.8,
+       12.0,
+       20.0,
+       -1.1,
+       41.4
+      ]
+     ]
+    },
+    {
+     "titre": "Trajectoire du prix autour du premier ordre (centimes au-dessus du prix affiché juste avant l'ordre)",
+     "colonnes": [
+      "Étape",
+      "Toutes les positions (moyenne)",
+      "Toutes, pondéré par la mise",
+      "Ouvertes en preneur",
+      "Ouvertes par ordre en attente"
+     ],
+     "lignes": [
+      [
+       "Premier prix payé par le wallet",
+       2.35,
+       1.41,
+       2.34,
+       2.79
+      ],
+      [
+       "Prix 1 minute après",
+       2.96,
+       1.75,
+       2.97,
+       2.62
+      ],
+      [
+       "Prix 5 minutes après",
+       2.86,
+       1.7,
+       2.84,
+       3.38
+      ],
+      [
+       "Prix 15 minutes après",
+       3.07,
+       2.05,
+       3.12,
+       1.6
+      ],
+      [
+       "Prix moyen final du wallet sur la position",
+       3.57,
+       3.54,
+       3.52,
+       5.0
+      ],
+      [
+       "Prix juste avant l'heure prévue du match (clôture)",
+       3.14,
+       3.34,
+       3.14,
+       3.17
+      ],
+      [
+       "Nombre de positions",
+       714,
+       714,
+       690,
+       24
+      ]
+     ]
+    },
+    {
+     "titre": "Le wallet déplace-t-il le prix lui-même ? Mouvement selon la taille de sa première salve (20 s)",
+     "colonnes": [
+      "Taille de la première salve",
+      "Positions",
+      "Premier prix payé − prix d'avant (centimes)",
+      "Prix 1 min après − prix d'avant (centimes)",
+      "Prix 15 min après − prix d'avant (centimes)",
+      "Clôture − prix d'avant (centimes)",
+      "Clôture − prix 1 min après (centimes)"
+     ],
+     "lignes": [
+      [
+       "0 à 100 USDC",
+       386,
+       2.49,
+       3.36,
+       3.26,
+       3.52,
+       0.16
+      ],
+      [
+       "100 à 1000 USDC",
+       266,
+       2.45,
+       2.76,
+       3.06,
+       2.87,
+       0.11
+      ],
+      [
+       "1000 à 5000 USDC",
+       50,
+       1.16,
+       1.57,
+       2.11,
+       2.01,
+       0.44
+      ],
+      [
+       "5000 USDC et plus",
+       12,
+       0.55,
+       0.54,
+       1.08,
+       1.33,
+       0.79
+      ]
+     ]
+    },
+    {
+     "titre": "Le prix payé bat-il le prix de clôture (dernier prix avant l'heure prévue) ? Avant frais",
+     "colonnes": [
+      "Qui / quel prix",
+      "Observations",
+      "Écart moyen clôture − prix payé (centimes)",
+      "Part des cas où la clôture est plus haute (%)",
+      "Écart moyen (% du prix payé)",
+      "Écart pondéré par la mise (% de la mise)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)"
+     ],
+     "lignes": [
+      [
+       "Wallet : prix moyen de la position",
+       734,
+       -0.36,
+       51.2,
+       0.2,
+       -0.2,
+       -0.91,
+       0.47
+      ],
+      [
+       "Wallet : premier prix payé",
+       734,
+       0.86,
+       61.3,
+       2.87,
+       4.17,
+       2.86,
+       5.45
+      ],
+      [
+       "Wallet : ordres pris au prix affiché",
+       5813,
+       0.09,
+       46.4,
+       0.65,
+       -0.1,
+       -0.75,
+       0.54
+      ],
+      [
+       "Wallet : ordres en attente exécutés",
+       4511,
+       -0.28,
+       42.2,
+       0.13,
+       -1.07,
+       -2.87,
+       0.98
+      ],
+      [
+       "Suiveur 1 min après (prix à la minute + 1.0 centime)",
+       724,
+       -0.75,
+       42.3,
+       -0.13,
+       1.58,
+       0.32,
+       2.84
+      ],
+      [
+       "Suiveur 5 min après (prix à la minute + 1.0 centime)",
+       721,
+       -0.68,
+       43.4,
+       -0.23,
+       1.72,
+       0.43,
+       2.99
+      ],
+      [
+       "Suiveur 15 min après (prix à la minute + 1.0 centime)",
+       724,
+       -0.88,
+       42.1,
+       -0.49,
+       0.89,
+       -0.34,
+       2.22
+      ]
+     ]
+    },
+    {
+     "titre": "D'où vient le bénéfice du wallet ? (positions d'avant-match réglées avec un prix de clôture connu)",
+     "colonnes": [
+      "Composante",
+      "USDC",
+      "% de l'argent misé"
+     ],
+     "lignes": [
+      [
+       "Gain dû au mouvement du prix entre l'achat et la clôture",
+       -7443.0,
+       -0.24
+      ],
+      [
+       "Gain dû au résultat du match par rapport au prix de clôture",
+       655882.0,
+       21.53
+      ],
+      [
+       "Frais",
+       -60496.0,
+       -1.99
+      ],
+      [
+       "Bénéfice net",
+       587942.0,
+       19.3
+      ],
+      [
+       "Score z du gain « résultat contre clôture » (groupé par match)",
+       2.17,
+       null
+      ],
+      [
+       "IC 95 % bas du gain « résultat contre clôture » (% de la valeur à la clôture)",
+       null,
+       3.85
+      ],
+      [
+       "IC 95 % haut",
+       null,
+       40.3
+      ],
+      [
+       "Rendement de celui qui achète seulement à la clôture, mise fixe (%)",
+       null,
+       3.87
+      ],
+      [
+       "Rendement de celui qui achète seulement à la clôture, mises proportionnelles (%)",
+       null,
+       17.54
+      ]
+     ]
+    },
+    {
+     "titre": "Écart observé : premier prix payé par le wallet (en preneur) moins le prix affiché juste avant",
+     "colonnes": [
+      "Mesure",
+      "Centimes"
+     ],
+     "lignes": [
+      [
+       "Médiane",
+       1.0
+      ],
+      [
+       "Moyenne",
+       2.35
+      ],
+      [
+       "3e quartile",
+       1.5
+      ],
+      [
+       "90e centile",
+       3.51
+      ],
+      [
+       "Positions mesurées",
+       727
+      ]
+     ]
+    }
+   ],
+   "avertissements": [
+    "Résolution : l'historique de prix a un point par minute. Les lignes « 10 s » et « 30 s » utilisent le premier point disponible après ce délai (souvent 30 à 70 s après l'ordre) : elles ne mesurent pas réellement un délai inférieur à la minute. Seul le tableau des achats exécutés est à la seconde.",
+    "Le prix de l'historique est un prix milieu ou le dernier prix traité, pas le prix auquel on peut réellement acheter. On ajoute 1.0 centime d'écart par hypothèse ; la sensibilité est donnée de 0 à 2 centimes. La profondeur réelle du carnet à ces instants n'est pas connue.",
+    "Le suiveur est supposé payer les frais de preneur (5 % × prix × (1 − prix)) et ne toucher aucune remise.",
+    "Le rendement du suiveur est calculé sur les mêmes matchs que celui du wallet : s'il y a eu de la chance dans ces résultats, le suiveur simulé en hérite. Ce tableau mesure le coût du retard, pas la réalité de l'avantage.",
+    "Les positions du wallet se construisent sur des heures : entrer une seule fois après le premier ordre n'est pas la même stratégie que la sienne (prix moyen final différent).",
+    "Achats exécutés : ils montrent des prix réellement payés par quelqu'un, pour de petites tailles (100 USDC) ; ils ne disent pas combien on pouvait acheter à ce prix, et ils n'existent que pour une partie des positions (voir la colonne couverture).",
+    "Le prix de clôture n'est pas un repère indépendant : le wallet représente lui-même une grande part des achats d'avant-match de son côté (voir section 6), donc il pousse le prix vers son propre prix moyen.",
+    "Les règles « plafond de prix » et « montant déjà engagé » ont été cherchées sur ces mêmes données : leurs bons résultats sont à confirmer sur de nouveaux matchs."
+   ]
+  },
+  {
+   "id": "angles_morts",
+   "titre": "6. Ce qu'on n'a pas demandé mais qui compte",
+   "resume": "Trois angles morts pèsent lourd. La liquidité : dans 52 % des positions, personne d'autre n'a acheté à moins de 2 centimes du prix du wallet dans le quart d'heure suivant, et jusqu'au match le montant médian n'est que de 165 USDC. La concentration : deux positions du même match ont le même résultat dans 70 % des cas, et l'argent est en réalité réparti comme sur 89 paris de même taille. Le biais du survivant : un parieur sans aucun avantage sur 39 environ ferait aussi bien par hasard.",
+   "tableaux": [
+    {
+     "titre": "Liquidité : combien a réellement été acheté du même côté après le premier ordre du wallet ? (USDC par position, prix de référence = prix moyen de ses 20 premières secondes)",
+     "colonnes": [
+      "Fenêtre",
+      "Acheteurs et limite de prix",
+      "Positions",
+      "1er quartile (USDC)",
+      "Médiane (USDC)",
+      "3e quartile (USDC)",
+      "Positions avec au moins 100 USDC achetés (%)",
+      "Positions avec au moins 1 000 USDC (%)",
+      "Positions sans aucun achat (%)"
+     ],
+     "lignes": [
+      [
+       "dans les 15 minutes suivant le premier ordre",
+       "autres acheteurs, au prix du wallet + 1 centime au plus",
+       747,
+       0.0,
+       0.0,
+       10.0,
+       11.5,
+       3.2,
+       63.5
+      ],
+      [
+       "dans les 15 minutes suivant le premier ordre",
+       "autres acheteurs, au prix du wallet + 2 centimes au plus",
+       747,
+       0.0,
+       0.0,
+       19.0,
+       14.2,
+       3.3,
+       51.9
+      ],
+      [
+       "dans les 15 minutes suivant le premier ordre",
+       "autres acheteurs, à n'importe quel prix",
+       747,
+       0.0,
+       1.0,
+       31.0,
+       15.8,
+       3.9,
+       44.7
+      ],
+      [
+       "dans les 15 minutes suivant le premier ordre",
+       "tous acheteurs, wallet compris, au prix du wallet + 2 centimes au plus",
+       747,
+       0.0,
+       3.0,
+       60.0,
+       21.0,
+       7.4,
+       43.4
+      ],
+      [
+       "jusqu'à l'heure prévue du match",
+       "autres acheteurs, au prix du wallet + 1 centime au plus",
+       747,
+       0.0,
+       65.0,
+       1055.0,
+       47.8,
+       25.6,
+       26.6
+      ],
+      [
+       "jusqu'à l'heure prévue du match",
+       "autres acheteurs, au prix du wallet + 2 centimes au plus",
+       747,
+       5.0,
+       165.0,
+       1774.0,
+       55.3,
+       31.3,
+       16.1
+      ],
+      [
+       "jusqu'à l'heure prévue du match",
+       "autres acheteurs, à n'importe quel prix",
+       747,
+       111.0,
+       740.0,
+       3789.0,
+       76.2,
+       45.1,
+       7.0
+      ],
+      [
+       "jusqu'à l'heure prévue du match",
+       "tous acheteurs, wallet compris, au prix du wallet + 2 centimes au plus",
+       747,
+       52.0,
+       470.0,
+       4390.0,
+       69.9,
+       39.8,
+       9.5
+      ]
+     ]
+    },
+    {
+     "titre": "Poids du wallet dans les achats d'avant-match de son côté (achats au prix affiché uniquement)",
+     "colonnes": [
+      "Type de marché",
+      "Positions",
+      "Achats d'avant-match de ce côté, tous acheteurs (USDC)",
+      "Part du wallet (%)",
+      "Part du wallet, médiane par position (%)",
+      "Volume total médian du marché, direct compris (parts)"
+     ],
+     "lignes": [
+      [
+       "Vainqueur du match",
+       361,
+       10066385.0,
+       18.5,
+       26.3,
+       51617.0
+      ],
+      [
+       "Vainqueur d'une carte",
+       141,
+       491568.0,
+       26.2,
+       49.9,
+       33576.0
+      ],
+      [
+       "Handicap de cartes",
+       177,
+       2504426.0,
+       30.1,
+       57.3,
+       14960.0
+      ],
+      [
+       "Nombre de cartes (plus/moins)",
+       47,
+       43644.0,
+       61.0,
+       80.4,
+       1355.0
+      ],
+      [
+       "Handicap de manches (une carte)",
+       21,
+       6176.0,
+       64.2,
+       91.6,
+       456.0
+      ],
+      [
+       "Tous les marchés",
+       747,
+       13112199.0,
+       21.2,
+       40.0,
+       28354.0
+      ]
+     ]
+    },
+    {
+     "titre": "L'avantage s'use-t-il ? Par semaine (date prévue du match)",
+     "colonnes": [
+      "Semaine",
+      "Matchs",
+      "Positions",
+      "Misé (USDC)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Écart au prix de clôture (% de la mise)",
+      "Rendement à mise fixe (%)",
+      "Rendement suiveur à 1 min, mise fixe (%)"
+     ],
+     "lignes": [
+      [
+       "2026-S22",
+       2,
+       2,
+       2.0,
+       -1.0,
+       -46.7,
+       -100.0,
+       7.3,
+       -1.04,
+       -46.3,
+       -47.4
+      ],
+      [
+       "2026-S33",
+       2,
+       3,
+       730.0,
+       372.0,
+       51.0,
+       11.7,
+       126.4,
+       -10.75,
+       96.0,
+       94.7
+      ],
+      [
+       "2026-S34",
+       4,
+       8,
+       6032.0,
+       -5303.0,
+       -87.9,
+       -100.0,
+       -86.3,
+       -0.69,
+       17.7,
+       -20.6
+      ],
+      [
+       "2026-S41",
+       18,
+       33,
+       13692.0,
+       -948.0,
+       -6.9,
+       -70.9,
+       63.1,
+       15.1,
+       6.7,
+       3.7
+      ],
+      [
+       "2026-S42",
+       46,
+       91,
+       256205.0,
+       90138.0,
+       35.2,
+       -6.0,
+       65.2,
+       -2.21,
+       0.4,
+       -1.1
+      ],
+      [
+       "2026-S43",
+       113,
+       210,
+       554507.0,
+       74424.0,
+       13.4,
+       -12.8,
+       39.0,
+       0.46,
+       0.6,
+       -0.8
+      ],
+      [
+       "2026-S44",
+       98,
+       200,
+       1007235.0,
+       352160.0,
+       35.0,
+       6.1,
+       60.5,
+       -0.52,
+       18.5,
+       18.0
+      ],
+      [
+       "2026-S45",
+       69,
+       139,
+       823522.0,
+       -5779.0,
+       -0.7,
+       -48.2,
+       44.0,
+       0.09,
+       -16.0,
+       -16.0
+      ],
+      [
+       "2026-S46",
+       30,
+       54,
+       392972.0,
+       79119.0,
+       20.1,
+       -43.7,
+       95.9,
+       -0.49,
+       27.2,
+       24.7
+      ]
+     ]
+    },
+    {
+     "titre": "Première moitié contre seconde moitié de l'historique",
+     "colonnes": [
+      "Période",
+      "Positions",
+      "Misé (USDC)",
+      "Bénéfice (USDC)",
+      "Rendement (%)",
+      "IC 95 % bas (%)",
+      "IC 95 % haut (%)",
+      "Rendement à mise fixe (%)",
+      "IC 95 % bas, mise fixe (%)",
+      "IC 95 % haut, mise fixe (%)"
+     ],
+     "lignes": [
+      [
+       "Première moitié des matchs",
+       364,
+       864037.0,
+       163889.0,
+       19.0,
+       -3.1,
+       38.6,
+       4.1,
+       -9.0,
+       17.5
+      ],
+      [
+       "Seconde moitié des matchs",
+       376,
+       2190860.0,
+       420292.0,
+       19.2,
+       -4.7,
+       43.1,
+       5.7,
+       -6.9,
+       17.6
+      ]
+     ]
+    },
+    {
+     "titre": "Corrélation entre positions du même match",
+     "colonnes": [
+      "Indicateur",
+      "Valeur"
+     ],
+     "lignes": [
+      [
+       "Paires de positions du même match avec le même résultat (%)",
+       69.9
+      ],
+      [
+       "Nombre de paires",
+       602
+      ],
+      [
+       "Incertitude réelle / incertitude si chaque position était indépendante",
+       1.22
+      ],
+      [
+       "Positions réglées",
+       740
+      ],
+      [
+       "Matchs réglés",
+       382
+      ],
+      [
+       "Nombre de paris « équivalents » de même taille (inverse de la concentration des mises par match)",
+       89.0
+      ],
+      [
+       "Plus grosse mise sur un seul match (USDC)",
+       128195.0
+      ],
+      [
+       "Part de l'argent misé sur les 20 plus gros matchs (%)",
+       37.4
+      ]
+     ]
+    },
+    {
+     "titre": "Biais du survivant : ce wallet a été choisi parce qu'il a gagné",
+     "colonnes": [
+      "Indicateur",
+      "Valeur"
+     ],
+     "lignes": [
+      [
+       "Score z du bénéfice (groupé par match)",
+       1.95
+      ],
+      [
+       "Probabilité qu'un parieur sans avantage fasse au moins aussi bien",
+       0.02547
+      ],
+      [
+       "Soit 1 parieur sans avantage sur …",
+       39.0
+      ],
+      [
+       "Score z à mise fixe (sans l'effet des grosses mises)",
+       1.05
+      ],
+      [
+       "Probabilité correspondante",
+       0.14699
+      ],
+      [
+       "Soit 1 parieur sans avantage sur … (mise fixe)",
+       7.0
+      ]
+     ]
+    },
+    {
+     "titre": "Risques propres aux marchés",
+     "colonnes": [
+      "Indicateur",
+      "Valeur"
+     ],
+     "lignes": [
+      [
+       "Positions remboursées à 50 % (match annulé, forfait…)",
+       14
+      ],
+      [
+       "Bénéfice sur ces positions (USDC)",
+       -1166.0
+      ],
+      [
+       "Part de l'argent misé sur des tournois de niveau 4 ou 5 (%)",
+       43.3
+      ],
+      [
+       "Part de l'argent misé hors « vainqueur du match » (%)",
+       32.7
+      ],
+      [
+       "Part de l'argent misé sur des handicaps de cartes (%)",
+       26.5
+      ],
+      [
+       "Positions encore ouvertes",
+       14
+      ],
+      [
+       "Argent engagé sur les positions ouvertes (USDC)",
+       104638.0
+      ]
+     ]
+    }
+   ],
+   "avertissements": [
+    "La liquidité est estimée à partir des achats réellement exécutés, pas à partir du carnet d'ordres de l'époque (non archivé). L'absence d'achat ne prouve pas qu'il n'y avait rien à acheter : c'est une borne basse. Le carnet relevé une fois en direct (voir notes/ANALYSIS.md) montrait 1 à 2 centimes d'écart et de quelques centaines à plusieurs centaines de milliers d'USDC selon le niveau du match.",
+    "Le calcul « 1 parieur sur N » suppose une loi normale ; il donne un ordre de grandeur, pas une probabilité exacte, et le nombre de wallets passés en revue pour trouver celui-ci n'est pas connu.",
+    "Les semaines contiennent peu de matchs : les variations d'une semaine à l'autre sont surtout du bruit.",
+    "Les marchés de niveau 4 et 5 sont les moins liquides et les plus exposés aux forfaits, remplacements de joueurs et matchs arrangés ; rien dans ces données ne permet de mesurer ce risque."
+   ]
+  }
+ ],
+ "methode": {
+  "delais_s": [
+   10,
+   30,
+   60,
+   300,
+   900
+  ],
+  "ecarts_testes": [
+   0.0,
+   0.005,
+   0.01,
+   0.02
+  ],
+  "ecart_de_base": 0.01,
+  "salve_s": 600,
+  "tirages_bootstrap": 5000,
+  "graine": 20261113,
+  "positions_avec_historique_de_prix": 754,
+  "positions_avec_achats_du_marche": 754,
+  "note": "Prix : un point par minute (CLOB prices-history). Achats du marché : flux public des transactions par marché. Intervalles de confiance : rééchantillonnage par match. Détails : notes/ANALYSIS.md."
+ }
+}
