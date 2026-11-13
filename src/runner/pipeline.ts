@@ -21,6 +21,7 @@ import type { PolymarketApi } from "./polymarket.ts";
 import { FILES, readAlerts, readEvents, readFills, readMarkets, readState, writeMarkets } from "./store.ts";
 import type { Store, SyncResult } from "./store.ts";
 import type { Sender } from "./telegram.ts";
+import { outcomeIndexFor } from "../core/positions.ts";
 
 export interface PipelineDeps {
   cfg: Config;
@@ -248,7 +249,7 @@ export class Pipeline {
     const meta = entry?.meta ?? stubMeta({
       condition_id: dft.condition_id, slug: p?.slug ?? "", event_slug: p?.event_slug ?? "", outcome: p?.outcome ?? "", outcome_index: dft.outcome_index,
     });
-    return safeDescribe(this.d.describe, meta, dft.outcome_index, p?.outcome ?? "");
+    return safeDescribe(this.d.describe, meta, outcomeIndexFor(meta, dft.token_id, dft.outcome_index), p?.outcome ?? "");
   }
 
   private async sendOutbox(): Promise<number> {

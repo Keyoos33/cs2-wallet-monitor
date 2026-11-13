@@ -27,6 +27,8 @@ export interface DashboardInput {
 const r3 = (x: number): number => Math.round(x * 1000) / 1000;
 
 /** Métadonnées minimales quand Gamma n'a jamais répondu pour ce marché : rien n'est interprété. */
+import { outcomeIndexFor } from "./positions.ts";
+
 export function stubMeta(p: { condition_id: string; slug: string; event_slug: string; outcome: string; outcome_index: number }, title = ""): MarketMeta {
   const outcomes: string[] = [];
   outcomes[p.outcome_index === 1 ? 1 : 0] = p.outcome;
@@ -55,7 +57,7 @@ export function buildDashboardData(inp: DashboardInput): DashboardData {
     let b = bets.get(p.token_id);
     if (!b) {
       const meta = inp.markets.get(p.condition_id)?.meta ?? stubMeta(p);
-      b = safeDescribe(inp.describe, meta, p.outcome_index, p.outcome);
+      b = safeDescribe(inp.describe, meta, outcomeIndexFor(meta, p.token_id, p.outcome_index), p.outcome);
       bets.set(p.token_id, b);
     }
     return b;

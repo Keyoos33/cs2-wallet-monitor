@@ -137,6 +137,9 @@ export function buildPositions(
   for (const p of pos.values()) {
     p.avgPrice = p.bought > 0 ? p.cost / p.bought : null;
     const m = marketOf(p.condition_id);
+    // L'API renvoie parfois outcome_index = 999 (non renseigné) : le token_id fait foi.
+    p.outcome_index = outcomeIndexFor(m?.meta, p.token_id, p.outcome_index);
+    if (m && !p.outcome && m.meta.outcomes[p.outcome_index]) p.outcome = m.meta.outcomes[p.outcome_index];
     const rd = redeems.get(`${p.condition_id}|${p.outcome_index}`);
     let settle: number | null = null;
     let ts: number | null = null;
@@ -171,3 +174,9 @@ export function buildPositions(
 }
 
 export function isClosed(p: Position): boolean { return p.status !== "open"; }
+
+/** Index de l'issue d'après le token (source sûre) ; repli sur l'index fourni par l'API. */
+export function outcomeIndexFor(meta: { tokenIds: string[] } | null | undefined, tokenId: string, fallback: number): number {
+  const i = meta?.tokenIds?.indexOf(tokenId) ?? -1;
+  return i >= 0 ? i : fallback;
+}
