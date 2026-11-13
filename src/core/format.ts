@@ -168,7 +168,7 @@ export function formatAlert(a: AlertInput): AlertMessage {
     if (buy && a.book !== undefined) lines.push(formatBookLine(a.book));
     if (a.lateLagS != null && a.lateLagS > 0) {
       const hhmm = a.detectedTs != null ? ` à ${frTime(a.detectedTs, a.tz)}` : "";
-      lines.push(`⏱ Détecté en retard${hhmm} (${frDuration(a.lateLagS / 60)} après le pari de ${frTime(a.lastTs, a.tz, true)})`);
+      lines.push(`⏱ Détecté en retard${hhmm} (${frDuration(a.lateLagS / 60)} après le pari de ${frTime(a.firstTs, a.tz, true)})`);
     }
   }
   if (a.isTest) title = TEST_PREFIX + title;

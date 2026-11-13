@@ -122,6 +122,15 @@ export async function runMonitor(d: MonitorDeps): Promise<{ outcome: MonitorOutc
       }
     }
     if (beat("amorçage: historique chargé", true) === "lost") return { outcome: "lease-lost", pipeline: p };
+    // Preuve de bout en bout : un message réel au tout premier démarrage (une seule fois, l'état est persisté).
+    if (p.state.bootstrapped_ts !== null) {
+      const txt = `✅ Moniteur CS2 en service\nWallet ${cfg.WALLET.slice(0, 6)}…${cfg.WALLET.slice(-4)}\n` +
+        `Historique chargé : ${p.ledger.fills.length} exécutions, ${p.positions.size} positions (${p.state.open.length} ouvertes).\n` +
+        `Vérification toutes les ${cfg.POLL_SECONDS} s. Chaque nouveau pari CS2 sera signalé ici.`;
+      const res = await d.sender.send(txt.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"), txt);
+      log(res.ok ? (res.dry ? "démarrage: message non envoyé (DRY_RUN)" : "démarrage: message de mise en service envoyé (Telegram ok:true)")
+        : `démarrage: ÉCHEC de l'envoi Telegram (${res.error ?? "inconnu"})`);
+    }
   }
 
   // ── 4. Boucle ──────────────────────────────────────────────────────────────

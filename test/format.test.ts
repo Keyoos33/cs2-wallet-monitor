@@ -61,7 +61,7 @@ describe("format des alertes (français, Europe/Zurich)", () => {
 
   it("mention de détection tardive", () => {
     const m = formatAlert({ ...base, lateLagS: 2 * 3600 + 8 * 60, detectedTs: TS + 2 * 3600 + 8 * 60 });
-    expect(plain(m.body)).toContain("⏱ Détecté en retard à 16:40 (2 h 08 après le pari de 13/11 14:32)");
+    expect(plain(m.body)).toContain("⏱ Détecté en retard à 16:40 (2 h 08 après le pari de 13/11 14:30)");
     expect(formatAlert({ ...base, lateLagS: null }).body).not.toContain("retard");
   });
 

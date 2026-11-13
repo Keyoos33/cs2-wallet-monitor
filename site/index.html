@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f6f6f4" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="CS2 Wallet">
+<meta name="format-detection" content="telephone=no">
+<meta name="robots" content="noindex">
+<title>CS2 Wallet Tracker</title>
+<meta name="description" content="Suivi en direct des paris CS2 d'un wallet Polymarket : positions en cours, historique, statistiques, analyse et alertes.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%232a78d6'/%3E%3Cpath d='M8 21l5-6 4 3 7-9' stroke='white' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="app.js"></script>
+</head>
+<body>
+<header class="top" id="top">
+  <div class="top-row">
+    <div class="brand">
+      <span class="brand-title">CS2 Wallet</span>
+      <span class="brand-sub" id="wallet">—</span>
+    </div>
+    <button class="health" id="health" type="button" aria-label="État du moniteur">
+      <span class="dot"></span><span class="health-txt">Chargement…</span>
+    </button>
+  </div>
+  <div class="top-meta">
+    <span id="updated">Chargement des données…</span>
+    <button class="refresh" id="refresh" type="button" aria-label="Actualiser">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.34-5.66M20 4v5h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="banner" id="banner" hidden></div>
+  <section class="view" id="v-open" data-view="open" hidden></section>
+  <section class="view" id="v-hist" data-view="hist" hidden></section>
+  <section class="view" id="v-stats" data-view="stats" hidden></section>
+  <section class="view" id="v-ana" data-view="ana" hidden></section>
+  <section class="view" id="v-alerts" data-view="alerts" hidden></section>
+  <div class="skeleton" id="skeleton">
+    <div class="sk sk-h"></div><div class="sk"></div><div class="sk"></div><div class="sk"></div>
+  </div>
+</main>
+
+<nav class="tabs" id="tabs" aria-label="Vues">
+  <button type="button" data-tab="open"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg><span>En cours</span></button>
+  <button type="button" data-tab="hist"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h9"/></svg><span>Historique</span></button>
+  <button type="button" data-tab="stats"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16M7 16v-5M12 16V6M17 16v-8"/></svg><span>Stats</span></button>
+  <button type="button" data-tab="ana"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15zM16 16l4.5 4.5"/></svg><span>Analyse</span></button>
+  <button type="button" data-tab="alerts"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16V11a6 6 0 0 1 12 0v5l1.5 2h-15zM10 20.5a2 2 0 0 0 4 0"/></svg><span>Alertes</span></button>
+</nav>
+
+<dialog class="sheet" id="sheet" aria-label="Détail de la position">
+  <div class="sheet-top">
+    <div class="sheet-grab" aria-hidden="true"></div>
+    <button class="sheet-close" type="button" id="sheet-close" aria-label="Fermer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="sheet-body" id="sheet-body"></div>
+</dialog>
+
+<noscript><p class="noscript">Ce tableau de bord nécessite JavaScript.</p></noscript>
+</body>
+</html>

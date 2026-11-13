@@ -88,7 +88,7 @@ describe("relais de bail entre deux runs (magasin local partagé, horloge simul�
         return true;
       },
     }));
-    const ra = await a; if (process.env.SHOW_LOGS) setTimeout(() => console.log(w.logs.join("\n")), 0);
+    const ra = await a;
     expect(ra.outcome).toBe("released");
     expect(bRun).not.toBeNull();
     const rb = await bRun!;
@@ -98,7 +98,10 @@ describe("relais de bail entre deux runs (magasin local partagé, horloge simul�
     const recs = store.readJsonl<AlertRecord>(FILES.alerts);
     const seen = recs.flatMap((r) => r.fills).sort((x, y) => x - y);
     expect(seen).toEqual([0, 1, 2, 3, 4, 5]);                      // tous notifiés, aucun deux fois
-    expect(w.sender.sent).toHaveLength(6);
+    // 1 message de mise en service (premier démarrage de A, jamais répété par B) + 6 alertes.
+    expect(w.sender.sent).toHaveLength(7);
+    expect(w.sender.sent.filter((m) => m.plain.includes("Moniteur CS2 en service"))).toHaveLength(1);
+    expect(w.sender.sent[0].plain).toContain("Moniteur CS2 en service");
     expect(recs.every((r) => r.kind === "NEW")).toBe(true);
 
     // Chronologie : B ne prend le bail qu'après la libération par A, et A n'attend pas MAX_RUN_S.
@@ -152,8 +155,10 @@ describe("relais de bail entre deux runs (magasin local partagé, horloge simul�
     w.api.activitySince = async (s: number) => { n++; if (n === 3 || n === 4) w.api.failActivity = 1; return orig(s); };
     const r = await runMonitor(d);
     expect(r.outcome).toBe("released");
-    expect(w.sender.sent).toHaveLength(1);                               // seulement le fill en direct
-    expect(w.sender.sent[0].plain).toContain("NOUVEAU PARI CS2");
+    // message de mise en service (amorçage) puis le seul fill en direct ; aucune alerte pour l'historique
+    expect(w.sender.sent).toHaveLength(2);
+    expect(w.sender.sent[0].plain).toContain("Moniteur CS2 en service");
+    expect(w.sender.sent[1].plain).toContain("NOUVEAU PARI CS2");
     expect(w.logs.filter((l) => l.includes("flux: lecture en échec"))).toHaveLength(2);
     const store = createStore({ repoDir: w.dir, storeDir: w.dir });
     expect(store.readJsonl<any>(FILES.fills).map((f) => f.src)).toEqual(["backfill", "live"]);
