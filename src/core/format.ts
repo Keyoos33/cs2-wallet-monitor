@@ -1,5 +1,6 @@
 // Formatage français des nombres, heures et messages d'alerte. Code pur.
-import type { BetDescription } from "./types.ts";
+import type { AlertKind, BetDescription, BookSnapshot } from "./types.ts";
+export type { AlertKind } from "./types.ts";
 
 const NBSP = " "; // espace fine insécable, séparateur de milliers
 
@@ -43,34 +44,45 @@ export function frTime(tsSec: number, tz = "Europe/Zurich", withDate = false): s
   return `${date} ${time}`;
 }
 
-export type AlertKind = "NEW" | "INCREASE" | "REDUCE" | "CLOSE";
-
 export interface AlertInput {
   kind: AlertKind;
   bet: BetDescription;
-  /** Dollars réellement échangés dans ce lot de fills (achat : payés ; vente : reçus), hors frais. */
+  /**
+   * Cash du lot de fills, tel que donné par l'API (`usdc_size`) :
+   * achat = cash réellement sorti, FRAIS INCLUS ; vente = cash reçu.
+   */
   usdc: number;
-  /** Frais payés sur ce lot, si connus. */
+  /** Frais compris dans `usdc` (achat), si connus. */
   fees: number | null;
   shares: number;
-  /** Prix moyen pondéré du lot. */
+  /** Prix moyen pondéré du lot, hors frais. */
   avgPrice: number;
   fillCount: number;
   firstTs: number;
   lastTs: number;
   /** Position après ce lot. */
   positionShares: number;
-  positionCost: number;      // coût d'acquisition restant engagé (hors frais)
-  positionAvgPrice: number | null;
+  positionCost: number;      // cash engagé sur la position, frais inclus
+  positionAvgPrice: number | null; // prix d'entrée moyen hors frais
   /** PnL réalisé par ce lot (ventes uniquement). */
   realizedPnl: number | null;
   /** "PRÉ-MATCH" | "LIVE" | null si non vérifiable. */
   phase: "PRE" | "LIVE" | null;
-  /** Minutes avant (+) le début prévu du match, si connu. */
+  /** Minutes avant (+) le début prévu du match au moment de l'envoi, si connu. */
   minutesToStart: number | null;
   url: string;
   isTest?: boolean;
   tz?: string;
+  /** Nombre de fills preneur / maker du lot (ligne « Exécution » si renseigné). */
+  takerCount?: number;
+  makerCount?: number;
+  /** Carnet au moment de l'envoi (NEW / INCREASE) ; null = carnet indisponible ; undefined = pas de ligne. */
+  book?: BookSnapshot | null;
+  /** Retard de détection (s) et heure de détection, si le lot a été détecté en retard. */
+  lateLagS?: number | null;
+  detectedTs?: number | null;
+  /** RESULT : issue du pari. `usdc` = mise totale, `fees` = frais totaux, `avgPrice` = prix d'entrée moyen. */
+  result?: { status: "won" | "lost" | "void"; payout: number; pnl: number; roi: number | null } | null;
 }
 
 const KIND_TITLE: Record<AlertKind, string> = {
@@ -78,9 +90,34 @@ const KIND_TITLE: Record<AlertKind, string> = {
   INCREASE: "➕ RENFORT DE POSITION CS2",
   REDUCE: "➖ VENTE PARTIELLE CS2",
   CLOSE: "✅ POSITION FERMÉE CS2",
+  RESULT: "🏁 RÉSULTAT CS2",
 };
 
+const RESULT_LABEL = { won: "✅ GAGNÉ", lost: "❌ PERDU", void: "↩️ REMBOURSÉ 50-50" } as const;
+
+export const TEST_PREFIX = "🧪 TEST (rejeu historique) — ";
+
 export interface AlertMessage { title: string; body: string; url: string; priority: "high" | "default"; tags: string }
+
+function signedUsd(n: number): string {
+  return `${n > 0 ? "+" : ""}${frUsd(n)}`;
+}
+
+/** "+12,3 %" */
+export function frPct(ratio: number, decimals = 1): string {
+  const v = ratio * 100;
+  return `${v > 0 ? "+" : ""}${frNumber(v, decimals)}${NBSP}%`;
+}
+
+/** Ligne « prix disponible au moment de l'envoi » (copiabilité). */
+export function formatBookLine(b: BookSnapshot | null): string {
+  if (b === null) return "Dispo maintenant : carnet indisponible";
+  if (b.bestAsk === null) return "Dispo maintenant : aucune offre à la vente";
+  const best = `${frPrice(b.bestAsk)} (cote ${frOdds(b.bestAsk)})${b.bestAskSize !== null ? ` × ${frNumber(b.bestAskSize, 0)} parts` : ""}`;
+  return b.usdAvail > 0
+    ? `Dispo maintenant : ${best} — ${frUsd(b.usdAvail, 0)} jusqu'à ${frPrice(b.limit)}`
+    : `Dispo maintenant : ${best} — rien jusqu'à ${frPrice(b.limit)}`;
+}
 
 export function formatAlert(a: AlertInput): AlertMessage {
   const buy = a.kind === "NEW" || a.kind === "INCREASE";
@@ -90,29 +127,68 @@ export function formatAlert(a: AlertInput): AlertMessage {
   lines.push(`Pari : ${a.bet.betFr}`);
   if (a.bet.winConditionFr) lines.push(`Pour gagner : ${a.bet.winConditionFr}`);
   if (!a.bet.exact) lines.push("⚠️ Type de marché non reconnu : intitulé brut, non interprété");
-  const feeTxt = a.fees && a.fees > 0.005 ? ` (+ ${frUsd(a.fees, 2)} de frais)` : "";
-  if (buy) {
+  const feeTxt = a.fees && a.fees > 0.005 ? ` (dont ${frUsd(a.fees, 2)} de frais)` : "";
+  let title = KIND_TITLE[a.kind];
+  if (a.kind === "RESULT") {
+    const r = a.result ?? null;
+    if (r) title += ` : ${RESULT_LABEL[r.status]}`;
+    lines.push(`Mise totale : ${frUsd(a.usdc)}${feeTxt}`);
+    lines.push(`Prix d'entrée moyen : ${frPrice(a.avgPrice)} — cote ${frOdds(a.avgPrice)}`);
+    if (r) {
+      lines.push(`Encaissé : ${frUsd(r.payout)}`);
+      lines.push(`PnL : ${signedUsd(r.pnl)}${r.roi !== null ? ` (ROI ${frPct(r.roi)})` : ""}`);
+    }
+  } else if (buy) {
     lines.push(`${a.kind === "NEW" ? "Mise" : "Ajout"} : ${frUsd(a.usdc)}${feeTxt}`);
     lines.push(`Prix d'entrée : ${frPrice(a.avgPrice)} — cote ${frOdds(a.avgPrice)}`);
     if (a.kind === "INCREASE" && a.positionAvgPrice !== null) {
       lines.push(`Position totale : ${frUsd(a.positionCost)} à ${frPrice(a.positionAvgPrice)} (cote ${frOdds(a.positionAvgPrice)})`);
     }
   } else {
-    lines.push(`Vendu : ${frNumber(a.shares)} parts à ${frPrice(a.avgPrice)} = ${frUsd(a.usdc)}${feeTxt}`);
-    if (a.realizedPnl !== null) lines.push(`PnL réalisé : ${a.realizedPnl >= 0 ? "+" : ""}${frUsd(a.realizedPnl)}`);
+    lines.push(`Vendu : ${frNumber(a.shares)} parts à ${frPrice(a.avgPrice)} = ${frUsd(a.usdc)}`);
+    if (a.realizedPnl !== null) lines.push(`PnL réalisé : ${signedUsd(a.realizedPnl)}`);
     lines.push(a.kind === "CLOSE" ? "Position restante : 0" : `Position restante : ${frUsd(a.positionCost)} engagés`);
   }
-  if (a.phase === "PRE") {
-    lines.push(a.minutesToStart !== null ? `Pré-match (début prévu dans ${frDuration(a.minutesToStart)})` : "Pré-match");
-  } else if (a.phase === "LIVE") {
-    lines.push("🔴 LIVE (match commencé)");
+  if (a.kind !== "RESULT") {
+    if (a.phase === "PRE") {
+      lines.push(a.minutesToStart !== null && a.minutesToStart > 0
+        ? `Pré-match (début prévu dans ${frDuration(a.minutesToStart)})`
+        : a.minutesToStart !== null ? "Pré-match au moment du pari (début prévu dépassé depuis)" : "Pré-match");
+    } else if (a.phase === "LIVE") {
+      lines.push("🔴 LIVE (match commencé)");
+    }
+    const tk = a.takerCount ?? 0, mk = a.makerCount ?? 0;
+    if (tk + mk > 0) {
+      lines.push(`Exécution : ${mk === 0 ? "ordre au marché (taker)" : tk === 0 ? "ordre limite exécuté (maker)" : `${tk} taker + ${mk} maker`}`);
+    }
+    const t = a.fillCount > 1 && a.lastTs - a.firstTs >= 60
+      ? `${frTime(a.firstTs, a.tz)}–${frTime(a.lastTs, a.tz)}`
+      : frTime(a.lastTs, a.tz);
+    lines.push(`Heure : ${t}${a.fillCount > 1 ? ` (${a.fillCount} exécutions)` : ""}`);
+    if (buy && a.book !== undefined) lines.push(formatBookLine(a.book));
+    if (a.lateLagS != null && a.lateLagS > 0) {
+      const hhmm = a.detectedTs != null ? ` à ${frTime(a.detectedTs, a.tz)}` : "";
+      lines.push(`⏱ Détecté en retard${hhmm} (${frDuration(a.lateLagS / 60)} après le pari de ${frTime(a.lastTs, a.tz, true)})`);
+    }
   }
-  const t = a.fillCount > 1 && a.lastTs - a.firstTs >= 60
-    ? `${frTime(a.firstTs, a.tz)}–${frTime(a.lastTs, a.tz)}`
-    : frTime(a.lastTs, a.tz);
-  lines.push(`Heure : ${t}${a.fillCount > 1 ? ` (${a.fillCount} exécutions)` : ""}`);
-  const title = (a.isTest ? "🧪 TEST (rejeu historique) — " : "") + KIND_TITLE[a.kind];
+  if (a.isTest) title = TEST_PREFIX + title;
   return { title, body: lines.join("\n"), url: a.url, priority: a.kind === "NEW" ? "high" : "default", tags: a.kind };
+}
+
+/** Échappe le texte pour Telegram parse_mode=HTML. */
+export function escapeHtml(s: string): string {
+  return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+/** Message Telegram (HTML) : titre en gras, corps, lien vers l'événement. */
+export function toTelegramHtml(m: AlertMessage): string {
+  const link = /^https:\/\/polymarket\.com\//.test(m.url) ? `\n<a href="${escapeHtml(m.url).replace(/"/g, "%22")}">Voir sur Polymarket</a>` : "";
+  return `<b>${escapeHtml(m.title)}</b>\n${escapeHtml(m.body)}${link}`;
+}
+
+/** Version texte brut (journal, alerts.jsonl). */
+export function toPlainText(m: AlertMessage): string {
+  return `${m.title}\n${m.body}\n${m.url}`;
 }
 
 export function frDuration(minutes: number): string {
