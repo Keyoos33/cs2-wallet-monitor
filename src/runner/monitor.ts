@@ -16,6 +16,12 @@ export interface MonitorDeps extends PipelineDeps {
   dispatch: () => Promise<boolean>;
   /** Demande d'arrêt (SIGTERM / SIGINT). */
   stopRequested: () => boolean;
+  /**
+   * Lancement manuel (push de .kick, workflow_dispatch, superviseur) : si un bail semble vivant, attendre qu'il
+   * devienne périmé au lieu de s'arrêter. Indispensable quand le run précédent a été tué (annulation, panne)
+   * sans libérer son bail : sinon personne ne reprend avant le prochain chien de garde.
+   */
+  waitForStaleLease?: boolean;
 }
 
 export type MonitorOutcome = "exit-lease-alive" | "exit-other-successor" | "standby-timeout" | "lease-lost" | "released" | "no-lease";
@@ -27,6 +33,18 @@ export async function runMonitor(d: MonitorDeps): Promise<{ outcome: MonitorOutc
   // ── 1. Bail ────────────────────────────────────────────────────────────────
   let st: RunnerState | null = readState(store);
   let decision = decideAtStart(st?.lease, store.readJson<Handover>(FILES.handover), now(), runId, cfg);
+  if (decision === "exit" && d.waitForStaleLease && st?.lease?.handover_wanted_ts == null) {
+    log("bail: un autre run semble vivant ; lancement manuel, j'attends de voir s'il bat encore");
+    const t0 = now();
+    while (decision === "exit" && now() - t0 <= cfg.LEASE_STALE_S + 60 && !d.stopRequested()) {
+      await sleep(15000);
+      if (store.fetchRemote()) store.resetToRemote();
+      st = readState(store);
+      if (st?.lease?.handover_wanted_ts != null) break;
+      decision = decideAtStart(st?.lease, store.readJson<Handover>(FILES.handover), now(), runId, cfg);
+    }
+    if (decision === "acquire") log("bail: périmé (run précédent mort sans le libérer), je le reprends");
+  }
   if (decision === "exit") {
     const h = st?.lease?.handover_wanted_ts != null;
     log(h ? "bail: un successeur est déjà annoncé, arrêt" : "bail: un autre run est vivant, arrêt (chien de garde)");

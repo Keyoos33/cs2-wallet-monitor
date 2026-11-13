@@ -23,7 +23,10 @@ export function eventKey(r: { type: string; transaction_hash: string; condition_
 
 export function isCs2(eventSlug: string, entry?: MarketEntry | null): boolean {
   if (entry && entry.meta.seriesSlug === "counter-strike") return true;
-  return typeof eventSlug === "string" && eventSlug.startsWith("cs2-");
+  if (typeof eventSlug === "string" && (eventSlug.startsWith("cs2-") || eventSlug.includes("counter-strike"))) return true;
+  // Marchés hors match (vainqueur de tournoi…) : pas de série « counter-strike », mais le titre le dit.
+  const txt = entry ? `${entry.meta.eventTitle} ${entry.meta.question}` : "";
+  return /counter-strike|\bcs2\b/i.test(txt);
 }
 
 /** PRE si le fill précède l'heure PRÉVUE du match ; null si elle est inconnue. */

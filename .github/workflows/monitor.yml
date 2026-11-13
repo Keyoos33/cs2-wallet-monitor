@@ -55,4 +55,6 @@ jobs:
           # Notifications Telegram désactivées à la demande du propriétaire (suivi consulté via Claude / dashboard).
           # Les alertes restent calculées et journalisées dans ledger/alerts.jsonl. Mettre "0" pour réactiver.
           DRY_RUN: "1"
+          # Lancement manuel (push .kick, dispatch, relais) : attendre qu'un bail mort devienne périmé au lieu de s'arrêter.
+          START_KIND: ${{ github.event_name == 'schedule' && 'schedule' || 'manual' }}
         run: node src/runner/main.ts

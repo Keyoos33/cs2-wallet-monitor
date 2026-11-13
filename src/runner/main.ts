@@ -30,6 +30,7 @@ export async function main(argv: string[] = process.argv.slice(2), env: Record<s
       const { outcome } = await runMonitor({
         ...rt,
         stopRequested: () => stop,
+        waitForStaleLease: env.START_KIND === "manual",
         dispatch: () => dispatchSuccessor({ repo: env.GITHUB_REPOSITORY, token: env.GITHUB_TOKEN, ref: env.GITHUB_REF_NAME || "main", log: rt.log }),
       });
       rt.log(`fin du run: ${outcome}`);
