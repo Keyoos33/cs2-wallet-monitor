@@ -1,0 +1,27 @@
+# Diagnostic Telegram : se déclenche quand le fichier .telegram-test change sur main (ou à la main).
+# Envoie un message de test et écrit dans le log la cause exacte d'un éventuel échec, sans aucun secret.
+name: telegram-test
+
+on:
+  push:
+    branches: [main]
+    paths: [".telegram-test", "scripts/telegram-diag.ts"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  diag:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Diagnostic Telegram
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: node scripts/telegram-diag.ts
